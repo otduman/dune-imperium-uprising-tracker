@@ -398,7 +398,7 @@ export function AddGameDialog({
 
                 {tbWinner ? (
                   <div className="flex items-center gap-2">
-                    <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-success text-success-foreground">
+                    <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-atreides/60 text-emerald-300">
                       Resolved
                     </span>
                     <span className="text-xs text-muted-foreground font-mono">
@@ -408,7 +408,7 @@ export function AddGameDialog({
                   </div>
                 ) : shownResources.length === 4 && (
                   <div className="flex items-center gap-2">
-                    <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-primary/20 text-primary">
+                    <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-fremen/20 text-fremen">
                       Shared Victory
                     </span>
                     <span className="text-xs text-muted-foreground font-mono">

@@ -57,6 +57,10 @@ export default function Home() {
   }, [])
 
   const stats = useMemo(() => getPlayerStats(games, players), [games, players])
+  const previousStats = useMemo(() => {
+    if (games.length < 1) return undefined
+    return getPlayerStats(games.slice(1), players)
+  }, [games, players])
   const leaderStats = useMemo(() => getLeaderStats(games), [games])
 
   const handlePlayersChange = useCallback((newPlayers: string[]) => {
@@ -140,7 +144,7 @@ export default function Home() {
               <h2 className="text-[10px] font-mono font-semibold tracking-[0.2em] text-muted-foreground/60 uppercase">
                 Standings
               </h2>
-              <StandingsTable stats={stats} onSelectPlayer={setProfilePlayer} />
+              <StandingsTable stats={stats} previousStats={previousStats} onSelectPlayer={setProfilePlayer} />
             </section>
 
             <section className="space-y-3">

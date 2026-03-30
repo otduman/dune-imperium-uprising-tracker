@@ -37,6 +37,10 @@
   --color-warning-foreground: var(--warning-foreground);
   --color-success: var(--success);
   --color-success-foreground: var(--success-foreground);
+  --color-fremen: var(--fremen);
+  --color-corrino: var(--corrino);
+  --color-harkonnen: var(--harkonnen);
+  --color-atreides: var(--atreides);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -70,6 +74,10 @@
   --warning-foreground: #FF8400;
   --success: #222924;
   --success-foreground: #B6FFCE;
+  --fremen: #00D2FF;
+  --corrino: #E5A93C;
+  --harkonnen: #A31E1E;
+  --atreides: #2B4C3F;
   --radius: 4px;
   --sidebar: #18181b;
   --sidebar-foreground: #fafafa;

@@ -1,9 +1,11 @@
 "use client"
 
 import { PlayerStats } from "@/lib/types"
+import { ChevronUp, ChevronDown, Minus } from "lucide-react"
 
 interface StandingsTableProps {
   stats: PlayerStats[]
+  previousStats?: PlayerStats[]
   onSelectPlayer?: (name: string) => void
 }
 
@@ -13,7 +15,7 @@ function shortFirst(name: string) {
   return `${parts[0][0]}. ${parts.slice(1).join(" ")}`
 }
 
-export function StandingsTable({ stats, onSelectPlayer }: StandingsTableProps) {
+export function StandingsTable({ stats, previousStats, onSelectPlayer }: StandingsTableProps) {
   if (stats.length === 0) {
     return (
       <div className="border border-border py-10 text-center text-sm text-muted-foreground font-mono">
@@ -49,6 +51,14 @@ export function StandingsTable({ stats, onSelectPlayer }: StandingsTableProps) {
       {/* Rows */}
       {stats.map((player, i) => {
         const isFirst = i === 0
+
+        const prevIndex = previousStats?.findIndex((p) => p.name === player.name)
+        let trend = "same"
+        if (prevIndex !== undefined && prevIndex !== -1) {
+          if (prevIndex > i) trend = "up"
+          else if (prevIndex < i) trend = "down"
+        }
+
         return (
           <div
             key={player.name}
@@ -64,11 +74,18 @@ export function StandingsTable({ stats, onSelectPlayer }: StandingsTableProps) {
             {/* rank */}
             <div
               className={[
-                "w-9 shrink-0 py-4 pl-2 font-mono text-sm font-bold tabular-nums",
+                "w-11 shrink-0 py-4 pl-2 font-mono text-sm font-bold tabular-nums flex flex-col justify-center",
                 isFirst ? "text-primary" : "text-muted-foreground/50",
               ].join(" ")}
             >
-              {i + 1}
+              <div className="flex items-center gap-1">
+                <span>{i + 1}</span>
+                {trend === "up" && <ChevronUp className="size-3 text-fremen shrink-0" strokeWidth={3} />}
+                {trend === "down" && <ChevronDown className="size-3 text-harkonnen shrink-0" strokeWidth={3} />}
+                {trend === "same" && previousStats && previousStats.length > 0 && prevIndex !== -1 && (
+                  <Minus className="size-3 text-muted-foreground/30 shrink-0" strokeWidth={3} />
+                )}
+              </div>
             </div>
 
             {/* name */}

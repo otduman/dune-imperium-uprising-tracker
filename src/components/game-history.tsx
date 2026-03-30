@@ -53,12 +53,12 @@ export function GameHistory({ games, onSelectGame }: GameHistoryProps) {
                   {formatDate(game.date)}
                 </span>
                 {/* Winner badge */}
-                <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-success/80 text-success-foreground">
+                <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-atreides/60 text-emerald-300">
                   {winners.map(shortenName).join(" & ")}
                 </span>
                 {/* Tiebreaker badge */}
                 {isTB && (
-                  <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-warning text-warning-foreground">
+                  <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-corrino/20 text-corrino">
                     TB
                   </span>
                 )}

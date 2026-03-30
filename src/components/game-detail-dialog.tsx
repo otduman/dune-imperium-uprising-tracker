@@ -173,14 +173,14 @@ export function GameDetailDialog({
                 })}
 
                 {game.tiebreakerResolved ? (
-                  <div className="text-xs text-warning-foreground opacity-90">
+                  <div className="text-xs text-corrino opacity-90">
                     Winner by{" "}
                     {game.tiebreakerResolved.resource.charAt(0).toUpperCase() +
                       game.tiebreakerResolved.resource.slice(1)}
                     : {shortenName(game.tiebreakerResolved.winnerName)}
                   </div>
                 ) : (
-                  <div className="text-xs text-primary opacity-90 font-mono font-semibold">
+                  <div className="text-xs text-fremen opacity-90 font-mono font-semibold">
                     Shared Victory — unbreakable tie
                   </div>
                 )}
