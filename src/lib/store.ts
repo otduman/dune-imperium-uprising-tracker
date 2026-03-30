@@ -2,55 +2,16 @@
 
 import { Game, PlayerStats, LeaderStats, DEFAULT_PLAYERS } from "./types"
 
-const STORAGE_KEY = "dune-uprising-tracker"
-const PLAYERS_KEY = "dune-uprising-players"
-
-export function loadGames(): Game[] {
-  if (typeof window === "undefined") return []
-  try {
-    const data = localStorage.getItem(STORAGE_KEY)
-    return data ? JSON.parse(data) : []
-  } catch {
-    return []
-  }
-}
-
-export function saveGames(games: Game[]) {
-  if (typeof window === "undefined") return
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(games))
-}
-
-export function loadPlayers(): string[] {
-  if (typeof window === "undefined") return DEFAULT_PLAYERS
-  try {
-    const data = localStorage.getItem(PLAYERS_KEY)
-    return data ? JSON.parse(data) : DEFAULT_PLAYERS
-  } catch {
-    return DEFAULT_PLAYERS
-  }
-}
-
-export function savePlayers(players: string[]) {
-  if (typeof window === "undefined") return
-  localStorage.setItem(PLAYERS_KEY, JSON.stringify(players))
-}
-
 export function addGame(games: Game[], game: Game): Game[] {
-  const updated = [game, ...games]
-  saveGames(updated)
-  return updated
+  return [game, ...games]
 }
 
 export function deleteGame(games: Game[], gameId: string): Game[] {
-  const updated = games.filter((g) => g.id !== gameId)
-  saveGames(updated)
-  return updated
+  return games.filter((g) => g.id !== gameId)
 }
 
 export function updateGame(games: Game[], game: Game): Game[] {
-  const updated = games.map((g) => (g.id === game.id ? game : g))
-  saveGames(updated)
-  return updated
+  return games.map((g) => (g.id === game.id ? game : g))
 }
 
 export function getPlayerStats(

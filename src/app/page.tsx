@@ -12,20 +12,26 @@ import { ManagePlayersDialog } from "@/components/manage-players-dialog"
 import { PlayerProfileDialog } from "@/components/player-profile-dialog"
 import { Game } from "@/lib/types"
 import {
-  loadGames,
-  loadPlayers,
-  savePlayers,
   addGame,
   deleteGame,
   updateGame,
   getPlayerStats,
   getLeaderStats,
 } from "@/lib/store"
-import { Plus, Users } from "lucide-react"
+import {
+  fetchGamesApi,
+  fetchPlayersApi,
+  createGameApi,
+  updateGameApi,
+  deleteGameApi,
+  updatePlayersApi,
+} from "@/lib/api"
+import { Plus, Users, Loader2 } from "lucide-react"
 
 export default function Home() {
   const [games, setGames] = useState<Game[]>([])
   const [players, setPlayers] = useState<string[]>([])
+  const [loading, setLoading] = useState(true)
   const [addOpen, setAddOpen] = useState(false)
   const [playersOpen, setPlayersOpen] = useState(false)
   const [detailGame, setDetailGame] = useState<Game | null>(null)
@@ -33,8 +39,21 @@ export default function Home() {
   const [profilePlayer, setProfilePlayer] = useState<string | null>(null)
 
   useEffect(() => {
-    setGames(loadGames())
-    setPlayers(loadPlayers())
+    async function loadData() {
+      try {
+        const [fetchedGames, fetchedPlayers] = await Promise.all([
+          fetchGamesApi(),
+          fetchPlayersApi()
+        ])
+        setGames(fetchedGames)
+        if (fetchedPlayers && fetchedPlayers.length > 0) setPlayers(fetchedPlayers)
+      } catch (err) {
+        console.error("Failed to load data", err)
+      } finally {
+        setLoading(false)
+      }
+    }
+    loadData()
   }, [])
 
   const stats = useMemo(() => getPlayerStats(games, players), [games, players])
@@ -42,7 +61,7 @@ export default function Home() {
 
   const handlePlayersChange = useCallback((newPlayers: string[]) => {
     setPlayers(newPlayers)
-    savePlayers(newPlayers)
+    updatePlayersApi(newPlayers).catch(console.error)
   }, [])
 
   const handleSaveGame = useCallback(
@@ -50,6 +69,10 @@ export default function Home() {
       setGames((prev) =>
         editGame ? updateGame(prev, game) : addGame(prev, game)
       )
+      
+      const apiCall = editGame ? updateGameApi(game) : createGameApi(game)
+      apiCall.catch(console.error)
+
       setEditGame(null)
     },
     [editGame]
@@ -57,6 +80,7 @@ export default function Home() {
 
   const handleDeleteGame = useCallback((gameId: string) => {
     setGames((prev) => deleteGame(prev, gameId))
+    deleteGameApi(gameId).catch(console.error)
   }, [])
 
   const handleEditFromDetail = useCallback((game: Game) => {
@@ -105,30 +129,36 @@ export default function Home() {
         </header>
 
         {/* Content */}
-        <div className="flex-1 max-w-2xl mx-auto w-full px-4 py-6 space-y-8 pb-16">
+        {loading ? (
+          <div className="flex-1 flex items-center justify-center min-h-[50vh]">
+            <Loader2 className="size-6 animate-spin text-muted-foreground/60" />
+          </div>
+        ) : (
+          <div className="flex-1 max-w-2xl mx-auto w-full px-4 py-6 space-y-8 pb-16">
 
-          <section className="space-y-3">
-            <h2 className="text-[10px] font-mono font-semibold tracking-[0.2em] text-muted-foreground/60 uppercase">
-              Standings
-            </h2>
-            <StandingsTable stats={stats} onSelectPlayer={setProfilePlayer} />
-          </section>
+            <section className="space-y-3">
+              <h2 className="text-[10px] font-mono font-semibold tracking-[0.2em] text-muted-foreground/60 uppercase">
+                Standings
+              </h2>
+              <StandingsTable stats={stats} onSelectPlayer={setProfilePlayer} />
+            </section>
 
-          <section className="space-y-3">
-            <h2 className="text-[10px] font-mono font-semibold tracking-[0.2em] text-muted-foreground/60 uppercase">
-              Game History
-            </h2>
-            <GameHistory games={games} onSelectGame={setDetailGame} />
-          </section>
+            <section className="space-y-3">
+              <h2 className="text-[10px] font-mono font-semibold tracking-[0.2em] text-muted-foreground/60 uppercase">
+                Game History
+              </h2>
+              <GameHistory games={games} onSelectGame={setDetailGame} />
+            </section>
 
-          <section className="space-y-3">
-            <h2 className="text-[10px] font-mono font-semibold tracking-[0.2em] text-muted-foreground/60 uppercase">
-              Leader Meta
-            </h2>
-            <LeaderMeta stats={leaderStats} />
-          </section>
+            <section className="space-y-3">
+              <h2 className="text-[10px] font-mono font-semibold tracking-[0.2em] text-muted-foreground/60 uppercase">
+                Leader Meta
+              </h2>
+              <LeaderMeta stats={leaderStats} />
+            </section>
 
-        </div>
+          </div>
+        )}
       </div>
 
       <AddGameDialog
