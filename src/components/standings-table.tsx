@@ -71,15 +71,14 @@ export function StandingsTable({ stats, previousStats, onSelectPlayer }: Standin
               onSelectPlayer ? "cursor-pointer active:bg-secondary" : "",
             ].join(" ")}
           >
-            {/* rank */}
             <div
               className={[
-                "w-11 shrink-0 py-4 pl-2 font-mono text-sm font-bold tabular-nums flex flex-col justify-center",
+                "w-12 shrink-0 py-4 pl-3 font-mono text-sm font-bold tabular-nums flex flex-col justify-center",
                 isFirst ? "text-primary" : "text-muted-foreground/50",
               ].join(" ")}
             >
-              <div className="flex items-center gap-1">
-                <span>{i + 1}</span>
+              <div className="flex items-center gap-2.5">
+                <span className="w-4 text-center">{i + 1}</span>
                 {trend === "up" && <ChevronUp className="size-3 text-fremen shrink-0" strokeWidth={3} />}
                 {trend === "down" && <ChevronDown className="size-3 text-harkonnen shrink-0" strokeWidth={3} />}
                 {trend === "same" && previousStats && previousStats.length > 0 && prevIndex !== -1 && (
