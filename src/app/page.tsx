@@ -1,10 +1,11 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useEffect, useCallback, useMemo } from "react"
 import { ShaderAnimation } from "@/components/ui/shader-animation"
 import { Button } from "@/components/ui/button"
 import { StandingsTable } from "@/components/standings-table"
 import { GameHistory } from "@/components/game-history"
+import { LeaderMeta } from "@/components/leader-meta"
 import { AddGameDialog } from "@/components/add-game-dialog"
 import { GameDetailDialog } from "@/components/game-detail-dialog"
 import { ManagePlayersDialog } from "@/components/manage-players-dialog"
@@ -18,6 +19,7 @@ import {
   deleteGame,
   updateGame,
   getPlayerStats,
+  getLeaderStats,
 } from "@/lib/store"
 import { Plus, Users } from "lucide-react"
 
@@ -35,7 +37,8 @@ export default function Home() {
     setPlayers(loadPlayers())
   }, [])
 
-  const stats = getPlayerStats(games, players)
+  const stats = useMemo(() => getPlayerStats(games, players), [games, players])
+  const leaderStats = useMemo(() => getLeaderStats(games), [games])
 
   const handlePlayersChange = useCallback((newPlayers: string[]) => {
     setPlayers(newPlayers)
@@ -69,7 +72,6 @@ export default function Home() {
         {/* Header */}
         <header className="sticky top-0 z-20 border-b border-border bg-background/90 backdrop-blur-sm">
           <div className="max-w-2xl mx-auto px-4 h-14 flex items-center justify-between gap-3">
-            {/* Title */}
             <div className="flex items-center gap-2.5 min-w-0">
               <span className="font-mono text-[13px] font-semibold tracking-wide text-foreground whitespace-nowrap">
                 DUNE: IMPERIUM
@@ -79,8 +81,6 @@ export default function Home() {
                 S01
               </span>
             </div>
-
-            {/* Actions */}
             <div className="flex items-center gap-2 shrink-0">
               <Button
                 variant="ghost"
@@ -107,7 +107,6 @@ export default function Home() {
         {/* Content */}
         <div className="flex-1 max-w-2xl mx-auto w-full px-4 py-6 space-y-8 pb-16">
 
-          {/* Standings */}
           <section className="space-y-3">
             <h2 className="text-[10px] font-mono font-semibold tracking-[0.2em] text-muted-foreground/60 uppercase">
               Standings
@@ -115,20 +114,23 @@ export default function Home() {
             <StandingsTable stats={stats} onSelectPlayer={setProfilePlayer} />
           </section>
 
-          {/* History */}
           <section className="space-y-3">
             <h2 className="text-[10px] font-mono font-semibold tracking-[0.2em] text-muted-foreground/60 uppercase">
               Game History
             </h2>
-            <GameHistory
-              games={games}
-              onSelectGame={setDetailGame}
-            />
+            <GameHistory games={games} onSelectGame={setDetailGame} />
           </section>
+
+          <section className="space-y-3">
+            <h2 className="text-[10px] font-mono font-semibold tracking-[0.2em] text-muted-foreground/60 uppercase">
+              Leader Meta
+            </h2>
+            <LeaderMeta stats={leaderStats} />
+          </section>
+
         </div>
       </div>
 
-      {/* Dialogs */}
       <AddGameDialog
         key={editGame?.id ?? "new"}
         open={addOpen}
@@ -162,6 +164,7 @@ export default function Home() {
         onOpenChange={(open) => { if (!open) setProfilePlayer(null) }}
         stats={stats.find((s) => s.name === profilePlayer) ?? null}
         games={games}
+        players={players}
       />
     </main>
   )

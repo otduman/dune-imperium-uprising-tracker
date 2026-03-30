@@ -1,10 +1,9 @@
 "use client"
 
-import { Game, PlayerStats, DEFAULT_PLAYERS } from "./types"
+import { Game, PlayerStats, LeaderStats, DEFAULT_PLAYERS } from "./types"
 
 const STORAGE_KEY = "dune-uprising-tracker"
 const PLAYERS_KEY = "dune-uprising-players"
-
 
 export function loadGames(): Game[] {
   if (typeof window === "undefined") return []
@@ -60,49 +59,110 @@ export function getPlayerStats(
 ): PlayerStats[] {
   return players
     .map((name) => {
+      // games are newest-first
       const playerGames = games.filter((g) =>
-        g.scores.some((s) => s.playerName === name)
+        g.scores.some((s) => s.playerName === name && s.score > 0)
       )
       const scores = playerGames
         .map((g) => g.scores.find((s) => s.playerName === name)!)
         .filter(Boolean)
 
-      const wins = games.filter((g) => {
-        if (g.tiebreakerResolved?.winnerName === name) return true
-        const sorted = [...g.scores].sort((a, b) => b.score - a.score)
-        if (
-          sorted[0]?.playerName === name &&
-          !g.tiebreakerResolved
-        )
-          return true
-        return false
-      }).length
+      const wins = playerGames.filter((g) => getWinner(g) === name).length
+
+      // Streak: playerGames is newest-first
+      let currentStreak = 0
+      for (const g of playerGames) {
+        if (getWinner(g) === name) currentStreak++
+        else break
+      }
+
+      let longestStreak = 0
+      let streak = 0
+      for (const g of [...playerGames].reverse()) {
+        if (getWinner(g) === name) {
+          streak++
+          if (streak > longestStreak) longestStreak = streak
+        } else {
+          streak = 0
+        }
+      }
 
       const totalScore = scores.reduce((sum, s) => sum + s.score, 0)
       const leaders = scores.map((s) => s.leader).filter(Boolean)
       const leaderCounts = leaders.reduce(
-        (acc, l) => {
-          acc[l] = (acc[l] || 0) + 1
-          return acc
-        },
+        (acc, l) => { acc[l] = (acc[l] || 0) + 1; return acc },
         {} as Record<string, number>
       )
       const mostPlayedLeader =
-        Object.entries(leaderCounts).sort(([, a], [, b]) => b - a)[0]?.[0] ||
-        "—"
+        Object.entries(leaderCounts).sort(([, a], [, b]) => b - a)[0]?.[0] || "—"
 
       return {
         name,
         gamesPlayed: playerGames.length,
         totalScore,
         avgScore: playerGames.length > 0 ? totalScore / playerGames.length : 0,
-        bestScore:
-          scores.length > 0 ? Math.max(...scores.map((s) => s.score)) : 0,
+        bestScore: scores.length > 0 ? Math.max(...scores.map((s) => s.score)) : 0,
         wins,
         mostPlayedLeader,
+        currentStreak,
+        longestStreak,
       }
     })
-    .sort((a, b) => b.totalScore - a.totalScore)
+    // Olympic sort: wins first, then total score, then avg
+    .sort((a, b) => b.wins - a.wins || b.totalScore - a.totalScore || b.avgScore - a.avgScore)
+}
+
+export function getLeaderStats(games: Game[]): LeaderStats[] {
+  const stats: Record<string, { gamesPlayed: number; wins: number }> = {}
+
+  for (const game of games) {
+    const winner = getWinner(game)
+    for (const score of game.scores) {
+      if (!score.leader || score.score === 0) continue
+      if (!stats[score.leader]) stats[score.leader] = { gamesPlayed: 0, wins: 0 }
+      stats[score.leader].gamesPlayed++
+      if (score.playerName === winner) stats[score.leader].wins++
+    }
+  }
+
+  return Object.entries(stats)
+    .map(([name, s]) => ({
+      name,
+      gamesPlayed: s.gamesPlayed,
+      wins: s.wins,
+      winRate: s.gamesPlayed > 0 ? s.wins / s.gamesPlayed : 0,
+    }))
+    .sort((a, b) => b.winRate - a.winRate || b.wins - a.wins || b.gamesPlayed - a.gamesPlayed)
+}
+
+export function getHeadToHead(
+  games: Game[],
+  playerA: string,
+  allPlayers: string[]
+): Record<string, { wins: number; losses: number; games: number }> {
+  const result: Record<string, { wins: number; losses: number; games: number }> = {}
+
+  for (const opponent of allPlayers) {
+    if (opponent !== playerA) result[opponent] = { wins: 0, losses: 0, games: 0 }
+  }
+
+  for (const game of games) {
+    const active = new Set(
+      game.scores.filter((s) => s.score > 0).map((s) => s.playerName)
+    )
+    if (!active.has(playerA)) continue
+
+    const winner = getWinner(game)
+
+    for (const opponent of allPlayers) {
+      if (opponent === playerA || !active.has(opponent)) continue
+      result[opponent].games++
+      if (winner === playerA) result[opponent].wins++
+      else result[opponent].losses++
+    }
+  }
+
+  return result
 }
 
 export function shortenName(name: string): string {

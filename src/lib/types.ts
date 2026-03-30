@@ -31,6 +31,15 @@ export interface PlayerStats {
   bestScore: number
   wins: number
   mostPlayedLeader: string
+  currentStreak: number
+  longestStreak: number
+}
+
+export interface LeaderStats {
+  name: string
+  gamesPlayed: number
+  wins: number
+  winRate: number
 }
 
 export const DEFAULT_PLAYERS = [

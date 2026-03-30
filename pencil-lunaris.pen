@@ -6109,7 +6109,8 @@
                   "fill": "$--muted-foreground",
                   "content": "League Tracker",
                   "fontFamily": "$--font-secondary",
-                  "fontSize": 14
+                  "fontSize": 14,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -6120,6 +6121,26 @@
               "gap": 12,
               "alignItems": "center",
               "children": [
+                {
+                  "id": "aRJ9z",
+                  "type": "ref",
+                  "ref": "Svd9t",
+                  "name": "playersBtn",
+                  "width": "fit_content",
+                  "x": 0,
+                  "y": 0,
+                  "descendants": {
+                    "Xphxk": {
+                      "enabled": false
+                    },
+                    "yqG8L": {
+                      "content": "Players",
+                      "fontSize": 12,
+                      "x": 16,
+                      "y": 11.5
+                    }
+                  }
+                },
                 {
                   "type": "text",
                   "id": "QkPsR",
@@ -6138,9 +6159,13 @@
                   "ref": "ZETEA",
                   "name": "addBtn",
                   "width": "fit_content",
-                  "x": 37,
+                  "x": 132,
                   "y": 0,
                   "descendants": {
+                    "mRGd3": {
+                      "x": 16,
+                      "y": 10
+                    },
                     "C6nAO": {
                       "stroke": {
                         "align": "center",
@@ -6151,7 +6176,9 @@
                       }
                     },
                     "q5Hn5": {
-                      "content": "New Game"
+                      "content": "New Game",
+                      "x": 42,
+                      "y": 10
                     }
                   }
                 }
@@ -7170,7 +7197,8 @@
                                       "fill": "$--muted-foreground",
                                       "content": "Mar 15, 2026",
                                       "fontFamily": "$--font-primary",
-                                      "fontSize": 13
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
                                     },
                                     {
                                       "id": "zUVN5",
@@ -7180,6 +7208,7 @@
                                       "width": "fit_content",
                                       "x": 102,
                                       "y": 0,
+                                      "height": "fit_content",
                                       "descendants": {
                                         "BFcCW": {
                                           "enabled": false
@@ -7198,7 +7227,8 @@
                                   "fill": "$--foreground",
                                   "content": "Duman 11 · T. Kerimbayev 9 · T. Muzhikbayev 8 · Yernar 7",
                                   "fontFamily": "$--font-secondary",
-                                  "fontSize": 13
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -7244,7 +7274,8 @@
                                       "fill": "$--muted-foreground",
                                       "content": "Mar 8, 2026",
                                       "fontFamily": "$--font-primary",
-                                      "fontSize": 13
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
                                     },
                                     {
                                       "id": "UdXtV",
@@ -7254,6 +7285,7 @@
                                       "width": "fit_content",
                                       "x": 94,
                                       "y": 0,
+                                      "height": "fit_content",
                                       "descendants": {
                                         "BFcCW": {
                                           "enabled": false
@@ -7271,6 +7303,7 @@
                                       "width": "fit_content",
                                       "x": 261,
                                       "y": 0,
+                                      "height": "fit_content",
                                       "descendants": {
                                         "rMf5x": {
                                           "enabled": false
@@ -7289,7 +7322,8 @@
                                   "fill": "$--foreground",
                                   "content": "T. Kerimbayev 10 · Duman 10 · Yernar 8 · T. Muzhikbayev 6",
                                   "fontFamily": "$--font-secondary",
-                                  "fontSize": 13
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
                                 },
                                 {
                                   "type": "text",
@@ -7339,7 +7373,8 @@
                                       "fill": "$--muted-foreground",
                                       "content": "Feb 28, 2026",
                                       "fontFamily": "$--font-primary",
-                                      "fontSize": 13
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
                                     },
                                     {
                                       "id": "7wUn4",
@@ -7349,6 +7384,7 @@
                                       "width": "fit_content",
                                       "x": 102,
                                       "y": 0,
+                                      "height": "fit_content",
                                       "descendants": {
                                         "BFcCW": {
                                           "enabled": false
@@ -7367,7 +7403,8 @@
                                   "fill": "$--foreground",
                                   "content": "Duman 12 · T. Muzhikbayev 9 · T. Kerimbayev 8 · Yernar 5",
                                   "fontFamily": "$--font-secondary",
-                                  "fontSize": 13
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -7454,19 +7491,24 @@
               "width": "fill_container",
               "x": 24,
               "y": 24,
+              "height": "fit_content",
               "descendants": {
                 "KbqaX": {
-                  "width": "fill_container"
+                  "width": "fill_container",
+                  "height": "fit_content"
                 },
                 "6olUK": {
                   "content": "Date",
                   "width": "fill_container"
                 },
                 "soBSx": {
-                  "width": "fill_container"
+                  "width": "fill_container",
+                  "y": 26
                 },
                 "FU4Re": {
-                  "content": "Mar 22, 2026"
+                  "content": "Mar 22, 2026",
+                  "x": 16,
+                  "y": 10
                 }
               }
             },
@@ -7511,19 +7553,24 @@
                       "width": "fill_container",
                       "x": 0,
                       "y": 0,
+                      "height": "fit_content",
                       "descendants": {
                         "KbqaX": {
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "height": "fit_content"
                         },
                         "6olUK": {
                           "content": "Score",
                           "width": "fill_container"
                         },
                         "soBSx": {
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "y": 26
                         },
                         "FU4Re": {
-                          "content": "0"
+                          "content": "0",
+                          "x": 16,
+                          "y": 10
                         }
                       }
                     },
@@ -7535,23 +7582,29 @@
                       "width": "fill_container",
                       "x": 232,
                       "y": 0,
+                      "height": "fit_content",
                       "descendants": {
                         "ygX49": {
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "height": "fit_content"
                         },
                         "uEVNH": {
                           "content": "Leader",
                           "width": "fill_container"
                         },
                         "UoY51": {
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "y": 26
                         },
                         "q2CuU": {
                           "content": "Paul Atreides",
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "x": 16,
+                          "y": 10
                         },
                         "04EW5": {
-                          "x": 188
+                          "x": 188,
+                          "y": 12
                         }
                       }
                     }
@@ -7592,19 +7645,24 @@
                       "width": "fill_container",
                       "x": 0,
                       "y": 0,
+                      "height": "fit_content",
                       "descendants": {
                         "KbqaX": {
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "height": "fit_content"
                         },
                         "6olUK": {
                           "content": "Score",
                           "width": "fill_container"
                         },
                         "soBSx": {
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "y": 26
                         },
                         "FU4Re": {
-                          "content": "0"
+                          "content": "0",
+                          "x": 16,
+                          "y": 10
                         }
                       }
                     },
@@ -7616,23 +7674,29 @@
                       "width": "fill_container",
                       "x": 232,
                       "y": 0,
+                      "height": "fit_content",
                       "descendants": {
                         "ygX49": {
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "height": "fit_content"
                         },
                         "uEVNH": {
                           "content": "Leader",
                           "width": "fill_container"
                         },
                         "UoY51": {
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "y": 26
                         },
                         "q2CuU": {
                           "content": "Duke Leto",
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "x": 16,
+                          "y": 10
                         },
                         "04EW5": {
-                          "x": 188
+                          "x": 188,
+                          "y": 12
                         }
                       }
                     }
@@ -7673,19 +7737,24 @@
                       "width": "fill_container",
                       "x": 0,
                       "y": 0,
+                      "height": "fit_content",
                       "descendants": {
                         "KbqaX": {
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "height": "fit_content"
                         },
                         "6olUK": {
                           "content": "Score",
                           "width": "fill_container"
                         },
                         "soBSx": {
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "y": 26
                         },
                         "FU4Re": {
-                          "content": "0"
+                          "content": "0",
+                          "x": 16,
+                          "y": 10
                         }
                       }
                     },
@@ -7697,23 +7766,29 @@
                       "width": "fill_container",
                       "x": 232,
                       "y": 0,
+                      "height": "fit_content",
                       "descendants": {
                         "ygX49": {
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "height": "fit_content"
                         },
                         "uEVNH": {
                           "content": "Leader",
                           "width": "fill_container"
                         },
                         "UoY51": {
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "y": 26
                         },
                         "q2CuU": {
                           "content": "Baron Vladimir",
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "x": 16,
+                          "y": 10
                         },
                         "04EW5": {
-                          "x": 188
+                          "x": 188,
+                          "y": 12
                         }
                       }
                     }
@@ -7754,19 +7829,24 @@
                       "width": "fill_container",
                       "x": 0,
                       "y": 0,
+                      "height": "fit_content",
                       "descendants": {
                         "KbqaX": {
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "height": "fit_content"
                         },
                         "6olUK": {
                           "content": "Score",
                           "width": "fill_container"
                         },
                         "soBSx": {
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "y": 26
                         },
                         "FU4Re": {
-                          "content": "0"
+                          "content": "0",
+                          "x": 16,
+                          "y": 10
                         }
                       }
                     },
@@ -7778,23 +7858,29 @@
                       "width": "fill_container",
                       "x": 232,
                       "y": 0,
+                      "height": "fit_content",
                       "descendants": {
                         "ygX49": {
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "height": "fit_content"
                         },
                         "uEVNH": {
                           "content": "Leader",
                           "width": "fill_container"
                         },
                         "UoY51": {
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "y": 26
                         },
                         "q2CuU": {
                           "content": "Helena Richese",
-                          "width": "fill_container"
+                          "width": "fill_container",
+                          "x": 16,
+                          "y": 10
                         },
                         "04EW5": {
-                          "x": 188
+                          "x": 188,
+                          "y": 12
                         }
                       }
                     }
@@ -7833,6 +7919,7 @@
                       "width": "fit_content",
                       "x": 0,
                       "y": 0,
+                      "height": "fit_content",
                       "descendants": {
                         "rMf5x": {
                           "enabled": false
@@ -8013,6 +8100,8 @@
                       "name": "resolvedCheck",
                       "x": 0,
                       "y": 0,
+                      "width": "fit_content",
+                      "height": "fit_content",
                       "descendants": {
                         "BFcCW": {
                           "enabled": false
@@ -8106,7 +8195,8 @@
                 },
                 "q5Hn5": {
                   "content": "Save Game",
-                  "x": 16
+                  "x": 16,
+                  "y": 10
                 }
               }
             },
@@ -8123,7 +8213,8 @@
                 },
                 "7ZVG7": {
                   "content": "Cancel",
-                  "x": 16
+                  "x": 16,
+                  "y": 10
                 }
               }
             }
@@ -8179,6 +8270,7 @@
                       "width": "fit_content",
                       "x": 203,
                       "y": 0,
+                      "height": "fit_content",
                       "descendants": {
                         "rMf5x": {
                           "enabled": false
@@ -8487,6 +8579,7 @@
                       "width": "fit_content",
                       "x": 0,
                       "y": 0,
+                      "height": "fit_content",
                       "descendants": {
                         "rMf5x": {
                           "enabled": false
@@ -8812,7 +8905,8 @@
                 },
                 "q5Hn5": {
                   "content": "Edit Game",
-                  "x": 16
+                  "x": 16,
+                  "y": 10
                 }
               }
             },
@@ -8829,7 +8923,8 @@
                 },
                 "UQdcX": {
                   "content": "Delete",
-                  "x": 16
+                  "x": 16,
+                  "y": 10
                 }
               }
             },
@@ -8839,6 +8934,366 @@
               "ref": "4x7RU",
               "width": "fit_content",
               "x": 231,
+              "y": 24,
+              "descendants": {
+                "r97g1": {
+                  "enabled": false
+                },
+                "7ZVG7": {
+                  "content": "Close",
+                  "x": 16,
+                  "y": 10
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "3lTZY",
+      "type": "ref",
+      "ref": "ERkuB",
+      "name": "Manage Players Dialog",
+      "x": 2640,
+      "y": 4600,
+      "width": 380,
+      "theme": {
+        "Mode": "Dark"
+      },
+      "fill": "$--background",
+      "height": "fit_content",
+      "descendants": {
+        "4zoFt": {
+          "height": "fit_content",
+          "width": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "gfQSS",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bnMq3",
+                  "fill": "$--foreground",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Manage Players",
+                  "lineHeight": 1.55,
+                  "fontFamily": "$--font-primary",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "e9Cfq",
+                  "fill": "$--muted-foreground",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Add or remove players from the league.",
+                  "lineHeight": 1.43,
+                  "fontFamily": "$--font-secondary",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        "QMHOm": {
+          "padding": 24,
+          "gap": 16,
+          "height": "fit_content",
+          "width": "fill_container",
+          "y": 100,
+          "children": [
+            {
+              "type": "frame",
+              "id": "ZA886",
+              "name": "addRow",
+              "width": "fill_container",
+              "gap": 8,
+              "alignItems": "end",
+              "children": [
+                {
+                  "id": "YuroY",
+                  "type": "ref",
+                  "ref": "gKpi4",
+                  "name": "addInput",
+                  "width": "fill_container",
+                  "x": 0,
+                  "y": 0,
+                  "descendants": {
+                    "KbqaX": {
+                      "width": "fill_container"
+                    },
+                    "6olUK": {
+                      "content": "New Player",
+                      "width": "fill_container"
+                    },
+                    "soBSx": {
+                      "width": "fill_container"
+                    },
+                    "FU4Re": {
+                      "content": "Enter name..."
+                    }
+                  }
+                },
+                {
+                  "id": "2JwWS",
+                  "type": "ref",
+                  "ref": "ZETEA",
+                  "name": "addBtn",
+                  "width": "fit_content",
+                  "x": 274,
+                  "y": 26,
+                  "descendants": {
+                    "mRGd3": {
+                      "enabled": false
+                    },
+                    "q5Hn5": {
+                      "content": "Add",
+                      "x": 16
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LElKr",
+              "name": "sep",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "$--border"
+            },
+            {
+              "type": "text",
+              "id": "eaevU",
+              "name": "listLabel",
+              "fill": "$--muted-foreground",
+              "content": "CURRENT PLAYERS",
+              "fontFamily": "$--font-primary",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1.5
+            },
+            {
+              "type": "frame",
+              "id": "ESYHZ",
+              "name": "pl1",
+              "width": "fill_container",
+              "cornerRadius": 4,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$--border"
+              },
+              "padding": [
+                10,
+                12
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "fzh56",
+                  "name": "pl1n",
+                  "fill": "$--foreground",
+                  "content": "Duman",
+                  "fontFamily": "$--font-primary",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "id": "FD7c3",
+                  "type": "ref",
+                  "ref": "Svd9t",
+                  "width": "fit_content",
+                  "name": "pl1x",
+                  "x": 244,
+                  "y": 10,
+                  "descendants": {
+                    "Xphxk": {
+                      "enabled": false
+                    },
+                    "yqG8L": {
+                      "content": "Remove",
+                      "fontSize": 12,
+                      "x": 16,
+                      "y": 11.5
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "w6oCG",
+              "name": "pl2",
+              "width": "fill_container",
+              "cornerRadius": 4,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$--border"
+              },
+              "padding": [
+                10,
+                12
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "r4d3C",
+                  "name": "pl2n",
+                  "fill": "$--foreground",
+                  "content": "Timur Kerimbayev",
+                  "fontFamily": "$--font-primary",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "id": "eHNL1",
+                  "type": "ref",
+                  "ref": "Svd9t",
+                  "width": "fit_content",
+                  "name": "pl2x",
+                  "x": 244,
+                  "y": 10,
+                  "descendants": {
+                    "Xphxk": {
+                      "enabled": false
+                    },
+                    "yqG8L": {
+                      "content": "Remove",
+                      "fontSize": 12,
+                      "x": 16,
+                      "y": 11.5
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "5ZYtN",
+              "name": "pl3",
+              "width": "fill_container",
+              "cornerRadius": 4,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$--border"
+              },
+              "padding": [
+                10,
+                12
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vGlKc",
+                  "name": "pl3n",
+                  "fill": "$--foreground",
+                  "content": "Timur Muzhikbayev",
+                  "fontFamily": "$--font-primary",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "id": "p2cw2",
+                  "type": "ref",
+                  "ref": "Svd9t",
+                  "width": "fit_content",
+                  "name": "pl3x",
+                  "x": 244,
+                  "y": 10,
+                  "descendants": {
+                    "Xphxk": {
+                      "enabled": false
+                    },
+                    "yqG8L": {
+                      "content": "Remove",
+                      "fontSize": 12,
+                      "x": 16,
+                      "y": 11.5
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jsa7N",
+              "name": "pl4",
+              "width": "fill_container",
+              "cornerRadius": 4,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$--border"
+              },
+              "padding": [
+                10,
+                12
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "uWQfo",
+                  "name": "pl4n",
+                  "fill": "$--foreground",
+                  "content": "Yernar",
+                  "fontFamily": "$--font-primary",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "id": "CFuGp",
+                  "type": "ref",
+                  "ref": "Svd9t",
+                  "width": "fit_content",
+                  "name": "pl4x",
+                  "x": 244,
+                  "y": 10,
+                  "descendants": {
+                    "Xphxk": {
+                      "enabled": false
+                    },
+                    "yqG8L": {
+                      "content": "Remove",
+                      "fontSize": 12,
+                      "x": 16,
+                      "y": 11.5
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "tiojM": {
+          "height": "fit_content",
+          "width": "fill_container",
+          "y": 566,
+          "children": [
+            {
+              "id": "OSYkz",
+              "type": "ref",
+              "ref": "4x7RU",
+              "width": "fit_content",
+              "x": 24,
               "y": 24,
               "descendants": {
                 "r97g1": {

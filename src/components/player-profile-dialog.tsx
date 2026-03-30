@@ -8,7 +8,9 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog"
 import { Game, PlayerStats } from "@/lib/types"
-import { getWinner } from "@/lib/store"
+import { getWinner, getHeadToHead, shortenName } from "@/lib/store"
+
+const BAR_MAX_PX = 64
 
 interface PlayerProfileDialogProps {
   player: string | null
@@ -16,27 +18,35 @@ interface PlayerProfileDialogProps {
   onOpenChange: (open: boolean) => void
   stats: PlayerStats | null
   games: Game[]
+  players: string[]
 }
 
 function StatBox({
   label,
   value,
   accent,
+  sub,
 }: {
   label: string
   value: string | number
   accent?: boolean
+  sub?: string
 }) {
   return (
-    <div className="flex flex-col items-center gap-0.5 py-3 px-2 border border-border rounded">
+    <div className="flex flex-col items-center gap-0.5 py-3 px-2 border border-border">
       <span
-        className={`font-mono text-lg font-bold tabular-nums ${
+        className={`font-mono text-lg font-bold tabular-nums leading-none ${
           accent ? "text-primary" : "text-foreground"
         }`}
       >
         {value}
       </span>
-      <span className="text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
+      {sub && (
+        <span className="text-[9px] font-mono text-muted-foreground/50 tabular-nums">
+          {sub}
+        </span>
+      )}
+      <span className="text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase mt-0.5">
         {label}
       </span>
     </div>
@@ -49,10 +59,11 @@ export function PlayerProfileDialog({
   onOpenChange,
   stats,
   games,
+  players,
 }: PlayerProfileDialogProps) {
   if (!player || !stats) return null
 
-  // Get this player's games in chronological order (newest-first in array → reverse for chart)
+  // Chart: player's games oldest→newest (games array is newest-first)
   const playerGames = games
     .filter((g) => g.scores.some((s) => s.playerName === player && s.score > 0))
     .slice(0, 12)
@@ -70,9 +81,12 @@ export function PlayerProfileDialog({
       ? Math.round((stats.wins / stats.gamesPlayed) * 100)
       : 0
 
+  const h2h = getHeadToHead(games, player, players)
+  const opponents = players.filter((p) => p !== player && h2h[p]?.games > 0)
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="bg-background border-border max-w-md max-h-[90vh] overflow-y-auto">
+      <DialogContent className="bg-background border-border max-w-md">
         <DialogHeader>
           <DialogTitle className="font-mono text-xl">{player}</DialogTitle>
           <DialogDescription className="font-mono text-xs">
@@ -81,19 +95,26 @@ export function PlayerProfileDialog({
         </DialogHeader>
 
         <div className="space-y-5">
-          {/* Stats grid */}
+          {/* Stats grid — 3×2 */}
           <div className="grid grid-cols-3 gap-2">
             <StatBox label="Wins" value={stats.wins} accent />
             <StatBox label="Win %" value={`${winRate}%`} />
-            <StatBox label="Avg" value={stats.gamesPlayed > 0 ? stats.avgScore.toFixed(1) : "—"} />
+            <StatBox
+              label="Streak"
+              value={stats.currentStreak > 0 ? `${stats.currentStreak}W` : stats.currentStreak === 0 && stats.gamesPlayed > 0 ? "—" : "—"}
+              accent={stats.currentStreak > 0}
+            />
             <StatBox label="Total" value={stats.totalScore} />
-            <StatBox label="Best" value={stats.bestScore > 0 ? stats.bestScore : "—"} />
-            <StatBox label="GP" value={stats.gamesPlayed} />
+            <StatBox label="Avg" value={stats.gamesPlayed > 0 ? stats.avgScore.toFixed(1) : "—"} />
+            <StatBox
+              label="Best Run"
+              value={stats.longestStreak > 0 ? `${stats.longestStreak}W` : "—"}
+            />
           </div>
 
-          {/* Most played leader */}
+          {/* Fav leader */}
           {stats.mostPlayedLeader !== "—" && (
-            <div className="flex items-center gap-3 px-4 py-3 border border-border rounded">
+            <div className="flex items-center gap-3 px-4 py-3 border border-border">
               <span className="text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
                 Fav Leader
               </span>
@@ -109,30 +130,37 @@ export function PlayerProfileDialog({
               <span className="text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
                 Score History
               </span>
-              <div className="border border-border rounded p-4">
-                <div className="flex items-end gap-1.5 h-24">
+              <div className="border border-border p-4 space-y-2">
+                {/* Bars */}
+                <div
+                  className="flex items-end gap-1"
+                  style={{ height: `${BAR_MAX_PX + 18}px` }}
+                >
                   {chartData.map((d, i) => {
-                    const heightPct = (d.score / maxChartScore) * 100
+                    const barPx = Math.max(
+                      Math.round((d.score / maxChartScore) * BAR_MAX_PX),
+                      3
+                    )
                     return (
                       <div
                         key={i}
-                        className="flex-1 flex flex-col items-center gap-1 group"
+                        className="relative flex-1 flex items-end justify-center h-full"
                       >
-                        <span className="text-[9px] font-mono tabular-nums text-muted-foreground/60 group-hover:text-foreground transition-colors">
+                        <span className="absolute top-0 left-0 right-0 text-center text-[9px] font-mono tabular-nums text-muted-foreground/60">
                           {d.score}
                         </span>
                         <div
-                          className={`w-full rounded-sm transition-colors ${
-                            d.won ? "bg-primary" : "bg-muted-foreground/30"
+                          className={`w-full ${
+                            d.won ? "bg-primary" : "bg-muted-foreground/25"
                           }`}
-                          style={{ height: `${Math.max(heightPct, 8)}%` }}
+                          style={{ height: `${barPx}px` }}
                         />
                       </div>
                     )
                   })}
                 </div>
                 {/* Date labels */}
-                <div className="flex gap-1.5 mt-2">
+                <div className="flex gap-1">
                   {chartData.map((d, i) => (
                     <div key={i} className="flex-1 text-center">
                       <span className="text-[8px] font-mono text-muted-foreground/40 leading-none">
@@ -144,16 +172,70 @@ export function PlayerProfileDialog({
                     </div>
                   ))}
                 </div>
-                <div className="flex items-center gap-3 mt-3">
+                {/* Legend */}
+                <div className="flex items-center gap-4 pt-1">
                   <div className="flex items-center gap-1.5">
-                    <div className="w-2.5 h-2.5 rounded-sm bg-primary" />
+                    <div className="w-2.5 h-2.5 bg-primary" />
                     <span className="text-[10px] font-mono text-muted-foreground/60">Win</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <div className="w-2.5 h-2.5 rounded-sm bg-muted-foreground/30" />
+                    <div className="w-2.5 h-2.5 bg-muted-foreground/25" />
                     <span className="text-[10px] font-mono text-muted-foreground/60">Loss</span>
                   </div>
                 </div>
+              </div>
+            </div>
+          )}
+
+          {/* Head-to-head */}
+          {opponents.length > 0 && (
+            <div className="space-y-2">
+              <span className="text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
+                Head to Head
+              </span>
+              <div className="border border-border overflow-hidden">
+                {/* Header */}
+                <div className="flex items-center border-b border-border bg-card/60 px-4 py-2">
+                  <div className="flex-1 text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
+                    Opponent
+                  </div>
+                  <div className="w-8 text-center text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
+                    GP
+                  </div>
+                  <div className="w-8 text-center text-[10px] font-mono font-semibold tracking-widest text-primary/60 uppercase">
+                    W
+                  </div>
+                  <div className="w-8 text-center text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
+                    L
+                  </div>
+                </div>
+                {opponents.map((opp) => {
+                  const record = h2h[opp]
+                  const isWinning = record.wins > record.losses
+                  return (
+                    <div
+                      key={opp}
+                      className="flex items-center border-b border-border last:border-b-0 px-4 py-3"
+                    >
+                      <div className="flex-1 font-mono text-sm text-foreground">
+                        {shortenName(opp)}
+                      </div>
+                      <div className="w-8 text-center font-mono text-sm tabular-nums text-muted-foreground">
+                        {record.games}
+                      </div>
+                      <div
+                        className={`w-8 text-center font-mono text-sm tabular-nums font-semibold ${
+                          isWinning ? "text-primary" : "text-foreground"
+                        }`}
+                      >
+                        {record.wins}
+                      </div>
+                      <div className="w-8 text-center font-mono text-sm tabular-nums text-muted-foreground">
+                        {record.losses}
+                      </div>
+                    </div>
+                  )
+                })}
               </div>
             </div>
           )}
