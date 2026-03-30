@@ -284,7 +284,7 @@ export function AddGameDialog({
                     onValueChange={(val) => {
                       setScores((prev) => ({
                         ...prev,
-                        [player]: { ...prev[player], leader: val },
+                        [player]: { ...prev[player], leader: val ?? "" },
                       }))
                       // advance to next player's score input
                       setTimeout(() => {
