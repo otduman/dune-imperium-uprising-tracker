@@ -28,19 +28,19 @@ export function getPlayerStats(
         .map((g) => g.scores.find((s) => s.playerName === name)!)
         .filter(Boolean)
 
-      const wins = playerGames.filter((g) => getWinner(g) === name).length
+      const wins = playerGames.filter((g) => getWinners(g).includes(name)).length
 
       // Streak: playerGames is newest-first
       let currentStreak = 0
       for (const g of playerGames) {
-        if (getWinner(g) === name) currentStreak++
+        if (getWinners(g).includes(name)) currentStreak++
         else break
       }
 
       let longestStreak = 0
       let streak = 0
       for (const g of [...playerGames].reverse()) {
-        if (getWinner(g) === name) {
+        if (getWinners(g).includes(name)) {
           streak++
           if (streak > longestStreak) longestStreak = streak
         } else {
@@ -69,20 +69,20 @@ export function getPlayerStats(
         longestStreak,
       }
     })
-    // Olympic sort: wins first, then total score, then avg
-    .sort((a, b) => b.wins - a.wins || b.totalScore - a.totalScore || b.avgScore - a.avgScore)
+    // Olympic sort: wins first, then avg, then total score
+    .sort((a, b) => b.wins - a.wins || b.avgScore - a.avgScore || b.totalScore - a.totalScore)
 }
 
 export function getLeaderStats(games: Game[]): LeaderStats[] {
   const stats: Record<string, { gamesPlayed: number; wins: number }> = {}
 
   for (const game of games) {
-    const winner = getWinner(game)
+    const winners = getWinners(game)
     for (const score of game.scores) {
       if (!score.leader || score.score === 0) continue
       if (!stats[score.leader]) stats[score.leader] = { gamesPlayed: 0, wins: 0 }
       stats[score.leader].gamesPlayed++
-      if (score.playerName === winner) stats[score.leader].wins++
+      if (winners.includes(score.playerName)) stats[score.leader].wins++
     }
   }
 
@@ -113,12 +113,12 @@ export function getHeadToHead(
     )
     if (!active.has(playerA)) continue
 
-    const winner = getWinner(game)
+    const winners = getWinners(game)
 
     for (const opponent of allPlayers) {
       if (opponent === playerA || !active.has(opponent)) continue
       result[opponent].games++
-      if (winner === playerA) result[opponent].wins++
+      if (winners.includes(playerA)) result[opponent].wins++
       else result[opponent].losses++
     }
   }
@@ -132,10 +132,10 @@ export function shortenName(name: string): string {
   return `${parts[0][0]}. ${parts.slice(1).join(" ")}`
 }
 
-export function getWinner(game: Game): string {
-  if (game.tiebreakerResolved) return game.tiebreakerResolved.winnerName
-  const sorted = [...game.scores].sort((a, b) => b.score - a.score)
-  return sorted[0]?.playerName || ""
+export function getWinners(game: Game): string[] {
+  if (game.tiebreakerResolved) return [game.tiebreakerResolved.winnerName]
+  const maxScore = Math.max(...game.scores.map(s => s.score))
+  return game.scores.filter(s => s.score === maxScore).map(s => s.playerName)
 }
 
 export function hasTiebreaker(game: Game): boolean {

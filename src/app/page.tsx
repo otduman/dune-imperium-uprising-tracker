@@ -69,7 +69,7 @@ export default function Home() {
       setGames((prev) =>
         editGame ? updateGame(prev, game) : addGame(prev, game)
       )
-      
+
       const apiCall = editGame ? updateGameApi(game) : createGameApi(game)
       apiCall.catch(console.error)
 
@@ -98,7 +98,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto px-4 h-14 flex items-center justify-between gap-3">
             <div className="flex items-center gap-2.5 min-w-0">
               <span className="font-mono text-[13px] font-semibold tracking-wide text-foreground whitespace-nowrap">
-                DUNE: IMPERIUM
+                DUNE: IMPERIUM - Uprising
               </span>
               <span className="text-border text-sm">·</span>
               <span className="font-mono text-[11px] text-muted-foreground tracking-widest uppercase">

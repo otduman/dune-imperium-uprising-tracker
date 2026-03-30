@@ -2,7 +2,7 @@
 
 import { ChevronRight } from "lucide-react"
 import { Game } from "@/lib/types"
-import { getWinner, hasTiebreaker, shortenName } from "@/lib/store"
+import { getWinners, hasTiebreaker, shortenName } from "@/lib/store"
 
 interface GameHistoryProps {
   games: Game[]
@@ -29,7 +29,7 @@ export function GameHistory({ games, onSelectGame }: GameHistoryProps) {
   return (
     <div className="border border-border overflow-hidden">
       {games.map((game, i) => {
-        const winner = getWinner(game)
+        const winners = getWinners(game)
         const isTB = hasTiebreaker(game)
         const sorted = [...game.scores].sort((a, b) => b.score - a.score)
         const summary = sorted
@@ -54,7 +54,7 @@ export function GameHistory({ games, onSelectGame }: GameHistoryProps) {
                 </span>
                 {/* Winner badge */}
                 <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-success/80 text-success-foreground">
-                  {shortenName(winner)}
+                  {winners.map(shortenName).join(" & ")}
                 </span>
                 {/* Tiebreaker badge */}
                 {isTB && (

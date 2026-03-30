@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import { Game, TIEBREAKER_ORDER } from "@/lib/types"
-import { getWinner, hasTiebreaker, shortenName } from "@/lib/store"
+import { getWinners, hasTiebreaker, shortenName } from "@/lib/store"
 
 interface GameDetailDialogProps {
   game: Game | null
@@ -29,7 +29,7 @@ export function GameDetailDialog({
 }: GameDetailDialogProps) {
   if (!game) return null
 
-  const winner = getWinner(game)
+  const winners = getWinners(game)
   const isTB = hasTiebreaker(game)
   const sortedScores = [...game.scores].sort((a, b) => b.score - a.score)
 
@@ -74,7 +74,7 @@ export function GameDetailDialog({
           {/* Score rows */}
           <div className="space-y-2">
             {sortedScores.map((s) => {
-              const isWinner = s.playerName === winner
+              const isWinner = winners.includes(s.playerName)
               return (
                 <div
                   key={s.playerName}
@@ -84,7 +84,7 @@ export function GameDetailDialog({
                       : "border border-border"
                   }`}
                 >
-                  <div className="flex items-center gap-2.5 min-w-0">
+                  <div className="flex flex-col min-w-0">
                     <span
                       className={`font-mono text-sm font-semibold truncate ${
                         isWinner ? "text-primary" : "text-foreground"
@@ -93,8 +93,8 @@ export function GameDetailDialog({
                       {shortenName(s.playerName)}
                     </span>
                     {s.leader && (
-                      <span className="text-xs text-muted-foreground truncate">
-                        · {s.leader}
+                      <span className="text-[10px] uppercase tracking-wider text-muted-foreground/80 truncate mt-0.5">
+                        {s.leader}
                       </span>
                     )}
                   </div>
@@ -131,7 +131,7 @@ export function GameDetailDialog({
 
                 {/* Tied player rows */}
                 {tiedPlayers.map((s) => {
-                  const isWinner = s.playerName === winner
+                  const isWinner = winners.includes(s.playerName)
                   return (
                     <div
                       key={s.playerName}
@@ -172,12 +172,16 @@ export function GameDetailDialog({
                   )
                 })}
 
-                {game.tiebreakerResolved && (
+                {game.tiebreakerResolved ? (
                   <div className="text-xs text-warning-foreground opacity-90">
                     Winner by{" "}
                     {game.tiebreakerResolved.resource.charAt(0).toUpperCase() +
                       game.tiebreakerResolved.resource.slice(1)}
                     : {shortenName(game.tiebreakerResolved.winnerName)}
+                  </div>
+                ) : (
+                  <div className="text-xs text-primary opacity-90 font-mono font-semibold">
+                    Shared Victory — unbreakable tie
                   </div>
                 )}
               </div>

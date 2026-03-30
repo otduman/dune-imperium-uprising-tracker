@@ -8,7 +8,7 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog"
 import { Game, PlayerStats } from "@/lib/types"
-import { getWinner, getHeadToHead, shortenName } from "@/lib/store"
+import { getWinners, getHeadToHead, shortenName } from "@/lib/store"
 
 const BAR_MAX_PX = 64
 
@@ -72,7 +72,7 @@ export function PlayerProfileDialog({
   const chartData = playerGames.map((g) => ({
     date: g.date,
     score: g.scores.find((s) => s.playerName === player)?.score || 0,
-    won: getWinner(g) === player,
+    won: getWinners(g).includes(player),
   }))
 
   const maxChartScore = Math.max(...chartData.map((d) => d.score), 1)

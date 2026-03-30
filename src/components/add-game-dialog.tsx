@@ -396,7 +396,7 @@ export function AddGameDialog({
                   )
                 })}
 
-                {tbWinner && (
+                {tbWinner ? (
                   <div className="flex items-center gap-2">
                     <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-success text-success-foreground">
                       Resolved
@@ -404,6 +404,15 @@ export function AddGameDialog({
                     <span className="text-xs text-muted-foreground font-mono">
                       {tbWinner.winnerName.split(" ")[0]} wins (
                       {tbWinner.resource})
+                    </span>
+                  </div>
+                ) : shownResources.length === 4 && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-primary/20 text-primary">
+                      Shared Victory
+                    </span>
+                    <span className="text-xs text-muted-foreground font-mono">
+                      Unbreakable tie
                     </span>
                   </div>
                 )}
