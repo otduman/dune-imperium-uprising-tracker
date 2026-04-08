@@ -67,13 +67,14 @@ export function GameDetailDialog({
         </DialogHeader>
 
         <div className="space-y-4">
-          {/* Scores label */}
-          <span className="text-[11px] font-mono font-semibold tracking-widest text-muted-foreground uppercase">
-            Scores
-          </span>
+          {/* Scores label + rows */}
+          <div className="space-y-3">
+            <span className="text-[11px] font-mono font-semibold tracking-widest text-muted-foreground uppercase">
+              Scores
+            </span>
 
-          {/* Score rows */}
-          <div className="space-y-2">
+            {/* Score rows */}
+            <div className="space-y-2">
             {sortedScores.map((s) => {
               const isWinner = winners.includes(s.playerName)
               return (
@@ -109,13 +110,14 @@ export function GameDetailDialog({
                 </div>
               )
             })}
+            </div>
           </div>
 
           {/* Tiebreaker breakdown */}
           {isTB && tiedPlayers.length > 0 && (
             <>
-              <div className="h-px bg-border mt-2" />
-              <div className="space-y-3 pt-1">
+              <div className="h-px bg-border" />
+              <div className="space-y-3 pt-2">
                 <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-warning text-warning-foreground">
                   TIEBREAKER BREAKDOWN
                 </span>

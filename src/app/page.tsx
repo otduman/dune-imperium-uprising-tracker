@@ -26,7 +26,8 @@ import {
   deleteGameApi,
   updatePlayersApi,
 } from "@/lib/api"
-import { Plus, Users, Loader2 } from "lucide-react"
+import { Plus, Users, Loader2, LogOut } from "lucide-react"
+import { useRouter } from "next/navigation"
 
 export default function Home() {
   const [games, setGames] = useState<Game[]>([])
@@ -37,6 +38,12 @@ export default function Home() {
   const [detailGame, setDetailGame] = useState<Game | null>(null)
   const [editGame, setEditGame] = useState<Game | null>(null)
   const [profilePlayer, setProfilePlayer] = useState<string | null>(null)
+  const router = useRouter()
+
+  const handleLogout = async () => {
+    await fetch("/api/auth/logout", { method: "POST" })
+    router.push("/login")
+  }
 
   useEffect(() => {
     async function loadData() {
@@ -110,6 +117,14 @@ export default function Home() {
               </span>
             </div>
             <div className="flex items-center gap-2 shrink-0">
+              <Button
+                variant="ghost"
+                size="icon-sm"
+                onClick={handleLogout}
+                title="Logout"
+              >
+                <LogOut className="size-4" />
+              </Button>
               <Button
                 variant="ghost"
                 size="icon-sm"

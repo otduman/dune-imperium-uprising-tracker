@@ -63,8 +63,11 @@ export function StandingsTable({ stats, previousStats, onSelectPlayer }: Standin
           W
         </div>
         {/* Pts header */}
-        <div className="w-16 py-2.5 pr-4 text-right text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
-          Pts
+        <div className="w-16 py-2.5 pr-4 flex items-center justify-end gap-1 text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
+          <span>Pts</span>
+          <div className="relative w-3.5 h-3.5 shrink-0 opacity-70">
+            <Image src="/images/victorypoint.png" alt="VP" fill className="object-contain" sizes="14px" />
+          </div>
         </div>
       </div>
 

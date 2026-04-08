@@ -31,7 +31,7 @@ export function LeaderMeta({ stats }: LeaderMetaProps) {
         return (
           <div
             key={leader.name}
-            className="flex flex-col border border-border"
+            className="flex flex-col border border-border rounded-sm overflow-hidden"
           >
             {/* Portrait */}
             <div className="relative w-full aspect-[3/2] bg-card overflow-hidden">
