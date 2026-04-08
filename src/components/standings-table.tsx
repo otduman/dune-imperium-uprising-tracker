@@ -62,12 +62,9 @@ export function StandingsTable({ stats, previousStats, onSelectPlayer }: Standin
         <div className="w-10 py-2.5 text-center text-[10px] font-mono font-semibold tracking-widest text-primary/70 uppercase">
           W
         </div>
-        {/* Pts header with VP icon */}
-        <div className="w-16 py-2.5 pr-4 flex items-center justify-end gap-1 text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
-          <span>Pts</span>
-          <div className="relative w-3.5 h-3.5 shrink-0 opacity-70">
-            <Image src="/images/victorypoint.png" alt="VP" fill className="object-contain" sizes="14px" />
-          </div>
+        {/* Pts header */}
+        <div className="w-16 py-2.5 pr-4 text-right text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
+          Pts
         </div>
       </div>
 
@@ -94,24 +91,20 @@ export function StandingsTable({ stats, previousStats, onSelectPlayer }: Standin
           >
             {/* Rank + trend */}
             <div className="w-12 shrink-0 py-4 pl-2 flex items-center gap-1.5">
-              <span
-                className={[
-                  "font-mono text-sm font-bold tabular-nums w-4 text-center",
-                  isFirst ? "text-primary" : "text-muted-foreground/50",
-                ].join(" ")}
-              >
-                {i + 1}
-              </span>
+              {isFirst ? (
+                <div className="relative w-4 h-4 shrink-0">
+                  <Image src="/images/victorypoint.png" alt="1" fill className="object-contain" sizes="16px" />
+                </div>
+              ) : (
+                <span className="font-mono text-sm font-bold tabular-nums w-4 text-center text-muted-foreground/50">
+                  {i + 1}
+                </span>
+              )}
               <TrendIcon trend={trend} hasPrev={hasPrev} />
             </div>
 
             {/* Name */}
-            <div className="flex-1 py-4 px-2 min-w-0 flex items-center gap-1.5">
-              {isFirst && (
-                <div className="relative w-3.5 h-3.5 shrink-0 opacity-80">
-                  <Image src="/images/victorypoint.png" alt="VP" fill className="object-contain" sizes="14px" />
-                </div>
-              )}
+            <div className="flex-1 py-4 px-2 min-w-0">
               <div
                 className={[
                   "font-mono text-sm font-semibold truncate leading-tight",
@@ -142,11 +135,14 @@ export function StandingsTable({ stats, previousStats, onSelectPlayer }: Standin
               {player.wins}
             </div>
 
-            {/* Pts */}
-            <div className="w-16 py-4 pr-4 text-right">
+            {/* Pts with VP icon */}
+            <div className="w-16 py-4 pr-4 flex items-center justify-end gap-1">
               <span className="font-mono tabular-nums text-muted-foreground text-sm">
                 {player.totalScore}
               </span>
+              <div className="relative w-3.5 h-3.5 shrink-0 opacity-50">
+                <Image src="/images/victorypoint.png" alt="VP" fill className="object-contain" sizes="14px" />
+              </div>
             </div>
           </div>
         )

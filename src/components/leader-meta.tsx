@@ -31,19 +31,17 @@ export function LeaderMeta({ stats }: LeaderMetaProps) {
         return (
           <div
             key={leader.name}
-            className={[
-              "flex flex-col border overflow-hidden",
-              isTop ? "border-primary/40 bg-primary/5" : "border-border",
-            ].join(" ")}
+            className="flex flex-col border border-border"
           >
-            {/* Portrait */}
-            <div className="relative w-full aspect-[3/2] bg-card overflow-hidden">
+            {/* Portrait — portrait aspect ratio, no overflow-hidden on outer card */}
+            <div className="relative w-full aspect-[2/3] bg-card overflow-hidden">
               {imgSrc ? (
                 <Image
                   src={imgSrc}
                   alt={leader.name}
                   fill
-                  className="object-cover object-top"
+                  draggable={false}
+                  className="object-cover object-top select-none"
                   sizes="(max-width: 640px) 50vw, 33vw"
                 />
               ) : (
@@ -51,10 +49,15 @@ export function LeaderMeta({ stats }: LeaderMetaProps) {
                   ?
                 </div>
               )}
-              {/* Win% badge overlay */}
-              <div className={`absolute top-1.5 right-1.5 px-1.5 py-0.5 text-[10px] font-mono font-bold ${isTop ? "bg-primary text-primary-foreground" : "bg-black/60 text-white"}`}>
+              {/* Win% badge */}
+              <div className="absolute top-1.5 right-1.5 px-1.5 py-0.5 text-[10px] font-mono font-bold bg-black/70 text-white">
                 {winPct}%
               </div>
+              {isTop && (
+                <div className="absolute top-1.5 left-1.5 px-1.5 py-0.5 text-[10px] font-mono font-bold bg-primary text-primary-foreground">
+                  TOP
+                </div>
+              )}
             </div>
 
             {/* Info */}

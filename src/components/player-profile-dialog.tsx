@@ -116,23 +116,30 @@ export function PlayerProfileDialog({
 
           {/* Fav leader */}
           {stats.mostPlayedLeader !== "—" && (
-            <div className="flex items-center gap-3 px-4 py-3 border border-border">
-              <span className="text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase shrink-0">
+            <div className="space-y-2">
+              <span className="text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
                 Fav Leader
               </span>
-              <div className="flex items-center gap-2 justify-end flex-1 min-w-0">
-                <span className="font-mono text-sm text-foreground truncate">
-                  {stats.mostPlayedLeader}
-                </span>
-                {LEADER_IMAGES[stats.mostPlayedLeader] && (
-                  <div className="relative w-8 h-8 rounded shrink-0 overflow-hidden">
+              <div className="border border-border overflow-hidden">
+                {LEADER_IMAGES[stats.mostPlayedLeader] ? (
+                  <div className="relative w-full aspect-[3/2] overflow-hidden">
                     <Image
                       src={LEADER_IMAGES[stats.mostPlayedLeader]!}
-                      alt=""
+                      alt={stats.mostPlayedLeader}
                       fill
-                      className="object-cover object-top"
-                      sizes="32px"
+                      draggable={false}
+                      className="object-cover object-top select-none"
+                      sizes="448px"
                     />
+                    <div className="absolute bottom-0 left-0 right-0 px-3 py-2 bg-gradient-to-t from-black/80 to-transparent">
+                      <span className="font-mono text-sm font-semibold text-white">
+                        {stats.mostPlayedLeader}
+                      </span>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="px-4 py-3 font-mono text-sm text-foreground">
+                    {stats.mostPlayedLeader}
                   </div>
                 )}
               </div>
