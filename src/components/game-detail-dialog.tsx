@@ -83,6 +83,14 @@ export function GameDetailDialog({
               >
                 <Trash2 className="size-3.5" />
               </Button>
+              <Button
+                variant="ghost"
+                size="icon-sm"
+                onClick={() => onOpenChange(false)}
+                title="Close"
+              >
+                <span className="text-base leading-none text-muted-foreground">×</span>
+              </Button>
             </div>
           </div>
         </DialogHeader>
@@ -114,35 +122,38 @@ export function GameDetailDialog({
               return (
                 <div
                   key={s.playerName}
-                  className={`flex items-stretch border ${borderClass} ${bgClass} overflow-hidden`}
+                  className={`flex items-center border ${borderClass} ${bgClass} overflow-hidden`}
                 >
-                  {/* Leader portrait — aspect-[2/3] matches card art exactly */}
-                  <div className="w-12 shrink-0 self-start">
-                    <div className="relative w-12 aspect-[2/3] bg-black/40 overflow-hidden">
-                      {imgSrc ? (
-                        <Image
-                          src={imgSrc}
-                          alt={s.leader}
-                          fill
-                          draggable={false}
-                          className="object-cover object-top select-none"
-                          sizes="48px"
-                        />
-                      ) : (
-                        <div className="w-full h-full flex items-center justify-center">
-                          <span className="font-mono text-[10px] text-muted-foreground/20">
-                            {s.playerName[0]}
-                          </span>
-                        </div>
-                      )}
-                    </div>
+                  {/* Leader portrait — fixed px, padded to match text column */}
+                  <div className="pl-4 py-3 shrink-0">
+                    {imgSrc ? (
+                      <Image
+                        src={imgSrc}
+                        alt={s.leader}
+                        width={48}
+                        height={72}
+                        draggable={false}
+                        className="select-none object-cover"
+                      />
+                    ) : (
+                      <div className="w-12 h-[72px] flex items-center justify-center bg-black/20">
+                        <span className="font-mono text-[10px] text-muted-foreground/20">{s.playerName[0]}</span>
+                      </div>
+                    )}
                   </div>
 
                   {/* Name + leader */}
-                  <div className="flex-1 flex flex-col justify-center px-3 py-3 min-w-0">
-                    <span className={`font-mono text-sm font-semibold truncate ${nameClass}`}>
-                      {shortenName(s.playerName)}
-                    </span>
+                  <div className="flex-1 flex flex-col justify-center px-4 py-3 min-w-0">
+                    <div className="flex items-center gap-1.5 min-w-0">
+                      <span className={`font-mono text-sm font-semibold truncate ${nameClass}`}>
+                        {shortenName(s.playerName)}
+                      </span>
+                      {isWinner && (
+                        <div className="relative w-3.5 h-3.5 shrink-0">
+                          <Image src="/images/victorypoint.png" alt="VP" fill className="object-contain" sizes="14px" />
+                        </div>
+                      )}
+                    </div>
                     {s.leader && (
                       <span className="font-mono text-[10px] text-muted-foreground/50 truncate mt-0.5">
                         {s.leader}
@@ -153,13 +164,8 @@ export function GameDetailDialog({
                     )}
                   </div>
 
-                  {/* VP icon + score — VP vertically centered between name and leader rows */}
-                  <div className="flex items-center gap-1.5 px-4">
-                    {isWinner && (
-                      <div className="relative w-4 h-4 shrink-0">
-                        <Image src="/images/victorypoint.png" alt="VP" fill className="object-contain" sizes="16px" />
-                      </div>
-                    )}
+                  {/* Score only */}
+                  <div className="flex items-center px-4">
                     <span className={`font-mono text-xl font-bold tabular-nums ${scoreClass}`}>
                       {s.score}
                     </span>
