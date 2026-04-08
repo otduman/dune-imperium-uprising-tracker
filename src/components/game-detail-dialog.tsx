@@ -39,29 +39,30 @@ export function GameDetailDialog({
     .sort((a, b) => b.score - a.score)
 
   const maxScore = sortedScores[0]?.score ?? 0
-
-  // Players who tied on score (whether they won TB or not)
   const tiedOnScore = sortedScores.filter((s) => s.score === maxScore)
   const isTiedGame = isTB && tiedOnScore.length > 1
-
-  // For tiebreaker breakdown
   const tiedPlayers = isTiedGame ? tiedOnScore : []
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="bg-background border-border max-w-md max-h-[90vh] overflow-y-auto">
+      <DialogContent showCloseButton={false} className="bg-background border-border max-w-md max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <div className="flex items-center justify-between gap-2">
-            <DialogTitle className="font-mono text-base">
-              {new Date(game.date).toLocaleDateString("en-US", {
-                month: "long",
-                day: "numeric",
-                year: "numeric",
-              })}
-            </DialogTitle>
-            <div className="flex items-center gap-1.5 shrink-0">
+          <div className="flex items-center gap-2 pr-1">
+            <div className="flex-1 min-w-0">
+              <DialogTitle className="font-mono text-base">
+                {new Date(game.date).toLocaleDateString("en-US", {
+                  month: "long",
+                  day: "numeric",
+                  year: "numeric",
+                })}
+              </DialogTitle>
+              <DialogDescription className="font-mono text-xs mt-0.5">
+                {sortedScores.length} players · Season 01
+              </DialogDescription>
+            </div>
+            <div className="flex items-center gap-0.5 shrink-0">
               {isTB && (
-                <span className="text-[10px] font-mono px-2 py-0.5 bg-warning text-warning-foreground rounded-full">
+                <span className="text-[10px] font-mono px-2 py-0.5 bg-warning text-warning-foreground rounded-full mr-1">
                   TB
                 </span>
               )}
@@ -84,9 +85,6 @@ export function GameDetailDialog({
               </Button>
             </div>
           </div>
-          <DialogDescription className="font-mono text-xs">
-            {sortedScores.length} players · Season 01
-          </DialogDescription>
         </DialogHeader>
 
         <div className="space-y-4">
@@ -100,14 +98,17 @@ export function GameDetailDialog({
               let borderClass = "border-border"
               let bgClass = ""
               let nameClass = "text-foreground"
+              let scoreClass = "text-muted-foreground/60"
               if (isWinner) {
                 borderClass = "border-primary/40"
                 bgClass = "bg-primary/5"
                 nameClass = "text-primary"
+                scoreClass = "text-primary"
               } else if (isTiedLoser) {
                 borderClass = "border-warning/40"
                 bgClass = "bg-warning/5"
-                nameClass = "text-warning-foreground"
+                nameClass = "text-warning-foreground/80"
+                scoreClass = "text-warning-foreground/60"
               }
 
               return (
@@ -115,26 +116,26 @@ export function GameDetailDialog({
                   key={s.playerName}
                   className={`flex items-stretch border ${borderClass} ${bgClass} overflow-hidden`}
                 >
-                  {/* Leader portrait — uncropped */}
-                  <div className="w-12 shrink-0 bg-black/30 overflow-hidden">
-                    {imgSrc ? (
-                      <div className="relative w-full h-full min-h-[64px]">
+                  {/* Leader portrait — aspect-[2/3] matches card art exactly */}
+                  <div className="w-12 shrink-0 self-start">
+                    <div className="relative w-12 aspect-[2/3] bg-black/40 overflow-hidden">
+                      {imgSrc ? (
                         <Image
                           src={imgSrc}
                           alt={s.leader}
                           fill
                           draggable={false}
-                          className="object-contain object-top select-none"
+                          className="object-cover object-top select-none"
                           sizes="48px"
                         />
-                      </div>
-                    ) : (
-                      <div className="w-full min-h-[64px] flex items-center justify-center">
-                        <span className="font-mono text-[10px] text-muted-foreground/20">
-                          {s.playerName[0]}
-                        </span>
-                      </div>
-                    )}
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center">
+                          <span className="font-mono text-[10px] text-muted-foreground/20">
+                            {s.playerName[0]}
+                          </span>
+                        </div>
+                      )}
+                    </div>
                   </div>
 
                   {/* Name + leader */}
@@ -142,19 +143,24 @@ export function GameDetailDialog({
                     <span className={`font-mono text-sm font-semibold truncate ${nameClass}`}>
                       {shortenName(s.playerName)}
                     </span>
-                    {s.leader ? (
-                      <span className="font-mono text-[10px] text-muted-foreground/60 truncate mt-0.5">
+                    {s.leader && (
+                      <span className="font-mono text-[10px] text-muted-foreground/50 truncate mt-0.5">
                         {s.leader}
                       </span>
-                    ) : null}
+                    )}
                     {isTiedLoser && (
-                      <span className="font-mono text-[9px] text-warning/60 mt-0.5">tied · lost TB</span>
+                      <span className="font-mono text-[9px] text-warning/50 mt-0.5">tied · lost TB</span>
                     )}
                   </div>
 
-                  {/* Score */}
-                  <div className="flex items-center px-4">
-                    <span className={`font-mono text-xl font-bold tabular-nums ${isWinner ? "text-primary" : isTiedLoser ? "text-warning-foreground/70" : "text-muted-foreground/60"}`}>
+                  {/* VP icon + score — VP vertically centered between name and leader rows */}
+                  <div className="flex items-center gap-1.5 px-4">
+                    {isWinner && (
+                      <div className="relative w-4 h-4 shrink-0">
+                        <Image src="/images/victorypoint.png" alt="VP" fill className="object-contain" sizes="16px" />
+                      </div>
+                    )}
+                    <span className={`font-mono text-xl font-bold tabular-nums ${scoreClass}`}>
                       {s.score}
                     </span>
                   </div>
@@ -172,7 +178,6 @@ export function GameDetailDialog({
                   Tiebreaker
                 </div>
 
-                {/* Column headers */}
                 <div className="flex items-center gap-2 px-2">
                   <div className="flex-1 text-[10px] font-mono text-muted-foreground/40 uppercase tracking-widest">Player</div>
                   {TIEBREAKER_ORDER.map((r) => (
@@ -182,7 +187,6 @@ export function GameDetailDialog({
                   ))}
                 </div>
 
-                {/* Tied player rows */}
                 {tiedPlayers.map((s) => {
                   const isWinner = winners.includes(s.playerName)
                   return (
@@ -197,17 +201,15 @@ export function GameDetailDialog({
                       </div>
                       {TIEBREAKER_ORDER.map((r) => {
                         const val = s.tiebreaker?.[r]
-                        const isDecidingResource = game.tiebreakerResolved?.resource === r
-                        const isThisWinner = isDecidingResource && s.playerName === game.tiebreakerResolved?.winnerName
+                        const isDeciding = game.tiebreakerResolved?.resource === r
+                        const isThisWinner = isDeciding && s.playerName === game.tiebreakerResolved?.winnerName
                         return (
                           <div
                             key={r}
                             className={`w-12 text-center font-mono text-sm tabular-nums ${
-                              isThisWinner
-                                ? "text-primary font-bold"
-                                : val !== undefined
-                                  ? "text-foreground/70"
-                                  : "text-muted-foreground/20"
+                              isThisWinner ? "text-primary font-bold"
+                              : val !== undefined ? "text-foreground/70"
+                              : "text-muted-foreground/20"
                             }`}
                           >
                             {val !== undefined ? val : "—"}
@@ -218,12 +220,11 @@ export function GameDetailDialog({
                   )
                 })}
 
-                {/* Winner by line */}
                 {game.tiebreakerResolved && (
                   <div className="flex items-center gap-1.5 font-mono text-xs text-muted-foreground/60">
                     <span>Winner by</span>
                     <ResourceIcon type={game.tiebreakerResolved.resource} size="sm" />
-                    <span className="text-muted-foreground/40">–</span>
+                    <span className="text-muted-foreground/30">–</span>
                     <span className="font-semibold text-foreground/80">
                       {shortenName(game.tiebreakerResolved.winnerName)}
                     </span>
