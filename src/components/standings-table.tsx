@@ -1,7 +1,7 @@
 "use client"
 
+import Image from "next/image"
 import { PlayerStats } from "@/lib/types"
-import { ChevronUp, ChevronDown, Minus } from "lucide-react"
 
 interface StandingsTableProps {
   stats: PlayerStats[]
@@ -15,6 +15,23 @@ function shortFirst(name: string) {
   return `${parts[0][0]}. ${parts.slice(1).join(" ")}`
 }
 
+function TrendIcon({ trend, hasPrev }: { trend: "up" | "down" | "same"; hasPrev: boolean }) {
+  if (!hasPrev) return <div className="w-4 h-4 shrink-0" />
+  if (trend === "up")
+    return (
+      <div className="relative w-4 h-4 shrink-0">
+        <Image src="/images/influence_plus.png" alt="up" fill className="object-contain" sizes="16px" />
+      </div>
+    )
+  if (trend === "down")
+    return (
+      <div className="relative w-4 h-4 shrink-0">
+        <Image src="/images/influence_minus.png" alt="down" fill className="object-contain" sizes="16px" />
+      </div>
+    )
+  return <div className="w-4 h-px bg-muted-foreground/20 shrink-0 self-center" />
+}
+
 export function StandingsTable({ stats, previousStats, onSelectPlayer }: StandingsTableProps) {
   if (stats.length === 0) {
     return (
@@ -24,11 +41,13 @@ export function StandingsTable({ stats, previousStats, onSelectPlayer }: Standin
     )
   }
 
+  const hasPrev = !!previousStats && previousStats.length > 0
+
   return (
     <div className="border border-border overflow-hidden">
-      {/* Column headers */}
+      {/* Header */}
       <div className="flex items-center border-b border-border bg-card/60 px-1">
-        <div className="w-9 shrink-0 py-2.5 pl-3 text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
+        <div className="w-12 shrink-0 py-2.5 pl-3 text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
           #
         </div>
         <div className="flex-1 py-2.5 px-2 text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
@@ -40,11 +59,15 @@ export function StandingsTable({ stats, previousStats, onSelectPlayer }: Standin
         <div className="hidden sm:block w-12 py-2.5 text-center text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
           Avg
         </div>
-        <div className="w-10 py-2.5 text-center text-[10px] font-mono font-semibold tracking-widest text-primary/60 uppercase">
+        <div className="w-10 py-2.5 text-center text-[10px] font-mono font-semibold tracking-widest text-primary/70 uppercase">
           W
         </div>
-        <div className="w-14 py-2.5 pr-4 text-right text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
-          Pts
+        {/* Pts header with VP icon */}
+        <div className="w-16 py-2.5 pr-4 flex items-center justify-end gap-1 text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
+          <div className="relative w-3.5 h-3.5 shrink-0 opacity-70">
+            <Image src="/images/victorypoint.png" alt="VP" fill className="object-contain" sizes="14px" />
+          </div>
+          <span>Pts</span>
         </div>
       </div>
 
@@ -52,12 +75,12 @@ export function StandingsTable({ stats, previousStats, onSelectPlayer }: Standin
       {stats.map((player, i) => {
         const isFirst = i === 0
 
-        const prevIndex = previousStats?.findIndex((p) => p.name === player.name)
-        let trend = "same"
-        if (prevIndex !== undefined && prevIndex !== -1) {
-          if (prevIndex > i) trend = "up"
-          else if (prevIndex < i) trend = "down"
-        }
+        const prevIndex = previousStats?.findIndex((p) => p.name === player.name) ?? -1
+        const trend: "up" | "down" | "same" =
+          prevIndex === -1 ? "same"
+          : prevIndex > i ? "up"
+          : prevIndex < i ? "down"
+          : "same"
 
         return (
           <div
@@ -65,29 +88,24 @@ export function StandingsTable({ stats, previousStats, onSelectPlayer }: Standin
             onClick={() => onSelectPlayer?.(player.name)}
             className={[
               "flex items-center border-b border-border last:border-b-0 px-1 transition-colors",
-              isFirst
-                ? "border-l-2 border-l-primary bg-primary/5"
-                : "border-l-2 border-l-transparent",
+              isFirst ? "border-l-2 border-l-primary bg-primary/5" : "border-l-2 border-l-transparent",
               onSelectPlayer ? "cursor-pointer active:bg-secondary" : "",
             ].join(" ")}
           >
-            <div
-              className={[
-                "w-12 shrink-0 py-4 pl-3 font-mono text-sm font-bold tabular-nums flex flex-col justify-center",
-                isFirst ? "text-primary" : "text-muted-foreground/50",
-              ].join(" ")}
-            >
-              <div className="flex items-center gap-2.5">
-                <span className="w-4 text-center">{i + 1}</span>
-                {trend === "up" && <ChevronUp className="size-3 text-fremen shrink-0" strokeWidth={3} />}
-                {trend === "down" && <ChevronDown className="size-3 text-harkonnen shrink-0" strokeWidth={3} />}
-                {trend === "same" && previousStats && previousStats.length > 0 && prevIndex !== -1 && (
-                  <Minus className="size-3 text-muted-foreground/30 shrink-0" strokeWidth={3} />
-                )}
-              </div>
+            {/* Rank + trend */}
+            <div className="w-12 shrink-0 py-4 pl-2 flex items-center gap-1.5">
+              <span
+                className={[
+                  "font-mono text-sm font-bold tabular-nums w-4 text-center",
+                  isFirst ? "text-primary" : "text-muted-foreground/50",
+                ].join(" ")}
+              >
+                {i + 1}
+              </span>
+              <TrendIcon trend={trend} hasPrev={hasPrev} />
             </div>
 
-            {/* name */}
+            {/* Name */}
             <div className="flex-1 py-4 px-2 min-w-0">
               <div
                 className={[
@@ -99,17 +117,17 @@ export function StandingsTable({ stats, previousStats, onSelectPlayer }: Standin
               </div>
             </div>
 
-            {/* GP desktop */}
+            {/* GP — desktop only */}
             <div className="hidden sm:block w-10 py-4 text-center text-sm font-mono tabular-nums text-muted-foreground">
               {player.gamesPlayed}
             </div>
 
-            {/* Avg desktop */}
+            {/* Avg — desktop only */}
             <div className="hidden sm:block w-12 py-4 text-center text-sm font-mono tabular-nums text-muted-foreground">
               {player.gamesPlayed > 0 ? player.avgScore.toFixed(1) : "—"}
             </div>
 
-            {/* W */}
+            {/* Wins */}
             <div
               className={[
                 "w-10 py-4 text-center text-sm font-mono tabular-nums font-semibold",
@@ -119,9 +137,14 @@ export function StandingsTable({ stats, previousStats, onSelectPlayer }: Standin
               {player.wins}
             </div>
 
-            {/* Total */}
-            <div className="w-14 py-4 pr-4 text-right font-mono tabular-nums text-muted-foreground text-sm">
-              {player.totalScore}
+            {/* Pts with VP icon */}
+            <div className="w-16 py-4 pr-4 flex items-center justify-end gap-1">
+              <span className="font-mono tabular-nums text-muted-foreground text-sm">
+                {player.totalScore}
+              </span>
+              <div className="relative w-3.5 h-3.5 shrink-0 opacity-50">
+                <Image src="/images/victorypoint.png" alt="VP" fill className="object-contain" sizes="14px" />
+              </div>
             </div>
           </div>
         )

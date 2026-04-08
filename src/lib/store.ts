@@ -1,6 +1,6 @@
 "use client"
 
-import { Game, PlayerStats, LeaderStats, DEFAULT_PLAYERS } from "./types"
+import { Game, PlayerStats, LeaderStats } from "./types"
 
 export function addGame(games: Game[], game: Game): Game[] {
   return [game, ...games]

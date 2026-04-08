@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { Game, TIEBREAKER_ORDER } from "@/lib/types"
 import { getWinners, hasTiebreaker, shortenName } from "@/lib/store"
+import { ResourceIcon } from "@/components/ui/resource-icon"
 
 interface GameDetailDialogProps {
   game: Game | null
@@ -123,8 +124,8 @@ export function GameDetailDialog({
                 <div className="flex items-center gap-2 px-2 text-[11px] font-mono font-semibold tracking-wider text-muted-foreground uppercase">
                   <div className="flex-1">Player</div>
                   {TIEBREAKER_ORDER.map((r) => (
-                    <div key={r} className="w-14 text-center capitalize">
-                      {r.slice(0, 5)}
+                    <div key={r} className="w-14 flex justify-center">
+                      <ResourceIcon type={r} size="md" title={r} />
                     </div>
                   ))}
                 </div>
@@ -173,11 +174,11 @@ export function GameDetailDialog({
                 })}
 
                 {game.tiebreakerResolved ? (
-                  <div className="text-xs text-corrino opacity-90">
-                    Winner by{" "}
-                    {game.tiebreakerResolved.resource.charAt(0).toUpperCase() +
-                      game.tiebreakerResolved.resource.slice(1)}
-                    : {shortenName(game.tiebreakerResolved.winnerName)}
+                  <div className="text-xs text-corrino opacity-90 flex items-center gap-1.5 flex-wrap">
+                    Winner by 
+                    <ResourceIcon type={game.tiebreakerResolved.resource} size="sm" />
+                    <span className="capitalize">{game.tiebreakerResolved.resource}</span>
+                    : <span className="font-semibold">{shortenName(game.tiebreakerResolved.winnerName)}</span>
                   </div>
                 ) : (
                   <div className="text-xs text-fremen opacity-90 font-mono font-semibold">

@@ -29,6 +29,7 @@ import {
 } from "@/lib/types"
 import { generateId, shortenName } from "@/lib/store"
 import { cn } from "@/lib/utils"
+import { ResourceIcon } from "@/components/ui/resource-icon"
 
 interface AddGameDialogProps {
   open: boolean
@@ -354,9 +355,14 @@ export function AddGameDialog({
 
                   return (
                     <div key={resource} className="space-y-2">
-                      <span className="text-xs font-mono font-semibold text-warning-foreground capitalize">
-                        {TIEBREAKER_ORDER.indexOf(resource) + 1}. {resource}
-                      </span>
+                      <div className="flex items-center mb-1">
+                        <ResourceIcon 
+                          type={resource} 
+                          size="sm" 
+                          label={`${TIEBREAKER_ORDER.indexOf(resource) + 1}. ${resource}`} 
+                          className="text-warning-foreground capitalize" 
+                        />
+                      </div>
                       <div className="grid grid-cols-2 gap-3">
                         {tiedPlayers.map((p) => {
                           const isWinner = resolvedWinner === p.name

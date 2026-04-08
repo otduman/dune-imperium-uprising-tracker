@@ -1,0 +1,5792 @@
+[
+  {
+    "id": 88,
+    "name": "Arrakis Observer",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-arrakis-observer",
+    "fullImagePath": "/images/bloodlines-imperium-arrakis-observer.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-arrakis-observer.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 89,
+    "name": "Bombast",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-bombast",
+    "fullImagePath": "/images/bloodlines-imperium-bombast.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-bombast.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 90,
+    "name": "CHOAM Demands",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-choam-demands",
+    "fullImagePath": "/images/bloodlines-imperium-choam-demands.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-choam-demands.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 91,
+    "name": "Command Center",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-command-center",
+    "fullImagePath": "/images/bloodlines-imperium-command-center.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-command-center.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 92,
+    "name": "Corrupt Bureaucrat",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-corrupt-bureaucrat",
+    "fullImagePath": "/images/bloodlines-imperium-corrupt-bureaucrat.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-corrupt-bureaucrat.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 94,
+    "name": "Delivery Logistics",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-delivery-logistics",
+    "fullImagePath": "/images/bloodlines-imperium-delivery-logistics.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-delivery-logistics.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 95,
+    "name": "Disruption Tactics",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-disruption-tactics",
+    "fullImagePath": "/images/bloodlines-imperium-disruption-tactics.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-disruption-tactics.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 96,
+    "name": "Eliminate Allies",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-eliminate-allies",
+    "fullImagePath": "/images/bloodlines-imperium-eliminate-allies.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-eliminate-allies.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 97,
+    "name": "Elite Forces",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-elite-forces",
+    "fullImagePath": "/images/bloodlines-imperium-elite-forces.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-elite-forces.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 98,
+    "name": "Engineered Miracle",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-engineered-miracle",
+    "fullImagePath": "/images/bloodlines-imperium-engineered-miracle.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-engineered-miracle.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 99,
+    "name": "Fremen War Name",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-fremen-war-name",
+    "fullImagePath": "/images/bloodlines-imperium-fremen-war-name.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-fremen-war-name.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 100,
+    "name": "Holy War",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-holy-war",
+    "fullImagePath": "/images/bloodlines-imperium-holy-war.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-holy-war.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 101,
+    "name": "I Believe",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-i-believe",
+    "fullImagePath": "/images/bloodlines-imperium-i-believe.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-i-believe.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 102,
+    "name": "Imperial Throneship",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-imperial-throneship",
+    "fullImagePath": "/images/bloodlines-imperium-imperial-throneship.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-imperial-throneship.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 104,
+    "name": "Intelligence Training",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-intelligence-training",
+    "fullImagePath": "/images/bloodlines-imperium-intelligence-training.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-intelligence-training.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 106,
+    "name": "Ixian Ambassador",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-ixian-ambassador",
+    "fullImagePath": "/images/bloodlines-imperium-ixian-ambassador.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-ixian-ambassador.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 107,
+    "name": "Litany Against Fear",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-litany-against-fear",
+    "fullImagePath": "/images/bloodlines-imperium-litany-against-fear.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-litany-against-fear.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 108,
+    "name": "Mercantile Affairs",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-mercantile-affairs",
+    "fullImagePath": "/images/bloodlines-imperium-mercantile-affairs.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-mercantile-affairs.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 77,
+    "name": "Pointing the Way",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-pointing-the-way",
+    "fullImagePath": "/images/bloodlines-imperium-pointing-the-way.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-pointing-the-way.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 78,
+    "name": "Possible Futures",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-possible-futures",
+    "fullImagePath": "/images/bloodlines-imperium-possible-futures.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-possible-futures.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 80,
+    "name": "Quash Rebellion",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-quash-rebellion",
+    "fullImagePath": "/images/bloodlines-imperium-quash-rebellion.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-quash-rebellion.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 82,
+    "name": "Sandwalk",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-sandwalk",
+    "fullImagePath": "/images/bloodlines-imperium-sandwalk.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-sandwalk.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 83,
+    "name": "Sardaukar Standard",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-sardaukar-standard",
+    "fullImagePath": "/images/bloodlines-imperium-sardaukar-standard.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-sardaukar-standard.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 86,
+    "name": "Shrouded Counsel",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-shrouded-counsel",
+    "fullImagePath": "/images/bloodlines-imperium-shrouded-counsel.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-shrouded-counsel.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 87,
+    "name": "Southern Faith",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-southern-faith",
+    "fullImagePath": "/images/bloodlines-imperium-southern-faith.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-southern-faith.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 85,
+    "name": "Urgent Shigawire",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "bloodlines-urgent-shigawire",
+    "fullImagePath": "/images/bloodlines-imperium-urgent-shigawire.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-imperium-urgent-shigawire.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 109,
+    "name": "Adaptive Tactics",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-adaptive-tactics",
+    "fullImagePath": "/images/bloodlines-intrigue-adaptive-tactics.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-adaptive-tactics.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 110,
+    "name": "Battlefield Research",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-battlefield-research",
+    "fullImagePath": "/images/bloodlines-intrigue-battlefield-research.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-battlefield-research.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 111,
+    "name": "Coercive Negotiation",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-coercive-negotiation",
+    "fullImagePath": "/images/bloodlines-intrigue-coercive-negotiation.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-coercive-negotiation.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 112,
+    "name": "Desert Support",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-desert-support",
+    "fullImagePath": "/images/bloodlines-intrigue-desert-support.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-desert-support.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 113,
+    "name": "Emperor's Invitation",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-emperor-s-invitation",
+    "fullImagePath": "/images/bloodlines-intrigue-emperor-s-invitation.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-emperor-s-invitation.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 114,
+    "name": "False Orders",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-false-orders",
+    "fullImagePath": "/images/bloodlines-intrigue-false-orders.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-false-orders.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 115,
+    "name": "Grasp Arrakis",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-grasp-arrakis",
+    "fullImagePath": "/images/bloodlines-intrigue-grasp-arrakis.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-grasp-arrakis.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 116,
+    "name": "Honor Guard",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-honor-guard",
+    "fullImagePath": "/images/bloodlines-intrigue-honor-guard.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-honor-guard.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 117,
+    "name": "Insider Information",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-insider-information",
+    "fullImagePath": "/images/bloodlines-intrigue-insider-information.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-insider-information.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 118,
+    "name": "Rapid Engineering",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-rapid-engineering",
+    "fullImagePath": "/images/bloodlines-intrigue-rapid-engineering.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-rapid-engineering.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 119,
+    "name": "Return The Favor",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-return-the-favor",
+    "fullImagePath": "/images/bloodlines-intrigue-return-the-favor.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-return-the-favor.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 120,
+    "name": "Ripples In The Sand",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-ripples-in-the-sand",
+    "fullImagePath": "/images/bloodlines-intrigue-ripples-in-the-sand.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-ripples-in-the-sand.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 121,
+    "name": "Sacred Pools",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-sacred-pools",
+    "fullImagePath": "/images/bloodlines-intrigue-sacred-pools.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-sacred-pools.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 122,
+    "name": "Seize Production",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-seize-production",
+    "fullImagePath": "/images/bloodlines-intrigue-seize-production.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-seize-production.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 123,
+    "name": "Sleeper Unit",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-sleeper-unit",
+    "fullImagePath": "/images/bloodlines-intrigue-sleeper-unit.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-sleeper-unit.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 124,
+    "name": "Tenuous Bond",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-tenuous-bond",
+    "fullImagePath": "/images/bloodlines-intrigue-tenuous-bond.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-tenuous-bond.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 125,
+    "name": "The Strong Survive",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-the-strong-survive",
+    "fullImagePath": "/images/bloodlines-intrigue-the-strong-survive.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-the-strong-survive.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 126,
+    "name": "Withdrawal Agreement",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "bloodlines-withdrawal-agreement",
+    "fullImagePath": "/images/bloodlines-intrigue-withdrawal-agreement.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-intrigue-withdrawal-agreement.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 162,
+    "name": "Advanced Data Analysis",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-advanced-data-analysis",
+    "fullImagePath": "/images/bloodlines-tech-advanced-data-analysis.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-advanced-data-analysis.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 163,
+    "name": "CHOAM Transports",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-choam-transports",
+    "fullImagePath": "/images/bloodlines-tech-choam-transports.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-choam-transports.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 164,
+    "name": "Delivery Bay",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-delivery-bay",
+    "fullImagePath": "/images/bloodlines-tech-delivery-bay.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-delivery-bay.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 165,
+    "name": "Forbidden Weapons",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-forbidden-weapons",
+    "fullImagePath": "/images/bloodlines-tech-forbidden-weapons.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-forbidden-weapons.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 166,
+    "name": "Gene-Locked Vault",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-gene-locked-vault",
+    "fullImagePath": "/images/bloodlines-tech-gene-locked-vault.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-gene-locked-vault.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 167,
+    "name": "Glowglobes",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-glowglobes",
+    "fullImagePath": "/images/bloodlines-tech-glowglobes.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-glowglobes.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 168,
+    "name": "Navigation Chamber",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-navigation-chamber",
+    "fullImagePath": "/images/bloodlines-tech-navigation-chamber.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-navigation-chamber.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 169,
+    "name": "Ornithopter Fleet",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-ornithopter-fleet",
+    "fullImagePath": "/images/bloodlines-tech-ornithopter-fleet.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-ornithopter-fleet.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 170,
+    "name": "Panopticon",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-panopticon",
+    "fullImagePath": "/images/bloodlines-tech-panopticon.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-panopticon.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 171,
+    "name": "Planetary Array",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-planetary-array",
+    "fullImagePath": "/images/bloodlines-tech-planetary-array.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-planetary-array.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 172,
+    "name": "Plasteel Blades",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-plasteel-blades",
+    "fullImagePath": "/images/bloodlines-tech-plasteel-blades.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-plasteel-blades.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 173,
+    "name": "Rapid Dropships",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-rapid-dropships",
+    "fullImagePath": "/images/bloodlines-tech-rapid-dropships.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-rapid-dropships.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 174,
+    "name": "Sardaukar High Command",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-sardaukar-high-command",
+    "fullImagePath": "/images/bloodlines-tech-sardaukar-high-command.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-sardaukar-high-command.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 175,
+    "name": "Self-Destroying Messages",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-self-destroying-messages",
+    "fullImagePath": "/images/bloodlines-tech-self-destroying-messages.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-self-destroying-messages.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 176,
+    "name": "Servo-Receivers",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-servo-receivers",
+    "fullImagePath": "/images/bloodlines-tech-servo-receivers.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-servo-receivers.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 177,
+    "name": "Spy Drones",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-spy-drones",
+    "fullImagePath": "/images/bloodlines-tech-spy-drones.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-spy-drones.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 178,
+    "name": "Suspensor Suits",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-suspensor-suits",
+    "fullImagePath": "/images/bloodlines-tech-suspensor-suits.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-suspensor-suits.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 179,
+    "name": "Training Depot",
+    "type": "tech",
+    "displayType": null,
+    "slug": "bloodlines-training-depot",
+    "fullImagePath": "/images/bloodlines-tech-training-depot.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-tech-training-depot.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 190,
+    "name": "Chani",
+    "type": "leader",
+    "displayType": null,
+    "slug": "bloodlines-chani",
+    "fullImagePath": "/images/bloodlines-leader-chani.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-leader-chani.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 189,
+    "name": "Count Hasimir Fenring",
+    "type": "leader",
+    "displayType": null,
+    "slug": "bloodlines-count-hasimir-fenring",
+    "fullImagePath": "/images/bloodlines-leader-count-hasimir-fenring.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-leader-count-hasimir-fenring.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 192,
+    "name": "Duncan Idaho",
+    "type": "leader",
+    "displayType": null,
+    "slug": "bloodlines-duncan-idaho",
+    "fullImagePath": "/images/bloodlines-leader-duncan-idaho.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-leader-duncan-idaho.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 188,
+    "name": "Esmar Tuek",
+    "type": "leader",
+    "displayType": null,
+    "slug": "bloodlines-esmar-tuek",
+    "fullImagePath": "/images/bloodlines-leader-esmar-tuek.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-leader-esmar-tuek.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 185,
+    "name": "Gaius Helen Mohiam",
+    "type": "leader",
+    "displayType": null,
+    "slug": "bloodlines-gaius-helen-mohiam",
+    "fullImagePath": "/images/bloodlines-leader-gaius-helen-mohiam.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-leader-gaius-helen-mohiam.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 191,
+    "name": "Kota Odax of Ix",
+    "type": "leader",
+    "displayType": null,
+    "slug": "bloodlines-kota-odax-of-ix",
+    "fullImagePath": "/images/bloodlines-leader-kota-odax-of-ix.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-leader-kota-odax-of-ix.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 193,
+    "name": "Liet Kynes",
+    "type": "leader",
+    "displayType": null,
+    "slug": "bloodlines-liet-kynes",
+    "fullImagePath": "/images/bloodlines-leader-liet-kynes.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-leader-liet-kynes.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 187,
+    "name": "Piter De Vries",
+    "type": "leader",
+    "displayType": null,
+    "slug": "bloodlines-piter-de-vries",
+    "fullImagePath": "/images/bloodlines-leader-piter-de-vries.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-leader-piter-de-vries.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 186,
+    "name": "Steersman Y'rkoon",
+    "type": "leader",
+    "displayType": null,
+    "slug": "bloodlines-steersman-y-rkoon",
+    "fullImagePath": "/images/bloodlines-leader-steersman-y-rkoon.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-leader-steersman-y-rkoon.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 207,
+    "name": "Canny",
+    "type": "skill",
+    "displayType": null,
+    "slug": "bloodlines-canny",
+    "fullImagePath": "/images/bloodlines-skill-canny.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-skill-canny.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 208,
+    "name": "Charismatic",
+    "type": "skill",
+    "displayType": null,
+    "slug": "bloodlines-charismatic",
+    "fullImagePath": "/images/bloodlines-skill-charismatic.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-skill-charismatic.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 209,
+    "name": "Desperate",
+    "type": "skill",
+    "displayType": null,
+    "slug": "bloodlines-desperate",
+    "fullImagePath": "/images/bloodlines-skill-desperate.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-skill-desperate.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 203,
+    "name": "Driven",
+    "type": "skill",
+    "displayType": null,
+    "slug": "bloodlines-driven",
+    "fullImagePath": "/images/bloodlines-skill-driven.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-skill-driven.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 204,
+    "name": "Fierce",
+    "type": "skill",
+    "displayType": null,
+    "slug": "bloodlines-fierce",
+    "fullImagePath": "/images/bloodlines-skill-fierce.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-skill-fierce.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 205,
+    "name": "Hardy",
+    "type": "skill",
+    "displayType": null,
+    "slug": "bloodlines-hardy",
+    "fullImagePath": "/images/bloodlines-skill-hardy.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-skill-hardy.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 206,
+    "name": "Loyal",
+    "type": "skill",
+    "displayType": null,
+    "slug": "bloodlines-loyal",
+    "fullImagePath": "/images/bloodlines-skill-loyal.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-skill-loyal.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 467,
+    "name": "Skirmish",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "bloodlines-skirmish",
+    "fullImagePath": "/images/bloodlines-conflict-skirmish.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-conflict-skirmish.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 468,
+    "name": "Storms In The South",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "bloodlines-storms-in-the-south",
+    "fullImagePath": "/images/bloodlines-conflict-storms-in-the-south.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-conflict-storms-in-the-south.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 521,
+    "name": "Deliver Supplies",
+    "type": "contract",
+    "displayType": null,
+    "slug": "bloodlines-deliver-supplies",
+    "fullImagePath": "/images/bloodlines-contract-deliver-supplies.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-contract-deliver-supplies.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 519,
+    "name": "Earn Any Alliance",
+    "type": "contract",
+    "displayType": null,
+    "slug": "bloodlines-earn-any-alliance",
+    "fullImagePath": "/images/bloodlines-contract-earn-any-alliance.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-contract-earn-any-alliance.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 523,
+    "name": "Harvest 3+",
+    "type": "contract",
+    "displayType": null,
+    "slug": "bloodlines-harvest-3",
+    "fullImagePath": "/images/bloodlines-contract-harvest-3.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-contract-harvest-3.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 524,
+    "name": "Harvest 4+",
+    "type": "contract",
+    "displayType": null,
+    "slug": "bloodlines-harvest-4",
+    "fullImagePath": "/images/bloodlines-contract-harvest-4.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-contract-harvest-4.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 526,
+    "name": "High Council",
+    "type": "contract",
+    "displayType": null,
+    "slug": "bloodlines-high-council",
+    "fullImagePath": "/images/bloodlines-contract-high-council.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-contract-high-council.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 520,
+    "name": "Immediate",
+    "type": "contract",
+    "displayType": null,
+    "slug": "bloodlines-immediate",
+    "fullImagePath": "/images/bloodlines-contract-immediate.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-contract-immediate.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 522,
+    "name": "Secrets",
+    "type": "contract",
+    "displayType": null,
+    "slug": "bloodlines-secrets",
+    "fullImagePath": "/images/bloodlines-contract-secrets.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-contract-secrets.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 525,
+    "name": "Spice Refinery",
+    "type": "contract",
+    "displayType": null,
+    "slug": "bloodlines-spice-refinery",
+    "fullImagePath": "/images/bloodlines-contract-spice-refinery.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-contract-spice-refinery.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 585,
+    "name": "Ixian Embassy board",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-ixian-embassy-board",
+    "fullImagePath": "/images/ixian embassy.jpg",
+    "thumbnailImagePath": "/thumbnails/ixian embassy.jpg",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 469,
+    "name": "Navigation card 1",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-navigation-card-1",
+    "fullImagePath": "/images/bloodlines-other-navigation-card-1.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-navigation-card-1.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 478,
+    "name": "Navigation card 10",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-navigation-card-10",
+    "fullImagePath": "/images/bloodlines-other-navigation-card-10.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-navigation-card-10.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 470,
+    "name": "Navigation card 2",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-navigation-card-2",
+    "fullImagePath": "/images/bloodlines-other-navigation-card-2.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-navigation-card-2.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 471,
+    "name": "Navigation card 3",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-navigation-card-3",
+    "fullImagePath": "/images/bloodlines-other-navigation-card-3.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-navigation-card-3.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 472,
+    "name": "Navigation card 4",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-navigation-card-4",
+    "fullImagePath": "/images/bloodlines-other-navigation-card-4.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-navigation-card-4.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 473,
+    "name": "Navigation card 5",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-navigation-card-5",
+    "fullImagePath": "/images/bloodlines-other-navigation-card-5.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-navigation-card-5.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 474,
+    "name": "Navigation card 6",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-navigation-card-6",
+    "fullImagePath": "/images/bloodlines-other-navigation-card-6.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-navigation-card-6.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 475,
+    "name": "Navigation card 7",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-navigation-card-7",
+    "fullImagePath": "/images/bloodlines-other-navigation-card-7.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-navigation-card-7.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 476,
+    "name": "Navigation card 8",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-navigation-card-8",
+    "fullImagePath": "/images/bloodlines-other-navigation-card-8.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-navigation-card-8.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 477,
+    "name": "Navigation card 9",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-navigation-card-9",
+    "fullImagePath": "/images/bloodlines-other-navigation-card-9.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-navigation-card-9.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 479,
+    "name": "Twisted Intrigue - Ambitious",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-twisted-intrigue-ambitious",
+    "fullImagePath": "/images/bloodlines-other-twisted-intrigue-ambitious.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-twisted-intrigue-ambitious.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 480,
+    "name": "Twisted Intrigue - Calculating",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-twisted-intrigue-calculating",
+    "fullImagePath": "/images/bloodlines-other-twisted-intrigue-calculating.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-twisted-intrigue-calculating.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 481,
+    "name": "Twisted Intrigue - Controlled",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-twisted-intrigue-controlled",
+    "fullImagePath": "/images/bloodlines-other-twisted-intrigue-controlled.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-twisted-intrigue-controlled.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 482,
+    "name": "Twisted Intrigue - Devious",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-twisted-intrigue-devious",
+    "fullImagePath": "/images/bloodlines-other-twisted-intrigue-devious.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-twisted-intrigue-devious.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 483,
+    "name": "Twisted Intrigue - Discerning",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-twisted-intrigue-discerning",
+    "fullImagePath": "/images/bloodlines-other-twisted-intrigue-discerning.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-twisted-intrigue-discerning.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 484,
+    "name": "Twisted Intrigue - Insidious",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-twisted-intrigue-insidious",
+    "fullImagePath": "/images/bloodlines-other-twisted-intrigue-insidious.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-twisted-intrigue-insidious.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 485,
+    "name": "Twisted Intrigue - Resourceful",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-twisted-intrigue-resourceful",
+    "fullImagePath": "/images/bloodlines-other-twisted-intrigue-resourceful.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-twisted-intrigue-resourceful.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 486,
+    "name": "Twisted Intrigue - Sadistic",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-twisted-intrigue-sadistic",
+    "fullImagePath": "/images/bloodlines-other-twisted-intrigue-sadistic.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-twisted-intrigue-sadistic.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 487,
+    "name": "Twisted Intrigue - Shrewd",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-twisted-intrigue-shrewd",
+    "fullImagePath": "/images/bloodlines-other-twisted-intrigue-shrewd.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-twisted-intrigue-shrewd.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 488,
+    "name": "Twisted Intrigue - Sinister",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-twisted-intrigue-sinister",
+    "fullImagePath": "/images/bloodlines-other-twisted-intrigue-sinister.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-twisted-intrigue-sinister.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 489,
+    "name": "Twisted Intrigue - Unnatural",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-twisted-intrigue-unnatural",
+    "fullImagePath": "/images/bloodlines-other-twisted-intrigue-unnatural.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-twisted-intrigue-unnatural.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 490,
+    "name": "Twisted Intrigue - Withdrawn",
+    "type": "other",
+    "displayType": null,
+    "slug": "bloodlines-twisted-intrigue-withdrawn",
+    "fullImagePath": "/images/bloodlines-other-twisted-intrigue-withdrawn.webp",
+    "thumbnailImagePath": "/thumbnails/bloodlines-other-twisted-intrigue-withdrawn.webp",
+    "expansionName": "Bloodlines"
+  },
+  {
+    "id": 30,
+    "name": "Bene Gesserit Operative",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-bene-gesserit-operative",
+    "fullImagePath": "/images/uprising-imperium-bene-gesserit-operative.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-bene-gesserit-operative.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 45,
+    "name": "Branching Path",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-branching-path",
+    "fullImagePath": "/images/uprising-imperium-branching-path.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-branching-path.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 42,
+    "name": "Calculus of Power",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-calculus-of-power",
+    "fullImagePath": "/images/uprising-imperium-calculus-of-power.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-calculus-of-power.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 61,
+    "name": "Captured Mentat",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-captured-mentat",
+    "fullImagePath": "/images/uprising-imperium-captured-mentat.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-captured-mentat.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 181,
+    "name": "Cargo Runner",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-cargo-runner",
+    "fullImagePath": "/images/uprising-imperium-cargo-runner.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-cargo-runner.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 67,
+    "name": "Chani, Clever Tactician",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-chani-clever-tactician",
+    "fullImagePath": "/images/uprising-imperium-chani-clever-tactician.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-chani-clever-tactician.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 69,
+    "name": "Corrinth City",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-corrinth-city",
+    "fullImagePath": "/images/uprising-imperium-corrinth-city.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-corrinth-city.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 35,
+    "name": "Covert Operation",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-covert-operation",
+    "fullImagePath": "/images/uprising-imperium-covert-operation.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-covert-operation.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 44,
+    "name": "Dangerous Rhetoric",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-dangerous-rhetoric",
+    "fullImagePath": "/images/uprising-imperium-dangerous-rhetoric.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-dangerous-rhetoric.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 182,
+    "name": "Delivery Agreement",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-delivery-agreement",
+    "fullImagePath": "/images/uprising-imperium-delivery-agreement.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-delivery-agreement.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 71,
+    "name": "Desert Power",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-desert-power",
+    "fullImagePath": "/images/uprising-imperium-desert-power.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-desert-power.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 27,
+    "name": "Desert Survival",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-desert-survival",
+    "fullImagePath": "/images/uprising-imperium-desert-survival.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-desert-survival.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 37,
+    "name": "Double Agent",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-double-agent",
+    "fullImagePath": "/images/uprising-imperium-double-agent.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-double-agent.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 46,
+    "name": "Ecological Testing Station",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-ecological-testing-station",
+    "fullImagePath": "/images/uprising-imperium-ecological-testing-station.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-ecological-testing-station.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 23,
+    "name": "Fedaykin Stilltent",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-fedaykin-stilltent",
+    "fullImagePath": "/images/uprising-imperium-fedaykin-stilltent.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-fedaykin-stilltent.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 38,
+    "name": "Guild Envoy",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-guild-envoy",
+    "fullImagePath": "/images/uprising-imperium-guild-envoy.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-guild-envoy.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 43,
+    "name": "Guild Spy",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-guild-spy",
+    "fullImagePath": "/images/uprising-imperium-guild-spy.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-guild-spy.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 21,
+    "name": "Hidden Missive",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-hidden-missive",
+    "fullImagePath": "/images/uprising-imperium-hidden-missive.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-hidden-missive.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 24,
+    "name": "Imperial Spymaster",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-imperial-spymaster",
+    "fullImagePath": "/images/uprising-imperium-imperial-spymaster.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-imperial-spymaster.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 64,
+    "name": "In High Places",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-in-high-places",
+    "fullImagePath": "/images/uprising-imperium-in-high-places.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-in-high-places.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 184,
+    "name": "Interstellar Trade",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-interstellar-trade",
+    "fullImagePath": "/images/uprising-imperium-interstellar-trade.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-interstellar-trade.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 68,
+    "name": "Junction Headquarters",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-junction-headquarters",
+    "fullImagePath": "/images/uprising-imperium-junction-headquaters.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-junction-headquaters.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 63,
+    "name": "Leadership",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-leadership",
+    "fullImagePath": "/images/uprising-imperium-leadership.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-leadership.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 74,
+    "name": "Long Live the Fighters",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-long-live-the-fighters",
+    "fullImagePath": "/images/uprising-imperium-long-live-the-fighters.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-long-live-the-fighters.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 19,
+    "name": "Maker Keeper",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-maker-keeper",
+    "fullImagePath": "/images/uprising-imperium-maker-keeper.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-maker-keeper.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 32,
+    "name": "Maula Pistol",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-maula-pistol",
+    "fullImagePath": "/images/uprising-imperium-maula-pistol.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-maula-pistol.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 34,
+    "name": "Northern Watermaster",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-northern-watermaster",
+    "fullImagePath": "/images/uprising-imperium-northern-watermaster.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-northern-watermaster.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 75,
+    "name": "Overthrow",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-overthrow",
+    "fullImagePath": "/images/uprising-imperium-overthrow.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-overthrow.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 49,
+    "name": "Paracompass",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-paracompass",
+    "fullImagePath": "/images/uprising-imperium-paracompass.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-paracompass.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 73,
+    "name": "Price is No Object",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-price-is-no-object",
+    "fullImagePath": "/images/uprising-imperium-price-is-no-object.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-price-is-no-object.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 183,
+    "name": "Priority Contracts",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-priority-contracts",
+    "fullImagePath": "/images/uprising-imperium-priority-contracts.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-priority-contracts.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 55,
+    "name": "Public Spectacle",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-public-spectacle",
+    "fullImagePath": "/images/uprising-imperium-public-spectacle.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-public-spectacle.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 40,
+    "name": "Rebel Supplier",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-rebel-supplier",
+    "fullImagePath": "/images/uprising-imperium-rebel-supplier.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-rebel-supplier.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 20,
+    "name": "Reliable Informant",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-reliable-informant",
+    "fullImagePath": "/images/uprising-imperium-reliable-informant.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-reliable-informant.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 51,
+    "name": "Sardaukar Coordination",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-sardaukar-coordination",
+    "fullImagePath": "/images/uprising-imperium-sardaukar-coordination.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-sardaukar-coordination.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 15,
+    "name": "Sardaukar Soldier",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-sardaukar-soldier",
+    "fullImagePath": "/images/uprising-imperium-sardaukar-soldier.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-sardaukar-soldier.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 48,
+    "name": "Shishakli",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-shishakli",
+    "fullImagePath": "/images/uprising-imperium-shishakli.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-shishakli.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 17,
+    "name": "Smuggler's Harvester",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-smuggler-s-harvester",
+    "fullImagePath": "/images/uprising-imperium-smuggler-s-harvester.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-smuggler-s-harvester.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 47,
+    "name": "Smuggler's Haven",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-smuggler-s-haven",
+    "fullImagePath": "/images/uprising-imperium-smuggler-s-haven.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-smuggler-s-haven.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 56,
+    "name": "Southern Elders",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-southern-elders",
+    "fullImagePath": "/images/uprising-imperium-southern-elders.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-southern-elders.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 12,
+    "name": "Space-time Folding",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-space-time-folding",
+    "fullImagePath": "/images/uprising-imperium-space-time-folding.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-space-time-folding.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 60,
+    "name": "Spacing Guild's Favor",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-spacing-guild-s-favor",
+    "fullImagePath": "/images/uprising-imperium-spacing-guild-s-favor.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-spacing-guild-s-favor.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 25,
+    "name": "Spy Network",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-spy-network",
+    "fullImagePath": "/images/uprising-imperium-spy-network.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-spy-network.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 76,
+    "name": "Steersman",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-steersman",
+    "fullImagePath": "/images/uprising-imperium-steersman.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-steersman.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 70,
+    "name": "Stilgar, The Devoted",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-stilgar-the-devoted",
+    "fullImagePath": "/images/uprising-imperium-stilgar-the-devoted.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-stilgar-the-devoted.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 65,
+    "name": "Strike Fleet",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-strike-fleet",
+    "fullImagePath": "/images/uprising-imperium-strike-fleet.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-strike-fleet.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 62,
+    "name": "Subversive Advisor",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-subversive-advisor",
+    "fullImagePath": "/images/uprising-imperium-subversive-advisor.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-subversive-advisor.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 66,
+    "name": "Theacherous Maneuver",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-theacherous-maneuver",
+    "fullImagePath": "/images/uprising-imperium-theacherous-maneuver.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-theacherous-maneuver.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 58,
+    "name": "Tread in Darkness",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-tread-in-darkness",
+    "fullImagePath": "/images/uprising-imperium-tread-in-darkness.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-tread-in-darkness.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 53,
+    "name": "Truthtrance",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-truthtrance",
+    "fullImagePath": "/images/uprising-imperium-truthtrance.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-truthtrance.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 28,
+    "name": "Undercover Asset",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-undercover-asset",
+    "fullImagePath": "/images/uprising-imperium-undercover-asset.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-undercover-asset.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 11,
+    "name": "Unswerving Loyalty",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-unswerving-loyalty",
+    "fullImagePath": "/images/uprising-imperium-unswerving-loyalty.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-unswerving-loyalty.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 14,
+    "name": "Weirding Woman",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-weirding-woman",
+    "fullImagePath": "/images/uprising-imperium-weirding-woman.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-weirding-woman.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 22,
+    "name": "Wheels Within Wheels",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "uprising-wheels-within-wheels",
+    "fullImagePath": "/images/uprising-imperium-wheels-within-wheels.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-imperium-wheels-within-wheels.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 448,
+    "name": "Backed by CHOAM",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-backed-by-choam",
+    "fullImagePath": "/images/uprising-intrigue-backed-by-choam.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-backed-by-choam.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 139,
+    "name": "Buy Access",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-buy-access",
+    "fullImagePath": "/images/uprising-intrigue-buy-access.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-buy-access.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 138,
+    "name": "Call to Arms",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-call-to-arms",
+    "fullImagePath": "/images/uprising-intrigue-call-to-arms.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-call-to-arms.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 135,
+    "name": "Change Allegiances",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-change-allegiances",
+    "fullImagePath": "/images/uprising-intrigue-change-allegiances.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-change-allegiances.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 450,
+    "name": "CHOAM Profits",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-choam-profits",
+    "fullImagePath": "/images/uprising-intrigue-choam-profits.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-choam-profits.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 147,
+    "name": "Contingency Plan",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-contingency-plan",
+    "fullImagePath": "/images/uprising-intrigue-contingency-plan.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-contingency-plan.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 129,
+    "name": "Councilor's Ambition",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-councilor-s-ambition",
+    "fullImagePath": "/images/uprising-intrigue-councilor-s-ambition.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-councilor-s-ambition.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 159,
+    "name": "Crysknife",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-crysknife",
+    "fullImagePath": "/images/uprising-intrigue-crysknife.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-crysknife.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 133,
+    "name": "Cunning",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-cunning",
+    "fullImagePath": "/images/uprising-intrigue-cunning.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-cunning.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 132,
+    "name": "Depart For Arrakis",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-depart-for-arrakis",
+    "fullImagePath": "/images/uprising-intrigue-depart-for-arrakis.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-depart-for-arrakis.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 157,
+    "name": "Desert Mouse",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-desert-mouse",
+    "fullImagePath": "/images/uprising-intrigue-desert-mouse.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-desert-mouse.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 131,
+    "name": "Detonation",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-detonation",
+    "fullImagePath": "/images/uprising-intrigue-detonation.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-detonation.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 151,
+    "name": "Devour",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-devour",
+    "fullImagePath": "/images/uprising-intrigue-devour.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-devour.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 144,
+    "name": "Distraction",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-distraction",
+    "fullImagePath": "/images/uprising-intrigue-distraction.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-distraction.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 149,
+    "name": "Find Weakness",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-find-weakness",
+    "fullImagePath": "/images/uprising-intrigue-find-weakness.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-find-weakness.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 146,
+    "name": "Go To Ground",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-go-to-ground",
+    "fullImagePath": "/images/uprising-intrigue-go-to-ground.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-go-to-ground.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 140,
+    "name": "Imperium Politics",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-imperium-politics",
+    "fullImagePath": "/images/uprising-intrigue-imperium-politics.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-imperium-politics.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 152,
+    "name": "Impress",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-impress",
+    "fullImagePath": "/images/uprising-intrigue-impress.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-impress.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 148,
+    "name": "Inspire Awe",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-inspire-awe",
+    "fullImagePath": "/images/uprising-intrigue-inspire-awe.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-inspire-awe.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 142,
+    "name": "Intelligence Report",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-intelligence-report",
+    "fullImagePath": "/images/uprising-intrigue-intelligence-report.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-intelligence-report.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 447,
+    "name": "Leverage",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-leverage",
+    "fullImagePath": "/images/uprising-intrigue-leverage.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-leverage.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 143,
+    "name": "Manipulate",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-manipulate",
+    "fullImagePath": "/images/uprising-intrigue-manipulate.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-manipulate.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 145,
+    "name": "Market Opportunity",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-market-opportunity",
+    "fullImagePath": "/images/uprising-intrigue-market-opportunity.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-market-opportunity.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 128,
+    "name": "Mercenaries",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-mercenaries",
+    "fullImagePath": "/images/uprising-intrigue-mercenaries.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-mercenaries.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 134,
+    "name": "Opportunism",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-opportunism",
+    "fullImagePath": "/images/uprising-intrigue-opportunism.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-opportunism.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 158,
+    "name": "Ornitopter",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-ornitopter",
+    "fullImagePath": "/images/uprising-intrigue-ornitopter.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-ornitopter.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 156,
+    "name": "Questionable Methods",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-questionable-methods",
+    "fullImagePath": "/images/uprising-intrigue-questionable-methods.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-questionable-methods.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 449,
+    "name": "Reach Agreement",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-reach-agreement",
+    "fullImagePath": "/images/uprising-intrigue-reach-agreement.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-reach-agreement.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 161,
+    "name": "Secure Spice Trade",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-secure-spice-trade",
+    "fullImagePath": "/images/uprising-intrigue-secure-spice-trade.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-secure-spice-trade.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 141,
+    "name": "Shaddam's Favor",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-shaddam-s-favor",
+    "fullImagePath": "/images/uprising-intrigue-shaddam-s-favor.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-shaddam-s-favor.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 160,
+    "name": "Shadow Alliance",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-shadow-alliance",
+    "fullImagePath": "/images/uprising-intrigue-shadow-alliance.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-shadow-alliance.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 127,
+    "name": "Sietch Ritual",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-sietch-ritual",
+    "fullImagePath": "/images/uprising-intrigue-sietch-ritual.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-sietch-ritual.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 136,
+    "name": "Special Mission",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-special-mission",
+    "fullImagePath": "/images/uprising-intrigue-special-mission.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-special-mission.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 150,
+    "name": "Spice is Power",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-spice-is-power",
+    "fullImagePath": "/images/uprising-intrigue-spice-is-power.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-spice-is-power.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 153,
+    "name": "Spring The Trap",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-spring-the-trap",
+    "fullImagePath": "/images/uprising-intrigue-spring-the-trap.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-spring-the-trap.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 130,
+    "name": "Strategic Stockpiling",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-strategic-stockpiling",
+    "fullImagePath": "/images/uprising-intrigue-strategic-stockpiling.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-strategic-stockpiling.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 155,
+    "name": "Tactical Option",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-tactical-option",
+    "fullImagePath": "/images/uprising-intrigue-tactical-option.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-tactical-option.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 137,
+    "name": "Unexpected Allies",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-unexpected-allies",
+    "fullImagePath": "/images/uprising-intrigue-unexpected-allies.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-unexpected-allies.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 154,
+    "name": "Weirding Combat",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "uprising-weirding-combat",
+    "fullImagePath": "/images/uprising-intrigue-weirding-combat.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-intrigue-weirding-combat.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 195,
+    "name": "Feyd-Rautha Harkonnen",
+    "type": "leader",
+    "displayType": null,
+    "slug": "uprising-feyd-rautha-harkonnen",
+    "fullImagePath": "/images/uprising-leader-feyd-rautha-harkonnen.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-leader-feyd-rautha-harkonnen.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 199,
+    "name": "Gurney Halleck",
+    "type": "leader",
+    "displayType": null,
+    "slug": "uprising-gurney-halleck",
+    "fullImagePath": "/images/uprising-leader-gurney-halleck.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-leader-gurney-halleck.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 194,
+    "name": "Lady Amber Metulli",
+    "type": "leader",
+    "displayType": null,
+    "slug": "uprising-lady-amber-metulli",
+    "fullImagePath": "/images/uprising-leader-lady-amber-metulli.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-leader-lady-amber-metulli.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 200,
+    "name": "Lady Jessica",
+    "type": "leader",
+    "displayType": null,
+    "slug": "uprising-lady-jessica",
+    "fullImagePath": "/images/uprising-leader-lady-jessica.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-leader-lady-jessica.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 198,
+    "name": "Lady Margot Fenring",
+    "type": "leader",
+    "displayType": null,
+    "slug": "uprising-lady-margot-fenring",
+    "fullImagePath": "/images/uprising-leader-lady-margot-fenring.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-leader-lady-margot-fenring.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 180,
+    "name": "Muad'Dib",
+    "type": "leader",
+    "displayType": null,
+    "slug": "uprising-muad-dib",
+    "fullImagePath": "/images/uprising-leader-muad-dib.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-leader-muad-dib.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 196,
+    "name": "Princess Irulan",
+    "type": "leader",
+    "displayType": null,
+    "slug": "uprising-princess-irulan",
+    "fullImagePath": "/images/uprising-leader-princess-irulan.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-leader-princess-irulan.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 201,
+    "name": "Reverend Mother Jessica",
+    "type": "leader",
+    "displayType": null,
+    "slug": "uprising-reverend-mother-jessica",
+    "fullImagePath": "/images/uprising-leader-reverend-mother-jessica.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-leader-reverend-mother-jessica.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 202,
+    "name": "Shaddam Corrino IV",
+    "type": "leader",
+    "displayType": null,
+    "slug": "uprising-shaddam-corrino-iv",
+    "fullImagePath": "/images/uprising-leader-shaddam-corrino-iv.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-leader-shaddam-corrino-iv.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 197,
+    "name": "Staban Tuek",
+    "type": "leader",
+    "displayType": null,
+    "slug": "uprising-staban-tuek",
+    "fullImagePath": "/images/uprising-leader-staban-tuek.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-leader-staban-tuek.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 465,
+    "name": "Battle For Arrakeen",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "uprising-battle-for-arrakeen",
+    "fullImagePath": "/images/uprising-conflict-battle-for-arrakeen.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-conflict-battle-for-arrakeen.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 464,
+    "name": "Battle For Imperial Basin",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "uprising-battle-for-imperial-basin",
+    "fullImagePath": "/images/uprising-conflict-battle-for-imperial-basin.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-conflict-battle-for-imperial-basin.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 466,
+    "name": "Battle For Spice Refinery",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "uprising-battle-for-spice-refinery",
+    "fullImagePath": "/images/uprising-conflict-battle-for-spice-refinery.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-conflict-battle-for-spice-refinery.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 454,
+    "name": "CHOAM Security",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "uprising-choam-security",
+    "fullImagePath": "/images/uprising-conflict-choam-security.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-conflict-choam-security.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 463,
+    "name": "Propaganda",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "uprising-propaganda",
+    "fullImagePath": "/images/uprising-conflict-propaganda.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-conflict-propaganda.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 461,
+    "name": "Protect The Sietches",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "uprising-protect-the-sietches",
+    "fullImagePath": "/images/uprising-conflict-protect-the-sietches.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-conflict-protect-the-sietches.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 460,
+    "name": "Secure Imperial Basin",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "uprising-secure-imperial-basin",
+    "fullImagePath": "/images/uprising-conflict-secure-imperial-basin.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-conflict-secure-imperial-basin.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 457,
+    "name": "Seize Spice Refinery",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "uprising-seize-spice-refinery",
+    "fullImagePath": "/images/uprising-conflict-seize-spice-refinery.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-conflict-seize-spice-refinery.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 459,
+    "name": "Shadow Contest",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "uprising-shadow-contest",
+    "fullImagePath": "/images/uprising-conflict-shadow-contest.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-conflict-shadow-contest.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 456,
+    "name": "Siege Of Arrakeen",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "uprising-siege-of-arrakeen",
+    "fullImagePath": "/images/uprising-conflict-siege-of-arrakeen.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-conflict-siege-of-arrakeen.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 451,
+    "name": "Skirmish (Crysknife)",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "uprising-skirmish-crysknife",
+    "fullImagePath": "/images/uprising-conflict-skirmish-crysknife.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-conflict-skirmish-crysknife.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 453,
+    "name": "Skirmish (Desert Mouse)",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "uprising-skirmish-desert-mouse",
+    "fullImagePath": "/images/uprising-conflict-skirmish-desert-mouse.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-conflict-skirmish-desert-mouse.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 452,
+    "name": "Skirmish (Ornithopter)",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "uprising-skirmish-ornithopter",
+    "fullImagePath": "/images/uprising-conflict-skirmish-ornithopter.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-conflict-skirmish-ornithopter.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 455,
+    "name": "Spice Freighters",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "uprising-spice-freighters",
+    "fullImagePath": "/images/uprising-conflict-spice-freighters.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-conflict-spice-freighters.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 458,
+    "name": "Test Of Loyalty",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "uprising-test-of-loyalty",
+    "fullImagePath": "/images/uprising-conflict-test-of-loyalty.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-conflict-test-of-loyalty.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 462,
+    "name": "Trade Dispute",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "uprising-trade-dispute",
+    "fullImagePath": "/images/uprising-conflict-trade-dispute.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-conflict-trade-dispute.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 517,
+    "name": "Acquire",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-acquire",
+    "fullImagePath": "/images/uprising-contract-acquire.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-acquire.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 512,
+    "name": "Arrakeen I",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-arrakeen-i",
+    "fullImagePath": "/images/uprising-contract-arrakeen-i.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-arrakeen-i.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 511,
+    "name": "Arrakeen II",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-arrakeen-ii",
+    "fullImagePath": "/images/uprising-contract-arrakeen-ii.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-arrakeen-ii.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 518,
+    "name": "Deliver Supplies",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-deliver-supplies",
+    "fullImagePath": "/images/uprising-contract-deliver-supplies.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-deliver-supplies.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 495,
+    "name": "Dreadnought",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-dreadnought",
+    "fullImagePath": "/images/uprising-contract-dreadnought.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-dreadnought.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 506,
+    "name": "Espionage I",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-espionage-i",
+    "fullImagePath": "/images/uprising-contract-espionage-i.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-espionage-i.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 496,
+    "name": "Espionage II",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-espionage-ii",
+    "fullImagePath": "/images/uprising-contract-espionage-ii.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-espionage-ii.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 508,
+    "name": "Harvest 3+",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-harvest-3",
+    "fullImagePath": "/images/uprising-contract-harvest-3.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-harvest-3.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 493,
+    "name": "Harvest 3+ (contract)",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-harvest-3-contract",
+    "fullImagePath": "/images/uprising-contract-harvest-3-contract.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-harvest-3-contract.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 507,
+    "name": "Harvest 4+",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-harvest-4",
+    "fullImagePath": "/images/uprising-contract-harvest-4.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-harvest-4.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 500,
+    "name": "Harvest 4+ (contract)",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-harvest-4-contract",
+    "fullImagePath": "/images/uprising-contract-harvest-4-contract.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-harvest-4-contract.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 505,
+    "name": "Heighliner I",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-heighliner-i",
+    "fullImagePath": "/images/uprising-contract-heighliner-i.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-heighliner-i.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 504,
+    "name": "Heighliner II",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-heighliner-ii",
+    "fullImagePath": "/images/uprising-contract-heighliner-ii.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-heighliner-ii.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 494,
+    "name": "Heighliner III",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-heighliner-iii",
+    "fullImagePath": "/images/uprising-contract-heighliner-iii.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-heighliner-iii.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 516,
+    "name": "High Council I",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-high-council-i",
+    "fullImagePath": "/images/uprising-contract-high-council-i.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-high-council-i.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 515,
+    "name": "High Council II",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-high-council-ii",
+    "fullImagePath": "/images/uprising-contract-high-council-ii.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-high-council-ii.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 497,
+    "name": "High Council III",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-high-council-iii",
+    "fullImagePath": "/images/uprising-contract-high-council-iii.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-high-council-iii.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 501,
+    "name": "Immediate",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-immediate",
+    "fullImagePath": "/images/uprising-contract-immediate.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-immediate.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 498,
+    "name": "Interstellar Shipping",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-interstellar-shipping",
+    "fullImagePath": "/images/uprising-contract-interstellar-shipping.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-interstellar-shipping.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 510,
+    "name": "Research Station I",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-research-station-i",
+    "fullImagePath": "/images/uprising-contract-research-station-i.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-research-station-i.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 509,
+    "name": "Research Station II",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-research-station-ii",
+    "fullImagePath": "/images/uprising-contract-research-station-ii.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-research-station-ii.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 503,
+    "name": "Sardaukar I",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-sardaukar-i",
+    "fullImagePath": "/images/uprising-contract-sardaukar-i.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-sardaukar-i.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 502,
+    "name": "Sardaukar II",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-sardaukar-ii",
+    "fullImagePath": "/images/uprising-contract-sardaukar-ii.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-sardaukar-ii.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 491,
+    "name": "Secrets",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-secrets",
+    "fullImagePath": "/images/uprising-contract-secrets.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-secrets.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 492,
+    "name": "Smuggling",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-smuggling",
+    "fullImagePath": "/images/uprising-contract-smuggling.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-smuggling.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 513,
+    "name": "Spice Refinery I",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-spice-refinery-i",
+    "fullImagePath": "/images/uprising-contract-spice-refinery-i.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-spice-refinery-i.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 514,
+    "name": "Spice Refinery II",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-spice-refinery-ii",
+    "fullImagePath": "/images/uprising-contract-spice-refinery-ii.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-spice-refinery-ii.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 499,
+    "name": "Tech Negotiation",
+    "type": "contract",
+    "displayType": null,
+    "slug": "uprising-tech-negotiation",
+    "fullImagePath": "/images/uprising-contract-tech-negotiation.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-contract-tech-negotiation.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 563,
+    "name": "Accept Contract",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-accept-contract",
+    "fullImagePath": "/images/uprising-location-accept-contract.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-accept-contract.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 564,
+    "name": "Arrakeen",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-arrakeen",
+    "fullImagePath": "/images/uprising-location-arakeen.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-arakeen.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 565,
+    "name": "Assembly Hall",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-assembly-hall",
+    "fullImagePath": "/images/uprising-location-assembly-hall.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-assembly-hall.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 566,
+    "name": "Deep Desert",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-deep-desert",
+    "fullImagePath": "/images/uprising-location-deet-desert.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-deet-desert.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 567,
+    "name": "Deliver Supplies",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-deliver-supplies",
+    "fullImagePath": "/images/uprising-location-deliver-supplies.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-deliver-supplies.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 568,
+    "name": "Desert Tactics",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-desert-tactics",
+    "fullImagePath": "/images/uprising-location-desert-tactics.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-desert-tactics.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 569,
+    "name": "Dutiful Service",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-dutiful-service",
+    "fullImagePath": "/images/uprising-location-dutiful-service.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-dutiful-service.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 570,
+    "name": "Espionage",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-espionage",
+    "fullImagePath": "/images/uprising-location-espionage.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-espionage.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 571,
+    "name": "Fremkit",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-fremkit",
+    "fullImagePath": "/images/uprising-location-fremkit.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-fremkit.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 572,
+    "name": "Gather Support",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-gather-support",
+    "fullImagePath": "/images/uprising-location-gather-support.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-gather-support.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 573,
+    "name": "Hagga Basin",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-hagga-basin",
+    "fullImagePath": "/images/uprising-location-hagga-basin.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-hagga-basin.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 574,
+    "name": "Heighliner",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-heighliner",
+    "fullImagePath": "/images/uprising-location-heighliner.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-heighliner.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 575,
+    "name": "High Council",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-high-council",
+    "fullImagePath": "/images/uprising-location-hight-council.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-hight-council.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 576,
+    "name": "Imperial Basin",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-imperial-basin",
+    "fullImagePath": "/images/uprising-location-imperial-basin.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-imperial-basin.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 577,
+    "name": "Imperial Privilege",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-imperial-privilege",
+    "fullImagePath": "/images/uprising-location-imperial-privilege.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-imperial-privilege.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 578,
+    "name": "Research Station",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-research-station",
+    "fullImagePath": "/images/uprising-location-research-station.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-research-station.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 579,
+    "name": "Sardaukar",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-sardaukar",
+    "fullImagePath": "/images/uprising-location-sardaukar.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-sardaukar.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 580,
+    "name": "Secrets",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-secrets",
+    "fullImagePath": "/images/uprising-location-secrets.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-secrets.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 581,
+    "name": "Shipping",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-shipping",
+    "fullImagePath": "/images/uprising-location-shipping.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-shipping.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 582,
+    "name": "Sietch Tabr",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-sietch-tabr",
+    "fullImagePath": "/images/uprising-location-sietch-tabr.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-sietch-tabr.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 583,
+    "name": "Spice Refinery",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-spice-refinery",
+    "fullImagePath": "/images/uprising-location-spice-refinery.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-spice-refinery.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 584,
+    "name": "Swordmaster",
+    "type": "location",
+    "displayType": null,
+    "slug": "uprising-swordmaster",
+    "fullImagePath": "/images/uprising-location-swordmaster.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-location-swordmaster.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 546,
+    "name": "Command Respect",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-command-respect",
+    "fullImagePath": "/images/uprising-other-command-respect.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-command-respect.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 555,
+    "name": "Convincing Argument (Emperor)",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-convincing-argument-emperor",
+    "fullImagePath": "/images/uprising-other-convincing-argument-emperor.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-convincing-argument-emperor.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 547,
+    "name": "Convincing Argument (Muad’Dib)",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-convincing-argument-muad-dib",
+    "fullImagePath": "/images/uprising-other-convincing-argument-muad-dib.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-convincing-argument-muad-dib.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 556,
+    "name": "Corrino Might",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-corrino-might",
+    "fullImagePath": "/images/uprising-other-corrino-might.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-corrino-might.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 557,
+    "name": "Critical Shipments",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-critical-shipments",
+    "fullImagePath": "/images/uprising-other-critical-shipments.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-critical-shipments.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 548,
+    "name": "Demand Attention",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-demand-attention",
+    "fullImagePath": "/images/uprising-other-demand-attention.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-demand-attention.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 558,
+    "name": "Demand Results",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-demand-results",
+    "fullImagePath": "/images/uprising-other-demand-results.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-demand-results.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 549,
+    "name": "Desert Call",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-desert-call",
+    "fullImagePath": "/images/uprising-other-desert-call.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-desert-call.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 559,
+    "name": "Devastating Assault",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-devastating-assault",
+    "fullImagePath": "/images/uprising-other-devastating-assault.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-devastating-assault.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 560,
+    "name": "Imperial Ornithopter (x2)",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-imperial-ornithopter-x2",
+    "fullImagePath": "/images/uprising-other-imperial-ornithopter-x2.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-imperial-ornithopter-x2.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 561,
+    "name": "Imperial Tent",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-imperial-tent",
+    "fullImagePath": "/images/uprising-other-imperial-tent.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-imperial-tent.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 550,
+    "name": "Limited Landsraad Access (x2)",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-limited-landsraad-access-x2",
+    "fullImagePath": "/images/uprising-other-limited-landsraad-access-x2.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-limited-landsraad-access-x2.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 537,
+    "name": "Prepare The Way",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-prepare-the-way",
+    "fullImagePath": "/images/uprising-other-prepare-the-way.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-prepare-the-way.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 562,
+    "name": "Seek Allies (Emperor)",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-seek-allies-emperor",
+    "fullImagePath": "/images/uprising-other-seek-allies-emperor.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-seek-allies-emperor.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 551,
+    "name": "Seek Allies (Muad’Dib)",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-seek-allies-muad-dib",
+    "fullImagePath": "/images/uprising-other-seek-allies-muad-dib.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-seek-allies-muad-dib.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 554,
+    "name": "Signet Ring (Emperor)",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-signet-ring-emperor",
+    "fullImagePath": "/images/uprising-other-signet-ring-emperor.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-signet-ring-emperor.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 545,
+    "name": "Signet Ring (Muad’Dib)",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-signet-ring-muad-dib",
+    "fullImagePath": "/images/uprising-other-signet-ring-muad-dib.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-signet-ring-muad-dib.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 538,
+    "name": "The Spice Must Flow",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-the-spice-must-flow",
+    "fullImagePath": "/images/uprising-other-the-spice-must-flow.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-the-spice-must-flow.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 553,
+    "name": "Threaten Spice Priduction",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-threaten-spice-priduction",
+    "fullImagePath": "/images/uprising-other-threaten-spice-priduction.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-threaten-spice-priduction.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 552,
+    "name": "Usul",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "uprising-usul",
+    "fullImagePath": "/images/uprising-other-usul.webp",
+    "thumbnailImagePath": "/thumbnails/uprising-other-usul.webp",
+    "expansionName": "Uprising"
+  },
+  {
+    "id": 367,
+    "name": "Bene Tleilax Lab",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-bene-tleilax-lab",
+    "fullImagePath": "/images/immortality-imperium-bene-tleilax-lab.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-bene-tleilax-lab.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 368,
+    "name": "Bene Tleilax Researcher",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-bene-tleilax-researcher",
+    "fullImagePath": "/images/immortality-imperium-bene-tleilax-researcher.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-bene-tleilax-researcher.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 369,
+    "name": "Blank Slate",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-blank-slate",
+    "fullImagePath": "/images/immortality-imperium-blank-slate.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-blank-slate.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 370,
+    "name": "Clandestine Meeting",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-clandestine-meeting",
+    "fullImagePath": "/images/immortality-imperium-clandestine-meeting.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-clandestine-meeting.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 371,
+    "name": "Corrupt Smuggler",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-corrupt-smuggler",
+    "fullImagePath": "/images/immortality-imperium-corrupt-smuggler.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-corrupt-smuggler.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 372,
+    "name": "Dissecting Kit",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-dissecting-kit",
+    "fullImagePath": "/images/immortality-imperium-dissecting-kit.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-dissecting-kit.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 373,
+    "name": "For Humanity",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-for-humanity",
+    "fullImagePath": "/images/immortality-imperium-for-humanity.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-for-humanity.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 374,
+    "name": "High Priority Travel",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-high-priority-travel",
+    "fullImagePath": "/images/immortality-imperium-high-priority-travel.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-high-priority-travel.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 375,
+    "name": "Imperium Ceremony",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-imperium-ceremony",
+    "fullImagePath": "/images/immortality-imperium-imperium-ceremony.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-imperium-ceremony.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 376,
+    "name": "Interstellar Conspiracy",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-interstellar-conspiracy",
+    "fullImagePath": "/images/immortality-imperium-interstellar-conspiracy.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-interstellar-conspiracy.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 377,
+    "name": "Keys To Power",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-keys-to-power",
+    "fullImagePath": "/images/immortality-imperium-keys-to-power.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-keys-to-power.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 378,
+    "name": "Lisan Al Gaib",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-lisan-al-gaib",
+    "fullImagePath": "/images/immortality-imperium-lisan-al-gaib.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-lisan-al-gaib.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 379,
+    "name": "Long Reach",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-long-reach",
+    "fullImagePath": "/images/immortality-imperium-long-reach.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-long-reach.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 380,
+    "name": "Occupation",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-occupation",
+    "fullImagePath": "/images/immortality-imperium-occupation.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-occupation.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 381,
+    "name": "Organ Merchants",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-organ-merchants",
+    "fullImagePath": "/images/immortality-imperium-organ-merchants.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-organ-merchants.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 382,
+    "name": "Planned Coupling",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-planned-coupling",
+    "fullImagePath": "/images/immortality-imperium-planned-coupling.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-planned-coupling.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 383,
+    "name": "Replacement Eyes",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-replacement-eyes",
+    "fullImagePath": "/images/immortality-imperium-replacement-eyes.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-replacement-eyes.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 384,
+    "name": "Sardaukar Quartermaster",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-sardaukar-quartermaster",
+    "fullImagePath": "/images/immortality-imperium-sardaukar-quartermaster.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-sardaukar-quartermaster.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 385,
+    "name": "Shadout Mapes",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-shadout-mapes",
+    "fullImagePath": "/images/immortality-imperium-shadout-mapes.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-shadout-mapes.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 386,
+    "name": "Show Of Strength",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-show-of-strength",
+    "fullImagePath": "/images/immortality-imperium-show-of-strength.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-show-of-strength.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 387,
+    "name": "Spiritual Fervor",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-spiritual-fervor",
+    "fullImagePath": "/images/immortality-imperium-spiritual-fervor.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-spiritual-fervor.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 388,
+    "name": "Stillsuit Manufacturer",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-stillsuit-manufacturer",
+    "fullImagePath": "/images/immortality-imperium-stillsuit-manufacturer.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-stillsuit-manufacturer.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 389,
+    "name": "Throne Room Politics",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-throne-room-politics",
+    "fullImagePath": "/images/immortality-imperium-throne-room-politics.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-throne-room-politics.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 390,
+    "name": "Tleilaxu Master",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-tleilaxu-master",
+    "fullImagePath": "/images/immortality-imperium-tleilaxu-master.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-tleilaxu-master.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 391,
+    "name": "Tleilaxu Surgeon",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "immortality-tleilaxu-surgeon",
+    "fullImagePath": "/images/immortality-imperium-tleilaxu-surgeon.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-imperium-tleilaxu-surgeon.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 392,
+    "name": "Breakthrough",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "immortality-breakthrough",
+    "fullImagePath": "/images/immortality-intrigue-breakthrough.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-intrigue-breakthrough.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 393,
+    "name": "Counterattack",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "immortality-counterattack",
+    "fullImagePath": "/images/immortality-intrigue-counterattack.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-intrigue-counterattack.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 394,
+    "name": "Disguised Bureaucrat",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "immortality-disguised-bureaucrat",
+    "fullImagePath": "/images/immortality-intrigue-disguised-bureaucrat.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-intrigue-disguised-bureaucrat.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 395,
+    "name": "Economic Positioning",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "immortality-economic-positioning",
+    "fullImagePath": "/images/immortality-intrigue-economic-positioning.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-intrigue-economic-positioning.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 396,
+    "name": "Gruesome Sacrifice",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "immortality-gruesome-sacrifice",
+    "fullImagePath": "/images/immortality-intrigue-gruesome-sacrifice.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-intrigue-gruesome-sacrifice.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 397,
+    "name": "Harvest Cells",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "immortality-harvest-cells",
+    "fullImagePath": "/images/immortality-intrigue-harvest-cells.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-intrigue-harvest-cells.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 398,
+    "name": "Illicit Deadlings",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "immortality-illicit-deadlings",
+    "fullImagePath": "/images/immortality-intrigue-illicit-deadlings.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-intrigue-illicit-deadlings.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 399,
+    "name": "Shadowy Bargain",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "immortality-shadowy-bargain",
+    "fullImagePath": "/images/immortality-intrigue-shadowy-bargain.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-intrigue-shadowy-bargain.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 400,
+    "name": "Study Melange",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "immortality-study-melange",
+    "fullImagePath": "/images/immortality-intrigue-study-melange.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-intrigue-study-melange.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 401,
+    "name": "Tleilaxu Puppet",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "immortality-tleilaxu-puppet",
+    "fullImagePath": "/images/immortality-intrigue-tleilaxu-puppet.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-intrigue-tleilaxu-puppet.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 402,
+    "name": "Vicious Talents",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "immortality-vicious-talents",
+    "fullImagePath": "/images/immortality-intrigue-vicious-talents.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-intrigue-vicious-talents.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 403,
+    "name": "Beguiling Pheromones",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-beguiling-pheromones",
+    "fullImagePath": "/images/immortality-tleilaxu-beguiling-pheromones.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-beguiling-pheromones.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 404,
+    "name": "Chairdog",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-chairdog",
+    "fullImagePath": "/images/immortality-tleilaxu-chairdog.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-chairdog.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 405,
+    "name": "Contaminator",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-contaminator",
+    "fullImagePath": "/images/immortality-tleilaxu-contaminator.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-contaminator.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 406,
+    "name": "Corrino Genes",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-corrino-genes",
+    "fullImagePath": "/images/immortality-tleilaxu-corrino-genes.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-corrino-genes.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 407,
+    "name": "Face Dancer",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-face-dancer",
+    "fullImagePath": "/images/immortality-tleilaxu-face-dancer.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-face-dancer.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 408,
+    "name": "Face Dancer Initiate",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-face-dancer-initiate",
+    "fullImagePath": "/images/immortality-tleilaxu-face-dancer-initiate.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-face-dancer-initiate.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 409,
+    "name": "From The Tanks",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-from-the-tanks",
+    "fullImagePath": "/images/immortality-tleilaxu-from-the-tanks.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-from-the-tanks.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 410,
+    "name": "Ghola",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-ghola",
+    "fullImagePath": "/images/immortality-tleilaxu-ghola.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-ghola.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 411,
+    "name": "Guild Impersonator",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-guild-impersonator",
+    "fullImagePath": "/images/immortality-tleilaxu-guild-impersonator.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-guild-impersonator.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 412,
+    "name": "Industrial Espionage",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-industrial-espionage",
+    "fullImagePath": "/images/immortality-tleilaxu-industrial-espionage.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-industrial-espionage.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 413,
+    "name": "Reclaimed Forces",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-reclaimed-forces",
+    "fullImagePath": "/images/immortality-tleilaxu-reclaimed-forces.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-reclaimed-forces.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 414,
+    "name": "Scientific Breakthrough",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-scientific-breakthrough",
+    "fullImagePath": "/images/immortality-tleilaxu-scientific-breakthrough.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-scientific-breakthrough.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 415,
+    "name": "Slig Farmer",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-slig-farmer",
+    "fullImagePath": "/images/immortality-tleilaxu-slig-farmer.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-slig-farmer.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 416,
+    "name": "Stitched Horror",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-stitched-horror",
+    "fullImagePath": "/images/immortality-tleilaxu-stitched-horror.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-stitched-horror.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 417,
+    "name": "Subject X-137",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-subject-x-137",
+    "fullImagePath": "/images/immortality-tleilaxu-subject-x-137.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-subject-x-137.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 418,
+    "name": "Tleilaxu Infiltrator",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-tleilaxu-infiltrator",
+    "fullImagePath": "/images/immortality-tleilaxu-tleilaxu-infiltrator.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-tleilaxu-infiltrator.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 419,
+    "name": "Twisted Mentat",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-twisted-mentat",
+    "fullImagePath": "/images/immortality-tleilaxu-twisted-mentat.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-twisted-mentat.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 420,
+    "name": "Unnatural Reflexes",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-unnatural-reflexes",
+    "fullImagePath": "/images/immortality-tleilaxu-unnatural-reflexes.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-unnatural-reflexes.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 421,
+    "name": "Usurp",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "immortality-usurp",
+    "fullImagePath": "/images/immortality-tleilaxu-usurp.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-tleilaxu-usurp.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 539,
+    "name": "Experimentation",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "immortality-experimentation",
+    "fullImagePath": "/images/immortality-other-experimentation.webp",
+    "thumbnailImagePath": "/thumbnails/immortality-other-experimentation.webp",
+    "expansionName": "Immortality"
+  },
+  {
+    "id": 306,
+    "name": "Appropriate",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-appropriate",
+    "fullImagePath": "/images/rise-of-ix-imperium-appropriate.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-appropriate.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 300,
+    "name": "Bounty Hunter",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-bounty-hunter",
+    "fullImagePath": "/images/rise-of-ix-imperium-bounty-hunter.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-bounty-hunter.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 299,
+    "name": "CHOAM Delegate",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-choam-delegate",
+    "fullImagePath": "/images/rise-of-ix-imperium-choam-delegate.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-choam-delegate.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 324,
+    "name": "Control The Spice",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-control-the-spice",
+    "fullImagePath": "/images/rise-of-ix-imperium-control-the-spice.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-control-the-spice.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 303,
+    "name": "Court Intrigue",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-court-intrigue",
+    "fullImagePath": "/images/rise-of-ix-imperium-court-intrigue.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-court-intrigue.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 307,
+    "name": "Desert Ambush",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-desert-ambush",
+    "fullImagePath": "/images/rise-of-ix-imperium-desert-ambush.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-desert-ambush.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 301,
+    "name": "Embedded Agent",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-embedded-agent",
+    "fullImagePath": "/images/rise-of-ix-imperium-embedded-agent.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-embedded-agent.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 302,
+    "name": "Esmar Tuek",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-esmar-tuek",
+    "fullImagePath": "/images/rise-of-ix-imperium-esmar-tuek.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-esmar-tuek.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 310,
+    "name": "Freighter Fleet",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-freighter-fleet",
+    "fullImagePath": "/images/rise-of-ix-imperium-freighter-fleet.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-freighter-fleet.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 322,
+    "name": "Full-Scale Assult",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-full-scale-assult",
+    "fullImagePath": "/images/rise-of-ix-imperium-full-scale-assult.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-full-scale-assult.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 295,
+    "name": "Guild Accord",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-guild-accord",
+    "fullImagePath": "/images/rise-of-ix-imperium-guild-accord.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-guild-accord.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 294,
+    "name": "Guild Chief Administrator",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-guild-chief-administrator",
+    "fullImagePath": "/images/rise-of-ix-imperium-guild-chief-administrator.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-guild-chief-administrator.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 311,
+    "name": "Imperial Bashar",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-imperial-bashar",
+    "fullImagePath": "/images/rise-of-ix-imperium-imperial-bashar.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-imperial-bashar.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 305,
+    "name": "Imperial Shock Trooper",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-imperial-shock-trooper",
+    "fullImagePath": "/images/rise-of-ix-imperium-imperial-shock-trooper.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-imperial-shock-trooper.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 308,
+    "name": "In The Shadows",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-in-the-shadows",
+    "fullImagePath": "/images/rise-of-ix-imperium-in-the-shadows.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-in-the-shadows.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 298,
+    "name": "Ix-Guild Compact",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-ix-guild-compact",
+    "fullImagePath": "/images/rise-of-ix-imperium-ix-guild-compact.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-ix-guild-compact.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 318,
+    "name": "Ixian Engineer",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-ixian-engineer",
+    "fullImagePath": "/images/rise-of-ix-imperium-ixian-engineer.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-ixian-engineer.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 312,
+    "name": "Jamis",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-jamis",
+    "fullImagePath": "/images/rise-of-ix-imperium-jamis.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-jamis.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 313,
+    "name": "Landing Rights",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-landing-rights",
+    "fullImagePath": "/images/rise-of-ix-imperium-landing-rights.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-landing-rights.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 296,
+    "name": "Local Fence",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-local-fence",
+    "fullImagePath": "/images/rise-of-ix-imperium-local-fence.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-local-fence.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 321,
+    "name": "Negotiated Withdrawal",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-negotiated-withdrawal",
+    "fullImagePath": "/images/rise-of-ix-imperium-negotiated-withdrawal.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-negotiated-withdrawal.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 309,
+    "name": "Satellite Ban",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-satellite-ban",
+    "fullImagePath": "/images/rise-of-ix-imperium-satellite-ban.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-satellite-ban.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 304,
+    "name": "Sayyadina",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-sayyadina",
+    "fullImagePath": "/images/rise-of-ix-imperium-sayyadina.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-sayyadina.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 297,
+    "name": "Shai-Hulud",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-shai-hulud",
+    "fullImagePath": "/images/rise-of-ix-imperium-shai-hulud.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-shai-hulud.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 317,
+    "name": "Spice Trader",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-spice-trader",
+    "fullImagePath": "/images/rise-of-ix-imperium-spice-trader.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-spice-trader.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 315,
+    "name": "Treachery",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-treachery",
+    "fullImagePath": "/images/rise-of-ix-imperium-treachery.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-treachery.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 316,
+    "name": "Truthsayer",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-truthsayer",
+    "fullImagePath": "/images/rise-of-ix-imperium-truthsayer.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-truthsayer.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 314,
+    "name": "Water Peddler",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-water-peddler",
+    "fullImagePath": "/images/rise-of-ix-imperium-water-peddler.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-water-peddler.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 319,
+    "name": "Web of Power",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-web-of-power",
+    "fullImagePath": "/images/rise-of-ix-imperium-web-of-power.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-web-of-power.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 320,
+    "name": "Weirding Way",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "rise-of-ix-weirding-way",
+    "fullImagePath": "/images/rise-of-ix-imperium-weirding-way.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-imperium-weirding-way.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 328,
+    "name": "Advanced Weaponry",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-advanced-weaponry",
+    "fullImagePath": "/images/rise-of-ix-intrigue-advanced-weaponry.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-advanced-weaponry.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 333,
+    "name": "Blackmail",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-blackmail",
+    "fullImagePath": "/images/rise-of-ix-intrigue-blackmail.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-blackmail.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 335,
+    "name": "Cannon Turrets",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-cannon-turrets",
+    "fullImagePath": "/images/rise-of-ix-intrigue-cannon-turrets.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-cannon-turrets.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 331,
+    "name": "Cull",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-cull",
+    "fullImagePath": "/images/rise-of-ix-intrigue-cull.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-cull.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 326,
+    "name": "Diversion",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-diversion",
+    "fullImagePath": "/images/rise-of-ix-intrigue-diversion.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-diversion.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 336,
+    "name": "Expedite",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-expedite",
+    "fullImagePath": "/images/rise-of-ix-intrigue-expedite.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-expedite.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 340,
+    "name": "Finesse",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-finesse",
+    "fullImagePath": "/images/rise-of-ix-intrigue-finesse.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-finesse.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 339,
+    "name": "Glimpse The Path",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-glimpse-the-path",
+    "fullImagePath": "/images/rise-of-ix-intrigue-glimpse-the-path.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-glimpse-the-path.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 330,
+    "name": "Grand Conspiracy",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-grand-conspiracy",
+    "fullImagePath": "/images/rise-of-ix-intrigue-grand-conspiracy.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-grand-conspiracy.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 337,
+    "name": "Ixian Probe",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-ixian-probe",
+    "fullImagePath": "/images/rise-of-ix-intrigue-ixian-probe.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-ixian-probe.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 334,
+    "name": "Machine Culture",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-machine-culture",
+    "fullImagePath": "/images/rise-of-ix-intrigue-machine-culture.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-machine-culture.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 342,
+    "name": "Quid Pro Quo",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-quid-pro-quo",
+    "fullImagePath": "/images/rise-of-ix-intrigue-quid-pro-quo.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-quid-pro-quo.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 338,
+    "name": "Second Wave",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-second-wave",
+    "fullImagePath": "/images/rise-of-ix-intrigue-second-wave.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-second-wave.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 329,
+    "name": "Secret Forces",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-secret-forces",
+    "fullImagePath": "/images/rise-of-ix-intrigue-secret-forces.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-secret-forces.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 332,
+    "name": "Strategic Push",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-strategic-push",
+    "fullImagePath": "/images/rise-of-ix-intrigue-strategic-push.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-strategic-push.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 341,
+    "name": "Strongarm",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-strongarm",
+    "fullImagePath": "/images/rise-of-ix-intrigue-strongarm.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-strongarm.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 327,
+    "name": "War Chest",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "rise-of-ix-war-chest",
+    "fullImagePath": "/images/rise-of-ix-intrigue-war-chest.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-intrigue-war-chest.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 352,
+    "name": "Artillery",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-artillery",
+    "fullImagePath": "/images/rise-of-ix-tech-artillery.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-artillery.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 356,
+    "name": "Chaumurky",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-chaumurky",
+    "fullImagePath": "/images/rise-of-ix-tech-chaumurky.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-chaumurky.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 357,
+    "name": "Detonation Devices",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-detonation-devices",
+    "fullImagePath": "/images/rise-of-ix-tech-detonation-devices.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-detonation-devices.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 361,
+    "name": "Disposal Facility",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-disposal-facility",
+    "fullImagePath": "/images/rise-of-ix-tech-disposal-facility.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-disposal-facility.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 350,
+    "name": "Flagship",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-flagship",
+    "fullImagePath": "/images/rise-of-ix-tech-flagship.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-flagship.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 359,
+    "name": "Holoprojectors",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-holoprojectors",
+    "fullImagePath": "/images/rise-of-ix-tech-holoprojectors.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-holoprojectors.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 362,
+    "name": "Holtzman Engine",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-holtzman-engine",
+    "fullImagePath": "/images/rise-of-ix-tech-holtzman-engine.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-holtzman-engine.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 355,
+    "name": "Invasion Ships",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-invasion-ships",
+    "fullImagePath": "/images/rise-of-ix-tech-invasion-ships.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-invasion-ships.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 360,
+    "name": "Memocorders",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-memocorders",
+    "fullImagePath": "/images/rise-of-ix-tech-memocorders.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-memocorders.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 358,
+    "name": "Minimic Film",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-minimic-film",
+    "fullImagePath": "/images/rise-of-ix-tech-minimic-film.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-minimic-film.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 365,
+    "name": "Restricted Ordnance",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-restricted-ordnance",
+    "fullImagePath": "/images/rise-of-ix-tech-restricted-ordnance.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-restricted-ordnance.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 364,
+    "name": "Shuttle Fleet",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-shuttle-fleet",
+    "fullImagePath": "/images/rise-of-ix-tech-shuttle-fleet.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-shuttle-fleet.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 351,
+    "name": "Sonic Snoopers",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-sonic-snoopers",
+    "fullImagePath": "/images/rise-of-ix-tech-sonic-snoopers.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-sonic-snoopers.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 366,
+    "name": "Spaceport",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-spaceport",
+    "fullImagePath": "/images/rise-of-ix-tech-spaceport.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-spaceport.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 354,
+    "name": "Spy Satellites",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-spy-satellites",
+    "fullImagePath": "/images/rise-of-ix-tech-spy-satellites.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-spy-satellites.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 363,
+    "name": "Training Drones",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-training-drones",
+    "fullImagePath": "/images/rise-of-ix-tech-training-drones.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-training-drones.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 353,
+    "name": "Troop Transports",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-troop-transports",
+    "fullImagePath": "/images/rise-of-ix-tech-troop-transports.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-troop-transports.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 349,
+    "name": "Windtraps",
+    "type": "tech",
+    "displayType": null,
+    "slug": "rise-of-ix-windtraps",
+    "fullImagePath": "/images/rise-of-ix-tech-windtraps.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-tech-windtraps.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 343,
+    "name": "\"Princess\" Yuna Moritani",
+    "type": "leader",
+    "displayType": null,
+    "slug": "rise-of-ix-princess-yuna-moritani",
+    "fullImagePath": "/images/rise-of-ix-leader-princess-yuna-moritani.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-leader-princess-yuna-moritani.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 348,
+    "name": "Archduke Armand Ecaz",
+    "type": "leader",
+    "displayType": null,
+    "slug": "rise-of-ix-archduke-armand-ecaz",
+    "fullImagePath": "/images/rise-of-ix-leader-archduke-armand-ecaz.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-leader-archduke-armand-ecaz.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 346,
+    "name": "Ilesa Ecaz",
+    "type": "leader",
+    "displayType": null,
+    "slug": "rise-of-ix-ilesa-ecaz",
+    "fullImagePath": "/images/rise-of-ix-leader-ilesa-ecaz.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-leader-ilesa-ecaz.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 344,
+    "name": "Prince Rhombur Vernius",
+    "type": "leader",
+    "displayType": null,
+    "slug": "rise-of-ix-prince-rhombur-vernius",
+    "fullImagePath": "/images/rise-of-ix-leader-prince-rhombur-vernius.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-leader-prince-rhombur-vernius.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 345,
+    "name": "Tessia Vernius",
+    "type": "leader",
+    "displayType": null,
+    "slug": "rise-of-ix-tessia-vernius",
+    "fullImagePath": "/images/rise-of-ix-leader-tessia-vernius.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-leader-tessia-vernius.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 347,
+    "name": "Viscount Hundro Moritani",
+    "type": "leader",
+    "displayType": null,
+    "slug": "rise-of-ix-viscount-hundro-moritani",
+    "fullImagePath": "/images/rise-of-ix-leader-viscount-hundro-moritani.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-leader-viscount-hundro-moritani.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 543,
+    "name": "Economic Supremacy",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "rise-of-ix-economic-supremacy",
+    "fullImagePath": "/images/rise-of-ix-conflict-economic-supremacy.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-conflict-economic-supremacy.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 541,
+    "name": "Skirmish I",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "rise-of-ix-skirmish-i",
+    "fullImagePath": "/images/rise-of-ix-conflict-skirmish-i.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-conflict-skirmish-i.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 540,
+    "name": "Skirmish II",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "rise-of-ix-skirmish-ii",
+    "fullImagePath": "/images/rise-of-ix-conflict-skirmish-ii.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-conflict-skirmish-ii.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 542,
+    "name": "Trade Monopoy",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "rise-of-ix-trade-monopoy",
+    "fullImagePath": "/images/rise-of-ix-conflict-trade-monopoy.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-conflict-trade-monopoy.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 611,
+    "name": "Dreadnought",
+    "type": "location",
+    "displayType": null,
+    "slug": "rise-of-ix-dreadnought",
+    "fullImagePath": "/images/rise-of-ix-location-dreadnought.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-location-dreadnought.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 609,
+    "name": "Interstellar Shipping",
+    "type": "location",
+    "displayType": null,
+    "slug": "rise-of-ix-interstellar-shipping",
+    "fullImagePath": "/images/rise-of-ix-location-intersteller-shipping.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-location-intersteller-shipping.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 608,
+    "name": "Smuggling",
+    "type": "location",
+    "displayType": null,
+    "slug": "rise-of-ix-smuggling",
+    "fullImagePath": "/images/rise-of-ix-location-smuggling.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-location-smuggling.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 610,
+    "name": "Tech Negotiation",
+    "type": "location",
+    "displayType": null,
+    "slug": "rise-of-ix-tech-negotiation",
+    "fullImagePath": "/images/rise-of-ix-location-tech-negotiation.webp",
+    "thumbnailImagePath": "/thumbnails/rise-of-ix-location-tech-negotiation.webp",
+    "expansionName": "Rise of Ix"
+  },
+  {
+    "id": 446,
+    "name": "Arrakis Recruiter",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-arrakis-recruiter",
+    "fullImagePath": "/images/dune-imperium-imperium-arrakis-recruiter.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-arrakis-recruiter.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 212,
+    "name": "Assassination Mission",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-assassination-mission",
+    "fullImagePath": "/images/dune-imperium-imperium-assassination-mission.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-assassination-mission.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 214,
+    "name": "Bene Gesserit Initiate",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-bene-gesserit-initiate",
+    "fullImagePath": "/images/dune-imperium-imperium-bene-gesserit-initiate.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-bene-gesserit-initiate.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 219,
+    "name": "Bene Gesserit Sister",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-bene-gesserit-sister",
+    "fullImagePath": "/images/dune-imperium-imperium-bene-gesserit-sister.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-bene-gesserit-sister.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 236,
+    "name": "Carryall",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-carryall",
+    "fullImagePath": "/images/dune-imperium-imperium-carryall.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-carryall.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 228,
+    "name": "Chani",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-chani",
+    "fullImagePath": "/images/dune-imperium-imperium-chani.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-chani.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 226,
+    "name": "CHOAM Directorship",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-choam-directorship",
+    "fullImagePath": "/images/dune-imperium-imperium-choam-directorship.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-choam-directorship.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 227,
+    "name": "Crysknife",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-crysknife",
+    "fullImagePath": "/images/dune-imperium-imperium-crysknife.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-crysknife.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 211,
+    "name": "Dr. Yueh",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-dr-yueh",
+    "fullImagePath": "/images/dune-imperium-imperium-dr-yueh.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-dr-yueh.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 230,
+    "name": "Duncan Idaho",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-duncan-idaho",
+    "fullImagePath": "/images/dune-imperium-imperium-duncan-idaho.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-duncan-idaho.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 223,
+    "name": "Fedaykin Death Commando",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-fedaykin-death-commando",
+    "fullImagePath": "/images/dune-imperium-imperium-fedaykin-death-commando.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-fedaykin-death-commando.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 234,
+    "name": "Firm Grip",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-firm-grip",
+    "fullImagePath": "/images/dune-imperium-imperium-form-grip.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-form-grip.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 240,
+    "name": "Fremen Camp",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-fremen-camp",
+    "fullImagePath": "/images/dune-imperium-imperium-fremen-camp.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-fremen-camp.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 224,
+    "name": "Gene Manipulation",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-gene-manipulation",
+    "fullImagePath": "/images/dune-imperium-imperium-gene-manipulation.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-gene-manipulation.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 215,
+    "name": "Guild Administrator",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-guild-administrator",
+    "fullImagePath": "/images/dune-imperium-imperium-guild-administrator.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-guild-administrator.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 238,
+    "name": "Guild Ambassador",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-guild-ambassador",
+    "fullImagePath": "/images/dune-imperium-imperium-guild-ambassador.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-guild-ambassador.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 225,
+    "name": "Guild Bankers",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-guild-bankers",
+    "fullImagePath": "/images/dune-imperium-imperium-guild-bankers.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-guild-bankers.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 237,
+    "name": "Gun Thopter",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-gun-thopter",
+    "fullImagePath": "/images/dune-imperium-imperium-gun-thopter.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-gun-thopter.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 245,
+    "name": "Gurney Halleck",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-gurney-halleck",
+    "fullImagePath": "/images/dune-imperium-imperium-gurney-halleck.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-gurney-halleck.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 218,
+    "name": "Imperial Spy",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-imperial-spy",
+    "fullImagePath": "/images/dune-imperium-imperium-imperial-spy.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-imperial-spy.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 232,
+    "name": "Kwisatz Haderach",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-kwisatz-haderach",
+    "fullImagePath": "/images/dune-imperium-imperium-kwisatz-haderach.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-kwisatz-haderach.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 242,
+    "name": "Lady Jessica",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-lady-jessica",
+    "fullImagePath": "/images/dune-imperium-imperium-lady-jessica.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-lady-jessica.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 248,
+    "name": "Liet Kynes",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-liet-kynes",
+    "fullImagePath": "/images/dune-imperium-imperium-liet-kynes.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-liet-kynes.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 220,
+    "name": "Missionaria Protectiva",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-missionaria-protectiva",
+    "fullImagePath": "/images/dune-imperium-imperium-missionaria-protectiva.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-missionaria-protectiva.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 241,
+    "name": "Opulence",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-opulence",
+    "fullImagePath": "/images/dune-imperium-imperium-opulence.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-opulence.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 247,
+    "name": "Other Memory",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-other-memory",
+    "fullImagePath": "/images/dune-imperium-imperium-other-memory.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-other-memory.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 244,
+    "name": "Piter De Vries",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-piter-de-vries",
+    "fullImagePath": "/images/dune-imperium-imperium-piter-de-vries.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-piter-de-vries.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 250,
+    "name": "Power Play",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-power-play",
+    "fullImagePath": "/images/dune-imperium-imperium-power-play.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-power-play.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 249,
+    "name": "Reverend Mother Mohiam",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-reverend-mother-mohiam",
+    "fullImagePath": "/images/dune-imperium-imperium-reverend-mother-mohiam.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-reverend-mother-mohiam.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 213,
+    "name": "Sardaukar Infantry",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-sardaukar-infantry",
+    "fullImagePath": "/images/dune-imperium-imperium-sardaukar-infantry.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-sardaukar-infantry.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 210,
+    "name": "Sardaukar Legion",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-sardaukar-legion",
+    "fullImagePath": "/images/dune-imperium-imperium-sardaukar-legion.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-sardaukar-legion.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 217,
+    "name": "Scout",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-scout",
+    "fullImagePath": "/images/dune-imperium-imperium-scout.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-scout.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 231,
+    "name": "Shifting Allegiances",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-shifting-allegiances",
+    "fullImagePath": "/images/dune-imperium-imperium-shifting-allegiances.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-shifting-allegiances.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 233,
+    "name": "Sietch Reverend Mother",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-sietch-reverend-mother",
+    "fullImagePath": "/images/dune-imperium-imperium-sietch-reverend-mother.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-sietch-reverend-mother.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 235,
+    "name": "Smuggler's Thopter",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-smuggler-s-thopter",
+    "fullImagePath": "/images/dune-imperium-imperium-smuggler-s-thopter.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-smuggler-s-thopter.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 229,
+    "name": "Space Travel",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-space-travel",
+    "fullImagePath": "/images/dune-imperium-imperium-space-travel.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-space-travel.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 221,
+    "name": "Spice Hunter",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-spice-hunter",
+    "fullImagePath": "/images/dune-imperium-imperium-spice-hunter.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-spice-hunter.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 222,
+    "name": "Spice Smugglers",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-spice-smugglers",
+    "fullImagePath": "/images/dune-imperium-imperium-spice-smugglers.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-spice-smugglers.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 243,
+    "name": "Stilgar",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-stilgar",
+    "fullImagePath": "/images/dune-imperium-imperium-stilgar.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-stilgar.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 239,
+    "name": "Test of Humanity",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-test-of-humanity",
+    "fullImagePath": "/images/dune-imperium-imperium-test-of-humanity.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-test-of-humanity.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 216,
+    "name": "The Voice",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-the-voice",
+    "fullImagePath": "/images/dune-imperium-imperium-the-voice.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-the-voice.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 246,
+    "name": "Thufir Hawat",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-thufir-hawat",
+    "fullImagePath": "/images/dune-imperium-imperium-thufir-hawat.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-thufir-hawat.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 445,
+    "name": "Worm Riders",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "dune-imperium-worm-riders",
+    "fullImagePath": "/images/dune-imperium-imperium-worm-riders.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-imperium-worm-riders.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 254,
+    "name": "Allied Armada",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-allied-armada",
+    "fullImagePath": "/images/dune-imperium-intrigue-allied-armada.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-allied-armada.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 253,
+    "name": "Ambush",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-ambush",
+    "fullImagePath": "/images/dune-imperium-intrigue-ambush.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-ambush.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 274,
+    "name": "Bindu Suspension",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-bindu-suspension",
+    "fullImagePath": "/images/dune-imperium-intrigue-bindu-suspension.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-bindu-suspension.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 251,
+    "name": "Bribery",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-bribery",
+    "fullImagePath": "/images/dune-imperium-intrigue-bribery.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-bribery.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 271,
+    "name": "Bypass Protocol",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-bypass-protocol",
+    "fullImagePath": "/images/dune-imperium-intrigue-bypass-protocol.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-bypass-protocol.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 269,
+    "name": "Calculated Hire",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-calculated-hire",
+    "fullImagePath": "/images/dune-imperium-intrigue-calculated-hire.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-calculated-hire.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 268,
+    "name": "Charisma",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-charisma",
+    "fullImagePath": "/images/dune-imperium-intrigue-charisma.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-charisma.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 270,
+    "name": "CHOAM Shares",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-choam-shares",
+    "fullImagePath": "/images/dune-imperium-intrigue-choam-shares.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-choam-shares.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 267,
+    "name": "Corner The Marker",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-corner-the-marker",
+    "fullImagePath": "/images/dune-imperium-intrigue-corner-the-marker.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-corner-the-marker.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 266,
+    "name": "Councilor's Dispensation",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-councilor-s-dispensation",
+    "fullImagePath": "/images/dune-imperium-intrigue-councilor-s-dispensation.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-councilor-s-dispensation.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 256,
+    "name": "Demand Respect",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-demand-respect",
+    "fullImagePath": "/images/dune-imperium-intrigue-demand-respect.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-demand-respect.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 259,
+    "name": "Dispatch an Envoy",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-dispatch-an-envoy",
+    "fullImagePath": "/images/dune-imperium-intrigue-dispatch-an-envoy.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-dispatch-an-envoy.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 265,
+    "name": "Double Cross",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-double-cross",
+    "fullImagePath": "/images/dune-imperium-intrigue-double-cross.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-double-cross.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 255,
+    "name": "Favored Subject",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-favored-subject",
+    "fullImagePath": "/images/dune-imperium-intrigue-favored-subject.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-favored-subject.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 258,
+    "name": "Guild Authorization",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-guild-authorization",
+    "fullImagePath": "/images/dune-imperium-intrigue-guild-authorization.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-guild-authorization.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 260,
+    "name": "Infiltrate",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-infiltrate",
+    "fullImagePath": "/images/dune-imperium-intrigue-infiltrate.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-infiltrate.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 261,
+    "name": "Know Their Ways",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-know-their-ways",
+    "fullImagePath": "/images/dune-imperium-intrigue-know-their-ways.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-know-their-ways.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 262,
+    "name": "Master Tactician",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-master-tactician",
+    "fullImagePath": "/images/dune-imperium-intrigue-master-tactician.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-master-tactician.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 263,
+    "name": "Plans Within Plans",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-plans-within-plans",
+    "fullImagePath": "/images/dune-imperium-intrigue-plans-within-plans.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-plans-within-plans.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 257,
+    "name": "Poison Snooper",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-poison-snooper",
+    "fullImagePath": "/images/dune-imperium-intrigue-poison-snooper.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-poison-snooper.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 264,
+    "name": "Private Army",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-private-army",
+    "fullImagePath": "/images/dune-imperium-intrigue-private-army.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-private-army.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 276,
+    "name": "Rapid Mobilization",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-rapid-mobilization",
+    "fullImagePath": "/images/dune-imperium-intrigue-rapid-mobilization.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-rapid-mobilization.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 272,
+    "name": "Recruitment Mission",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-recruitment-mission",
+    "fullImagePath": "/images/dune-imperium-intrigue-recruitment-mission.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-recruitment-mission.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 252,
+    "name": "Refocus",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-refocus",
+    "fullImagePath": "/images/dune-imperium-intrigue-refocus.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-refocus.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 273,
+    "name": "Reinforcements",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-reinforcements",
+    "fullImagePath": "/images/dune-imperium-intrigue-reinforcements.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-reinforcements.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 275,
+    "name": "Secret of the Sisterhood",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-secret-of-the-sisterhood",
+    "fullImagePath": "/images/dune-imperium-intrigue-secret-of-the-sisterhood.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-secret-of-the-sisterhood.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 277,
+    "name": "Staged Incident",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-staged-incident",
+    "fullImagePath": "/images/dune-imperium-intrigue-staged-incident.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-staged-incident.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 278,
+    "name": "The Sleeper Must Awaken",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-the-sleeper-must-awaken",
+    "fullImagePath": "/images/dune-imperium-intrigue-the-sleeper-must-awaken.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-the-sleeper-must-awaken.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 279,
+    "name": "Tiebreaker",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-tiebreaker",
+    "fullImagePath": "/images/dune-imperium-intrigue-tiebreaker.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-tiebreaker.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 280,
+    "name": "To The Victory...",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-to-the-victory",
+    "fullImagePath": "/images/dune-imperium-intrigue-to-the-victory.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-to-the-victory.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 284,
+    "name": "Urgent Mission",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-urgent-mission",
+    "fullImagePath": "/images/dune-imperium-intrigue-urgent-mission.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-urgent-mission.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 283,
+    "name": "Water Of Life",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-water-of-life",
+    "fullImagePath": "/images/dune-imperium-intrigue-water-of-life.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-water-of-life.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 281,
+    "name": "Water Peddlers Union",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-water-peddlers-union",
+    "fullImagePath": "/images/dune-imperium-intrigue-water-peddlers-union.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-water-peddlers-union.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 282,
+    "name": "Windfall",
+    "type": "intrigue",
+    "displayType": null,
+    "slug": "dune-imperium-windfall",
+    "fullImagePath": "/images/dune-imperium-intrigue-windfall.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-intrigue-windfall.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 285,
+    "name": "Baron Vladimir Harkonnen",
+    "type": "leader",
+    "displayType": null,
+    "slug": "dune-imperium-baron-vladimir-harkonnen",
+    "fullImagePath": "/images/dune-imperium-leader-baron-vladimir-harkonnen.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-leader-baron-vladimir-harkonnen.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 289,
+    "name": "Count Ilban Richese",
+    "type": "leader",
+    "displayType": null,
+    "slug": "dune-imperium-count-ilban-richese",
+    "fullImagePath": "/images/dune-imperium-leader-count-ilban-richese.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-leader-count-ilban-richese.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 287,
+    "name": "Countess Ariana Thorvald",
+    "type": "leader",
+    "displayType": null,
+    "slug": "dune-imperium-countess-ariana-thorvald",
+    "fullImagePath": "/images/dune-imperium-leader-countess-ariana-thorvald.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-leader-countess-ariana-thorvald.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 292,
+    "name": "Duke Leto Atreides",
+    "type": "leader",
+    "displayType": null,
+    "slug": "dune-imperium-duke-leto-atreides",
+    "fullImagePath": "/images/dune-imperium-leader-dune-leto-atreides.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-leader-dune-leto-atreides.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 288,
+    "name": "Earl Memnon Thorvald",
+    "type": "leader",
+    "displayType": null,
+    "slug": "dune-imperium-earl-memnon-thorvald",
+    "fullImagePath": "/images/dune-imperium-leader-earl-memnon-thorvald.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-leader-earl-memnon-thorvald.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 291,
+    "name": "Glossu \"The Beast\" Rabban",
+    "type": "leader",
+    "displayType": null,
+    "slug": "dune-imperium-glossu-the-beast-rabban",
+    "fullImagePath": "/images/dune-imperium-leader-glossu-the-beast-rabban.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-leader-glossu-the-beast-rabban.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 290,
+    "name": "Helena Richese",
+    "type": "leader",
+    "displayType": null,
+    "slug": "dune-imperium-helena-richese",
+    "fullImagePath": "/images/dune-imperium-leader-helena-richese.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-leader-helena-richese.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 286,
+    "name": "Paul Atreides",
+    "type": "leader",
+    "displayType": null,
+    "slug": "dune-imperium-paul-atreides",
+    "fullImagePath": "/images/dune-imperium-leader-paul-atreides.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-leader-paul-atreides.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 440,
+    "name": "Battle For Arrakeen",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-battle-for-arrakeen",
+    "fullImagePath": "/images/dune-imperium-conflict-battle-for-arrakeen.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-battle-for-arrakeen.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 439,
+    "name": "Battle For Carthag",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-battle-for-carthag",
+    "fullImagePath": "/images/dune-imperium-conflict-battle-for-carthag.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-battle-for-carthag.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 437,
+    "name": "Battle For Imperial Basin",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-battle-for-imperial-basin",
+    "fullImagePath": "/images/dune-imperium-conflict-battle-for-imperial-basin.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-battle-for-imperial-basin.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 429,
+    "name": "Cloak And Dagger",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-cloak-and-dagger",
+    "fullImagePath": "/images/dune-imperium-conflict-cloak-and-dagger.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-cloak-and-dagger.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 427,
+    "name": "Desert Power",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-desert-power",
+    "fullImagePath": "/images/dune-imperium-conflict-desert-power.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-desert-power.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 438,
+    "name": "Grand Vision",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-grand-vision",
+    "fullImagePath": "/images/dune-imperium-conflict-grand-vision.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-grand-vision.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 433,
+    "name": "Guild Bank Raid",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-guild-bank-raid",
+    "fullImagePath": "/images/dune-imperium-conflict-guild-bank-raid.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-guild-bank-raid.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 430,
+    "name": "Machinations",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-machinations",
+    "fullImagePath": "/images/dune-imperium-conflict-machinations.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-machinations.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 428,
+    "name": "Raid Stockpiles",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-raid-stockpiles",
+    "fullImagePath": "/images/dune-imperium-conflict-raid-stockpiles.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-raid-stockpiles.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 436,
+    "name": "Secure Imperial Basin",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-secure-imperial-basin",
+    "fullImagePath": "/images/dune-imperium-conflict-secure-imperial-basin.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-secure-imperial-basin.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 434,
+    "name": "Siege Of Arrakeen",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-siege-of-arrakeen",
+    "fullImagePath": "/images/dune-imperium-conflict-siege-of-arrakeen.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-siege-of-arrakeen.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 435,
+    "name": "Siege Of Carthag",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-siege-of-carthag",
+    "fullImagePath": "/images/dune-imperium-conflict-siege-of-carthag.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-siege-of-carthag.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 426,
+    "name": "Skirmish I",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-skirmish-i",
+    "fullImagePath": "/images/dune-imperium-conflict-skirmish-i.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-skirmish-i.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 425,
+    "name": "Skirmish II",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-skirmish-ii",
+    "fullImagePath": "/images/dune-imperium-conflict-skirmish-ii.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-skirmish-ii.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 424,
+    "name": "Skirmish III",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-skirmish-iii",
+    "fullImagePath": "/images/dune-imperium-conflict-skirmish-iii.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-skirmish-iii.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 423,
+    "name": "Skirmish IIII",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-skirmish-iiii",
+    "fullImagePath": "/images/dune-imperium-conflict-skirmish-iiii.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-skirmish-iiii.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 431,
+    "name": "Sort Through The Chaos",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-sort-through-the-chaos",
+    "fullImagePath": "/images/dune-imperium-conflict-sort-through-the-chaos.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-sort-through-the-chaos.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 432,
+    "name": "Terrible Purpose",
+    "type": "conflict",
+    "displayType": null,
+    "slug": "dune-imperium-terrible-purpose",
+    "fullImagePath": "/images/dune-imperium-conflict-terrible-purpose.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-conflict-terrible-purpose.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 586,
+    "name": "Arrakeen",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-arrakeen",
+    "fullImagePath": "/images/dune-imperium-location-arrakeen.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-arrakeen.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 587,
+    "name": "Carthag",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-carthag",
+    "fullImagePath": "/images/dune-imperium-location-carthag.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-carthag.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 588,
+    "name": "Conspire",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-conspire",
+    "fullImagePath": "/images/dune-imperium-location-conspire.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-conspire.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 589,
+    "name": "Foldspace",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-foldspace",
+    "fullImagePath": "/images/dune-imperium-location-foldspace.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-foldspace.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 607,
+    "name": "Hagga Basin",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-hagga-basin",
+    "fullImagePath": "/images/dune-imperium-location-hagga-basin.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-hagga-basin.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 591,
+    "name": "Hall of Oratory",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-hall-of-oratory",
+    "fullImagePath": "/images/dune-imperium-location-hall-of-oratory.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-hall-of-oratory.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 592,
+    "name": "Hardy Warriors",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-hardy-warriors",
+    "fullImagePath": "/images/dune-imperium-location-hardy-warriors.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-hardy-warriors.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 593,
+    "name": "Heighliner",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-heighliner",
+    "fullImagePath": "/images/dune-imperium-location-heighliner.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-heighliner.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 596,
+    "name": "High Council",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-high-council",
+    "fullImagePath": "/images/dune-imperium-location-high-council.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-high-council.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 595,
+    "name": "Imperial Basin",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-imperial-basin",
+    "fullImagePath": "/images/dune-imperium-location-imperial-basin.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-imperial-basin.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 597,
+    "name": "Mentat",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-mentat",
+    "fullImagePath": "/images/dune-imperium-location-mentat.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-mentat.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 594,
+    "name": "Rally Troops",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-rally-troops",
+    "fullImagePath": "/images/dune-imperium-location-rally-troops.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-rally-troops.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 598,
+    "name": "Research Station",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-research-station",
+    "fullImagePath": "/images/dune-imperium-location-research-station.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-research-station.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 599,
+    "name": "Secrets",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-secrets",
+    "fullImagePath": "/images/dune-imperium-location-secrets.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-secrets.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 600,
+    "name": "Secure Contract",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-secure-contract",
+    "fullImagePath": "/images/dune-imperium-location-secure-contract.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-secure-contract.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 601,
+    "name": "Selective Breeding",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-selective-breeding",
+    "fullImagePath": "/images/dune-imperium-location-selective-breeding.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-selective-breeding.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 602,
+    "name": "Sell Melange",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-sell-melange",
+    "fullImagePath": "/images/dune-imperium-location-sell-melange.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-sell-melange.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 603,
+    "name": "Sietch Tabr",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-sietch-tabr",
+    "fullImagePath": "/images/dune-imperium-location-sietch-tabr.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-sietch-tabr.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 604,
+    "name": "Stillsuits",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-stillsuits",
+    "fullImagePath": "/images/dune-imperium-location-stillsuits.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-stillsuits.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 605,
+    "name": "Swordmaster",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-swordmaster",
+    "fullImagePath": "/images/dune-imperium-location-swordmaster.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-swordmaster.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 590,
+    "name": "The Great Flat",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-the-great-flat",
+    "fullImagePath": "/images/dune-imperium-location-the-great-flat.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-the-great-flat.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 606,
+    "name": "Wealth",
+    "type": "location",
+    "displayType": null,
+    "slug": "dune-imperium-wealth",
+    "fullImagePath": "/images/dune-imperium-location-wealth.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-location-wealth.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 535,
+    "name": "Arrakis Liaison",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "dune-imperium-arrakis-liaison",
+    "fullImagePath": "/images/dune-imperium-other-arrakis-liaison.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-other-arrakis-liaison.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 530,
+    "name": "Convincing Argument",
+    "type": "other",
+    "displayType": null,
+    "slug": "dune-imperium-convincing-argument",
+    "fullImagePath": "/images/dune-imperium-other-convincing-argument.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-other-convincing-argument.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 528,
+    "name": "Dagger",
+    "type": "other",
+    "displayType": null,
+    "slug": "dune-imperium-dagger",
+    "fullImagePath": "/images/dune-imperium-other-dagger.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-other-dagger.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 533,
+    "name": "Diplomacy",
+    "type": "other",
+    "displayType": null,
+    "slug": "dune-imperium-diplomacy",
+    "fullImagePath": "/images/dune-imperium-other-diplomacy.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-other-diplomacy.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 527,
+    "name": "Dune, The Desert Planet",
+    "type": "other",
+    "displayType": null,
+    "slug": "dune-imperium-dune-the-desert-planet",
+    "fullImagePath": "/images/dune-imperium-other-dune-the-desert-planet.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-other-dune-the-desert-planet.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 534,
+    "name": "Foldspace",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "dune-imperium-foldspace",
+    "fullImagePath": "/images/dune-imperium-other-foldspace.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-other-foldspace.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 529,
+    "name": "Reconnaissance",
+    "type": "other",
+    "displayType": null,
+    "slug": "dune-imperium-reconnaissance",
+    "fullImagePath": "/images/dune-imperium-other-reconnaissance.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-other-reconnaissance.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 532,
+    "name": "Seek Allies",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "dune-imperium-seek-allies",
+    "fullImagePath": "/images/dune-imperium-other-seek-allies.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-other-seek-allies.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 531,
+    "name": "Signet Ring",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "dune-imperium-signet-ring",
+    "fullImagePath": "/images/dune-imperium-other-signet-ring.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-other-signet-ring.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 536,
+    "name": "The Spice Must Flow",
+    "type": "other",
+    "displayType": "imperium",
+    "slug": "dune-imperium-the-spice-must-flow",
+    "fullImagePath": "/images/dune-imperium-other-the-spice-must-flow.webp",
+    "thumbnailImagePath": "/thumbnails/dune-imperium-other-the-spice-must-flow.webp",
+    "expansionName": "Dune: Imperium"
+  },
+  {
+    "id": 72,
+    "name": "Arrakis Revolt",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "imperium-arrakis-revolt",
+    "fullImagePath": "/images/imperium-arrakis-revolt.webp",
+    "thumbnailImagePath": "/thumbnails/imperium-arrakis-revolt.webp",
+    "expansionName": "Other"
+  },
+  {
+    "id": 293,
+    "name": "Boundless Ambition",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "imperium-boundless-ambition",
+    "fullImagePath": "/images/imperium-boundless-ambition.webp",
+    "thumbnailImagePath": "/thumbnails/imperium-boundless-ambition.webp",
+    "expansionName": "Other"
+  },
+  {
+    "id": 325,
+    "name": "Duncan, Loyal Blade",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "imperium-duncan-loyal-blade",
+    "fullImagePath": "/images/imperium-duncan-loyal-blade.webp",
+    "thumbnailImagePath": "/thumbnails/imperium-duncan-loyal-blade.webp",
+    "expansionName": "Other"
+  },
+  {
+    "id": 323,
+    "name": "Jessica of Arrakis",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "imperium-jessica-of-arrakis",
+    "fullImagePath": "/images/imperium-jessica-of-arrakis.webp",
+    "thumbnailImagePath": "/thumbnails/imperium-jessica-of-arrakis.webp",
+    "expansionName": "Other"
+  },
+  {
+    "id": 444,
+    "name": "Pivotal Gambit",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "imperium-pivotal-gambit",
+    "fullImagePath": "/images/imperium-pivotal-gambit.webp",
+    "thumbnailImagePath": "/thumbnails/imperium-pivotal-gambit.webp",
+    "expansionName": "Other"
+  },
+  {
+    "id": 443,
+    "name": "Ruthless Leadeship",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "imperium-ruthless-leadeship",
+    "fullImagePath": "/images/imperium-ruthless-leadeship.webp",
+    "thumbnailImagePath": "/thumbnails/imperium-ruthless-leadeship.webp",
+    "expansionName": "Other"
+  },
+  {
+    "id": 442,
+    "name": "The Beast's Spoils",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "imperium-the-beast-s-spoils",
+    "fullImagePath": "/images/imperium-the-beast-s-spoils.webp",
+    "thumbnailImagePath": "/thumbnails/imperium-the-beast-s-spoils.webp",
+    "expansionName": "Other"
+  },
+  {
+    "id": 441,
+    "name": "Thumper",
+    "type": "imperium",
+    "displayType": null,
+    "slug": "imperium-thumper",
+    "fullImagePath": "/images/imperium-thumper.webp",
+    "thumbnailImagePath": "/thumbnails/imperium-thumper.webp",
+    "expansionName": "Other"
+  },
+  {
+    "id": 422,
+    "name": "Piter, Genius Advisor",
+    "type": "tleilaxu",
+    "displayType": null,
+    "slug": "tleilaxu-piter-genius-advisor",
+    "fullImagePath": "/images/tleilaxu-piter-genius-advisor.webp",
+    "thumbnailImagePath": "/thumbnails/tleilaxu-piter-genius-advisor.webp",
+    "expansionName": "Other"
+  }
+]
