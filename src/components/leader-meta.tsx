@@ -50,12 +50,9 @@ export function LeaderMeta({ stats }: LeaderMetaProps) {
                   ?
                 </div>
               )}
-              {/* Win% badge */}
-              <div className="absolute top-1.5 right-1.5 px-1.5 py-0.5 text-[10px] font-mono font-bold bg-black/70 text-white">
-                {winPct}%
-              </div>
+              {/* TOP badge — top right */}
               {isTop && (
-                <div className="absolute top-1.5 left-1.5 px-1.5 py-0.5 text-[10px] font-mono font-bold bg-primary text-primary-foreground">
+                <div className="absolute top-1.5 right-1.5 px-1.5 py-0.5 text-[10px] font-mono font-bold bg-primary text-primary-foreground">
                   TOP
                 </div>
               )}
@@ -68,10 +65,11 @@ export function LeaderMeta({ stats }: LeaderMetaProps) {
                 {leader.name}
               </div>
 
-              {/* GP / W row */}
+              {/* GP / W / Win% row */}
               <div className="flex items-center gap-3 text-[10px] font-mono text-muted-foreground">
                 <span><span className="text-foreground font-semibold">{leader.wins}</span>W</span>
                 <span><span className="text-foreground font-semibold">{leader.gamesPlayed}</span>GP</span>
+                <span className={`ml-auto font-semibold ${isTop ? "text-primary" : "text-foreground"}`}>{winPct}%</span>
               </div>
 
               {/* Per-player breakdown */}
