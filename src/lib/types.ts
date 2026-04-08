@@ -40,6 +40,7 @@ export interface LeaderStats {
   gamesPlayed: number
   wins: number
   winRate: number
+  players: Record<string, { wins: number; games: number }>
 }
 
 export const DEFAULT_PLAYERS = [

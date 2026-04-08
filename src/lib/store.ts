@@ -74,15 +74,22 @@ export function getPlayerStats(
 }
 
 export function getLeaderStats(games: Game[]): LeaderStats[] {
-  const stats: Record<string, { gamesPlayed: number; wins: number }> = {}
+  const stats: Record<string, { gamesPlayed: number; wins: number; players: Record<string, { wins: number; games: number }> }> = {}
 
   for (const game of games) {
     const winners = getWinners(game)
     for (const score of game.scores) {
       if (!score.leader || score.score === 0) continue
-      if (!stats[score.leader]) stats[score.leader] = { gamesPlayed: 0, wins: 0 }
+      if (!stats[score.leader]) stats[score.leader] = { gamesPlayed: 0, wins: 0, players: {} }
       stats[score.leader].gamesPlayed++
-      if (winners.includes(score.playerName)) stats[score.leader].wins++
+      if (!stats[score.leader].players[score.playerName]) {
+        stats[score.leader].players[score.playerName] = { wins: 0, games: 0 }
+      }
+      stats[score.leader].players[score.playerName].games++
+      if (winners.includes(score.playerName)) {
+        stats[score.leader].wins++
+        stats[score.leader].players[score.playerName].wins++
+      }
     }
   }
 
@@ -92,6 +99,7 @@ export function getLeaderStats(games: Game[]): LeaderStats[] {
       gamesPlayed: s.gamesPlayed,
       wins: s.wins,
       winRate: s.gamesPlayed > 0 ? s.wins / s.gamesPlayed : 0,
+      players: s.players,
     }))
     .sort((a, b) => b.winRate - a.winRate || b.wins - a.wins || b.gamesPlayed - a.gamesPlayed)
 }
@@ -119,7 +127,7 @@ export function getHeadToHead(
       if (opponent === playerA || !active.has(opponent)) continue
       result[opponent].games++
       if (winners.includes(playerA)) result[opponent].wins++
-      else result[opponent].losses++
+      else if (winners.includes(opponent)) result[opponent].losses++
     }
   }
 

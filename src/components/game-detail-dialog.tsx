@@ -114,18 +114,18 @@ export function GameDetailDialog({
           {/* Tiebreaker breakdown */}
           {isTB && tiedPlayers.length > 0 && (
             <>
-              <div className="h-px bg-border" />
-              <div className="space-y-3">
+              <div className="h-px bg-border mt-2" />
+              <div className="space-y-3 pt-1">
                 <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-warning text-warning-foreground">
                   TIEBREAKER BREAKDOWN
                 </span>
 
                 {/* Table header */}
-                <div className="flex items-center gap-2 px-2 text-[11px] font-mono font-semibold tracking-wider text-muted-foreground uppercase">
-                  <div className="flex-1">Player</div>
+                <div className="flex items-center gap-2 px-2">
+                  <div className="flex-1 text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">Player</div>
                   {TIEBREAKER_ORDER.map((r) => (
-                    <div key={r} className="w-14 flex justify-center">
-                      <ResourceIcon type={r} size="md" title={r} />
+                    <div key={r} className="w-12 flex justify-center">
+                      <ResourceIcon type={r} size="sm" />
                     </div>
                   ))}
                 </div>
@@ -136,8 +136,8 @@ export function GameDetailDialog({
                   return (
                     <div
                       key={s.playerName}
-                      className={`flex items-center gap-2 px-2 py-2 rounded ${
-                        isWinner ? "bg-accent" : "border border-border"
+                      className={`flex items-center gap-2 px-2 py-2.5 border ${
+                        isWinner ? "bg-primary/5 border-primary/20" : "border-border"
                       }`}
                     >
                       <div
@@ -157,12 +157,12 @@ export function GameDetailDialog({
                         return (
                           <div
                             key={r}
-                            className={`w-14 text-center font-mono text-sm ${
+                            className={`w-12 text-center font-mono text-sm tabular-nums ${
                               isThisWinner
                                 ? "text-primary font-bold"
                                 : val !== undefined
                                   ? "text-foreground"
-                                  : "text-muted-foreground/40"
+                                  : "text-muted-foreground/20"
                             }`}
                           >
                             {val !== undefined ? val : "—"}
@@ -174,14 +174,13 @@ export function GameDetailDialog({
                 })}
 
                 {game.tiebreakerResolved ? (
-                  <div className="text-xs text-corrino opacity-90 flex items-center gap-1.5 flex-wrap">
-                    Winner by 
+                  <div className="font-mono text-xs text-corrino flex items-center gap-1.5">
+                    <span className="text-muted-foreground/60">Winner by</span>
                     <ResourceIcon type={game.tiebreakerResolved.resource} size="sm" />
-                    <span className="capitalize">{game.tiebreakerResolved.resource}</span>
-                    : <span className="font-semibold">{shortenName(game.tiebreakerResolved.winnerName)}</span>
+                    <span className="font-semibold">{shortenName(game.tiebreakerResolved.winnerName)}</span>
                   </div>
                 ) : (
-                  <div className="text-xs text-fremen opacity-90 font-mono font-semibold">
+                  <div className="font-mono text-xs text-fremen font-semibold">
                     Shared Victory — unbreakable tie
                   </div>
                 )}
