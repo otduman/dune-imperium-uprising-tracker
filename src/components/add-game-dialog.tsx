@@ -108,12 +108,22 @@ export function AddGameDialog({
       formRef.current.querySelectorAll<HTMLElement>(
         'input[data-slot="input"], button[data-slot="select-trigger"]'
       )
-    )
+    ).filter((el) => !el.closest('[data-tiebreaker]') || el.closest('[data-tiebreaker]'))
     const idx = focusable.indexOf(currentEl)
     if (idx >= 0 && idx < focusable.length - 1) {
       focusable[idx + 1].focus()
     }
   }
+
+  // Leaders already chosen by other active players
+  const usedLeaders = useMemo(() => {
+    const used: Record<string, string> = {}
+    activePlayers.forEach((p) => {
+      const l = scores[p]?.leader
+      if (l) used[l] = p
+    })
+    return used
+  }, [scores, activePlayers])
 
   const tiedPlayers = useMemo(() => {
     const parsed = activePlayers
@@ -272,7 +282,11 @@ export function AddGameDialog({
                     onKeyDown={(e) => {
                       if (e.key === "Enter") {
                         e.preventDefault()
-                        advanceFocus(e.currentTarget)
+                        // Jump to this player's leader select specifically
+                        const trigger = formRef.current?.querySelector(
+                          `button[data-player-trigger="${player}"]`
+                        ) as HTMLElement | null
+                        trigger?.focus()
                       }
                     }}
                     className="font-mono bg-background border-input"
@@ -326,24 +340,28 @@ export function AddGameDialog({
                       </SelectValue>
                     </SelectTrigger>
                     <SelectContent>
-                      {LEADERS.map((l) => (
-                        <SelectItem key={l} value={l}>
-                          <div className="flex items-center gap-2">
-                            {LEADER_IMAGES[l] && (
-                              <div className="relative w-5 h-5 rounded shrink-0 overflow-hidden">
-                                <Image
-                                  src={LEADER_IMAGES[l]!}
-                                  alt=""
-                                  fill
-                                  className="object-cover object-top"
-                                  sizes="20px"
-                                />
-                              </div>
-                            )}
-                            <span>{l}</span>
-                          </div>
-                        </SelectItem>
-                      ))}
+                      {LEADERS.map((l) => {
+                        const takenBy = usedLeaders[l]
+                        const isDisabled = !!takenBy && takenBy !== player
+                        return (
+                          <SelectItem key={l} value={l} disabled={isDisabled}>
+                            <div className={`flex items-center gap-2 ${isDisabled ? "opacity-35" : ""}`}>
+                              {LEADER_IMAGES[l] && (
+                                <div className="relative w-5 h-5 rounded shrink-0 overflow-hidden">
+                                  <Image
+                                    src={LEADER_IMAGES[l]!}
+                                    alt=""
+                                    fill
+                                    className="object-cover object-top"
+                                    sizes="20px"
+                                  />
+                                </div>
+                              )}
+                              <span>{l}</span>
+                            </div>
+                          </SelectItem>
+                        )
+                      })}
                     </SelectContent>
                   </Select>
                 </div>

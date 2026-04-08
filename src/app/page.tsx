@@ -38,6 +38,7 @@ export default function Home() {
   const [detailGame, setDetailGame] = useState<Game | null>(null)
   const [editGame, setEditGame] = useState<Game | null>(null)
   const [profilePlayer, setProfilePlayer] = useState<string | null>(null)
+  const [addGameKey, setAddGameKey] = useState(0)
   const router = useRouter()
 
   const handleLogout = async () => {
@@ -138,6 +139,7 @@ export default function Home() {
                 size="sm"
                 onClick={() => {
                   setEditGame(null)
+                  setAddGameKey((k) => k + 1)
                   setAddOpen(true)
                 }}
               >
@@ -182,7 +184,7 @@ export default function Home() {
       </div>
 
       <AddGameDialog
-        key={editGame?.id ?? "new"}
+        key={editGame?.id ?? `new-${addGameKey}`}
         open={addOpen}
         onOpenChange={(open) => {
           setAddOpen(open)

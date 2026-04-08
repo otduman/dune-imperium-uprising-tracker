@@ -23,62 +23,62 @@ interface PlayerCardProps {
   score: number
   leader: string
   isWinner: boolean
-  playerCount: number
 }
 
-function PlayerCard({ playerName, score, leader, isWinner, playerCount }: PlayerCardProps) {
+function PlayerCard({ playerName, score, leader, isWinner }: PlayerCardProps) {
   const imgSrc = leader ? LEADER_IMAGES[leader] : undefined
-  // portrait for 2-player, landscape for 3-4
-  const aspect = playerCount === 2 ? "aspect-[2/3]" : "aspect-[3/2]"
 
   return (
     <div className={[
-      "relative flex flex-col overflow-hidden rounded-sm border",
-      isWinner ? "border-primary/50" : "border-border",
+      "relative flex flex-col overflow-hidden border",
+      isWinner ? "border-primary/60" : "border-border/60",
     ].join(" ")}>
-      {/* Portrait */}
-      <div className={`relative w-full ${aspect} bg-card overflow-hidden`}>
+      {/* Full portrait — object-contain so no cropping */}
+      <div className="relative w-full aspect-[2/3] bg-black/40 overflow-hidden">
         {imgSrc ? (
           <Image
             src={imgSrc}
             alt={leader}
             fill
             draggable={false}
-            className="object-cover select-none"
-            style={{ objectPosition: "center 20%" }}
-            sizes="25vw"
+            className="object-contain select-none"
+            sizes="20vw"
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center bg-muted/20">
-            <span className="font-mono text-[10px] text-muted-foreground/30 uppercase tracking-widest">
-              {leader || "?"}
+          /* No leader: show initials placeholder */
+          <div className="w-full h-full flex flex-col items-center justify-center gap-1.5 bg-card/60">
+            <span className="font-mono text-lg font-bold text-muted-foreground/30">
+              {playerName.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase()}
+            </span>
+            <span className="font-mono text-[9px] text-muted-foreground/20 uppercase tracking-widest">
+              no leader
             </span>
           </div>
         )}
 
-        {/* Winner glow overlay */}
+        {/* Winner tint */}
         {isWinner && (
           <div className="absolute inset-0 bg-primary/10 pointer-events-none" />
         )}
 
-        {/* Score + VP badge */}
+        {/* Score badge */}
         <div className={[
-          "absolute bottom-1.5 right-1.5 flex items-center gap-1 px-1.5 py-0.5",
-          isWinner ? "bg-primary text-primary-foreground" : "bg-black/70 text-white",
+          "absolute bottom-1 right-1 flex items-center gap-0.5 px-1.5 py-0.5",
+          isWinner ? "bg-primary text-primary-foreground" : "bg-black/70 text-white/80",
         ].join(" ")}>
           <span className="font-mono text-[11px] font-bold tabular-nums">{score}</span>
           {isWinner && (
-            <div className="relative w-3 h-3 shrink-0">
-              <Image src="/images/victorypoint.png" alt="VP" fill className="object-contain" sizes="12px" />
+            <div className="relative w-2.5 h-2.5 shrink-0">
+              <Image src="/images/victorypoint.png" alt="VP" fill className="object-contain" sizes="10px" />
             </div>
           )}
         </div>
       </div>
 
-      {/* Name */}
+      {/* Name bar */}
       <div className={[
-        "px-1.5 py-1 text-[10px] font-mono font-semibold truncate",
-        isWinner ? "text-primary bg-primary/5" : "text-muted-foreground",
+        "px-1.5 py-1 text-[9px] font-mono font-semibold truncate text-center",
+        isWinner ? "text-primary bg-primary/8" : "text-muted-foreground/60 bg-card/40",
       ].join(" ")}>
         {shortenName(playerName)}
       </div>
@@ -96,43 +96,45 @@ export function GameHistory({ games, onSelectGame }: GameHistoryProps) {
   }
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-2">
       {games.map((game) => {
         const winners = getWinners(game)
         const isTB = hasTiebreaker(game)
-        const activePlayers = game.scores.filter((s) => s.score > 0)
-        const sorted = [...activePlayers].sort((a, b) => b.score - a.score)
+        const sorted = [...game.scores]
+          .filter((s) => s.score > 0)
+          .sort((a, b) => b.score - a.score)
         const count = sorted.length
-
-        // grid: 2 players → 2 cols, 3 → 3 cols, 4 → 2x2
-        const gridClass =
+        const gridCols =
           count === 2 ? "grid-cols-2" :
           count === 3 ? "grid-cols-3" :
-          "grid-cols-2"
+          "grid-cols-4"
 
         return (
           <button
             key={game.id}
             onClick={() => onSelectGame(game)}
-            className="w-full text-left border border-border p-3 space-y-2.5 transition-colors active:bg-secondary block"
+            className="w-full text-left block border border-border/80 bg-card/20 transition-colors active:bg-secondary"
           >
-            {/* Header row */}
-            <div className="flex items-center gap-2">
-              <span className="text-[11px] font-mono text-muted-foreground/60">
+            {/* Match header */}
+            <div className="flex items-center gap-2 px-3 py-2 border-b border-border/60 bg-card/40">
+              <span className="font-mono text-[10px] text-muted-foreground/50">
                 {formatDate(game.date)}
               </span>
+              <span className="font-mono text-[10px] font-semibold text-primary/80">
+                {winners.map(shortenName).join(" & ")}
+              </span>
               {isTB && (
-                <span className="text-[10px] font-mono px-1.5 py-0.5 rounded-full bg-corrino/20 text-corrino">
+                <span className="text-[9px] font-mono px-1.5 py-0.5 bg-corrino/20 text-corrino rounded-full">
                   TB
                 </span>
               )}
-              <span className="ml-auto text-[10px] font-mono text-muted-foreground/40">
-                tap for details
+              <span className="ml-auto text-[9px] font-mono text-muted-foreground/30 uppercase tracking-widest">
+                details →
               </span>
             </div>
 
-            {/* Player cards grid */}
-            <div className={`grid ${gridClass} gap-1.5`}>
+            {/* Player cards — gap-px gives a "panel seam" look vs leader meta's gap-3 */}
+            <div className={`grid ${gridCols} gap-px bg-border/30`}>
               {sorted.map((s) => (
                 <PlayerCard
                   key={s.playerName}
@@ -140,7 +142,6 @@ export function GameHistory({ games, onSelectGame }: GameHistoryProps) {
                   score={s.score}
                   leader={s.leader}
                   isWinner={winners.includes(s.playerName)}
-                  playerCount={count}
                 />
               ))}
             </div>
