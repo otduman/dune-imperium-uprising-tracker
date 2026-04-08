@@ -41,6 +41,8 @@ export function GameHistory({ games, onSelectGame }: GameHistoryProps) {
 
         const winnerScore = sorted.find((s) => s.playerName === winner)
         const losers = sorted.filter((s) => s.playerName !== winner)
+        const tiedScore = isTB ? (sorted.find(s => s.playerName === winner)?.score ?? null) : null
+        const tiedLosers = tiedScore !== null ? new Set(losers.filter(s => s.score === tiedScore).map(s => s.playerName)) : new Set<string>()
 
         return (
           <button
@@ -70,11 +72,11 @@ export function GameHistory({ games, onSelectGame }: GameHistoryProps) {
             <div className="flex items-stretch min-h-[64px]">
               {/* Left — winner */}
               <div className="w-2/5 border-r border-border/60 bg-primary/5 flex flex-col items-center justify-center px-3 py-3 gap-0.5">
-                <span className="font-mono text-base font-bold text-primary leading-tight text-center">
+                <span className="font-mono text-sm font-bold text-primary leading-tight text-center">
                   {shortenName(winner)}
                 </span>
                 <div className="flex items-center gap-1">
-                  <span className="font-mono text-xl font-bold text-primary tabular-nums">
+                  <span className="font-mono text-base font-bold text-primary tabular-nums">
                     {winnerScore?.score ?? 0}
                   </span>
                   <div className="relative w-4 h-4 shrink-0">
@@ -85,16 +87,19 @@ export function GameHistory({ games, onSelectGame }: GameHistoryProps) {
 
               {/* Right — losers */}
               <div className="flex-1 flex flex-col justify-center px-3 py-3 gap-1">
-                {losers.map((s) => (
-                  <div key={s.playerName} className="flex items-center justify-between gap-2">
-                    <span className="font-mono text-sm text-muted-foreground/60 truncate">
-                      {shortenName(s.playerName)}
-                    </span>
-                    <span className="font-mono text-sm tabular-nums text-muted-foreground/50 shrink-0">
-                      {s.score}
-                    </span>
-                  </div>
-                ))}
+                {losers.map((s) => {
+                  const wasTied = tiedLosers.has(s.playerName)
+                  return (
+                    <div key={s.playerName} className="flex items-center justify-between gap-2">
+                      <span className={`font-mono text-sm truncate ${wasTied ? "text-warning-foreground/70 font-semibold" : "text-muted-foreground/60"}`}>
+                        {shortenName(s.playerName)}
+                      </span>
+                      <span className={`font-mono text-sm tabular-nums shrink-0 ${wasTied ? "text-warning-foreground/60" : "text-muted-foreground/50"}`}>
+                        {s.score}
+                      </span>
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </button>

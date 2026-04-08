@@ -18,15 +18,25 @@ export function LeaderMeta({ stats }: LeaderMetaProps) {
     )
   }
 
+  // Fan favorite: all leaders tied for most played
+  const maxPlayed = Math.max(...stats.map(s => s.gamesPlayed), 0)
+  const fanFavorites = new Set(stats.filter(s => s.gamesPlayed === maxPlayed).map(s => s.name))
+
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
       {stats.map((leader, i) => {
-        const isTop = i === 0
+        const isTop3 = i < 3
         const winPct = Math.round(leader.winRate * 100)
         const imgSrc = LEADER_IMAGES[leader.name]
+        const isFanFav = fanFavorites.has(leader.name)
         const playerEntries = Object.entries(leader.players).sort(
           (a, b) => b[1].wins - a[1].wins || b[1].games - a[1].games
         )
+
+        const badgeLabel = isTop3 ? "TOP" : null
+        const badgeClass =
+          i === 0 ? "bg-primary text-primary-foreground" :
+          "bg-muted-foreground/30 text-foreground"
 
         return (
           <div
@@ -50,29 +60,34 @@ export function LeaderMeta({ stats }: LeaderMetaProps) {
                   ?
                 </div>
               )}
-              {/* TOP badge — top right */}
-              {isTop && (
-                <div className="absolute top-1.5 right-1.5 px-1.5 py-0.5 text-[10px] font-mono font-bold bg-primary text-primary-foreground">
-                  TOP
-                </div>
-              )}
+
+              {/* Top-right badges */}
+              <div className="absolute top-1.5 right-1.5 flex flex-col items-end gap-1">
+                {isTop3 && (
+                  <div className={`px-1.5 py-0.5 text-[10px] font-mono font-bold ${badgeClass}`}>
+                    {badgeLabel}
+                  </div>
+                )}
+                {isFanFav && (
+                  <div className="px-1.5 py-0.5 text-[10px] font-mono font-bold bg-corrino/60 text-white">
+                    FAV
+                  </div>
+                )}
+              </div>
             </div>
 
             {/* Info */}
             <div className="px-2.5 pt-2 pb-2.5 space-y-2">
-              {/* Leader name */}
-              <div className={`font-mono text-xs font-semibold leading-tight ${isTop ? "text-primary" : "text-foreground"}`}>
+              <div className={`font-mono text-xs font-semibold leading-tight ${i === 0 ? "text-primary" : "text-foreground"}`}>
                 {leader.name}
               </div>
 
-              {/* GP / W / Win% row */}
               <div className="flex items-center gap-3 text-[10px] font-mono text-muted-foreground">
                 <span><span className="text-foreground font-semibold">{leader.wins}</span>W</span>
                 <span><span className="text-foreground font-semibold">{leader.gamesPlayed}</span>GP</span>
-                <span className={`ml-auto font-semibold ${isTop ? "text-primary" : "text-foreground"}`}>{winPct}%</span>
+                <span className={`ml-auto font-semibold ${i === 0 ? "text-primary" : "text-foreground"}`}>{winPct}%</span>
               </div>
 
-              {/* Per-player breakdown */}
               {playerEntries.length > 0 && (
                 <div className="space-y-0.5 border-t border-border pt-2">
                   {playerEntries.map(([name, record]) => (

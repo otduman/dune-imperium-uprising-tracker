@@ -113,10 +113,10 @@ export function GameDetailDialog({
                 nameClass = "text-primary"
                 scoreClass = "text-primary"
               } else if (isTiedLoser) {
-                borderClass = "border-warning/40"
-                bgClass = "bg-warning/5"
-                nameClass = "text-warning-foreground/80"
-                scoreClass = "text-warning-foreground/60"
+                borderClass = "border-warning-foreground/60"
+                bgClass = "bg-warning/10"
+                nameClass = "text-warning-foreground"
+                scoreClass = "text-warning-foreground"
               }
 
               return (
@@ -150,8 +150,8 @@ export function GameDetailDialog({
                         {shortenName(s.playerName)}
                       </span>
                       {isWinner && (
-                        <div className="relative w-3.5 h-3.5 shrink-0">
-                          <Image src="/images/victorypoint.png" alt="VP" fill className="object-contain" sizes="14px" />
+                        <div className="relative w-3 h-3 shrink-0">
+                          <Image src="/images/victorypoint.png" alt="VP" fill className="object-contain" sizes="12px" />
                         </div>
                       )}
                     </div>
@@ -161,7 +161,7 @@ export function GameDetailDialog({
                       </span>
                     )}
                     {isTiedLoser && (
-                      <span className="font-mono text-[9px] text-warning/50 mt-0.5">tied · lost TB</span>
+                      <span className="font-mono text-[9px] text-warning-foreground mt-0.5">tied · lost TB</span>
                     )}
                   </div>
 
