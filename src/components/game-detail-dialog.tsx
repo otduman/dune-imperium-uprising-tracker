@@ -124,19 +124,20 @@ export function GameDetailDialog({
                   key={s.playerName}
                   className={`flex items-center border ${borderClass} ${bgClass} overflow-hidden`}
                 >
-                  {/* Leader portrait — fixed px, padded to match text column */}
-                  <div className="pl-4 py-3 shrink-0">
+                  {/* Leader portrait */}
+                  <div className="shrink-0 flex items-center py-3 pl-4 pr-0">
                     {imgSrc ? (
                       <Image
                         src={imgSrc}
                         alt={s.leader}
-                        width={48}
-                        height={72}
+                        width={64}
+                        height={96}
                         draggable={false}
-                        className="select-none object-cover"
+                        className="select-none block"
+                        style={{ display: "block" }}
                       />
                     ) : (
-                      <div className="w-12 h-[72px] flex items-center justify-center bg-black/20">
+                      <div className="w-16 h-24 flex items-center justify-center bg-black/20">
                         <span className="font-mono text-[10px] text-muted-foreground/20">{s.playerName[0]}</span>
                       </div>
                     )}
