@@ -124,8 +124,8 @@ export function GameDetailDialog({
                   key={s.playerName}
                   className={`flex items-center border ${borderClass} ${bgClass} overflow-hidden`}
                 >
-                  {/* Leader portrait */}
-                  <div className="shrink-0 flex items-center py-3 pl-4 pr-0">
+                  {/* Leader portrait — image sets row height, no extra padding */}
+                  <div className="shrink-0 pl-4">
                     {imgSrc ? (
                       <Image
                         src={imgSrc}
