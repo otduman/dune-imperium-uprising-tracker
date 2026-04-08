@@ -130,14 +130,14 @@ export function GameDetailDialog({
                       <Image
                         src={imgSrc}
                         alt={s.leader}
-                        width={64}
-                        height={96}
+                        width={72}
+                        height={108}
                         draggable={false}
                         className="select-none block"
                         style={{ display: "block" }}
                       />
                     ) : (
-                      <div className="w-16 h-24 flex items-center justify-center bg-black/20">
+                      <div className="w-[72px] h-[108px] flex items-center justify-center bg-black/20">
                         <span className="font-mono text-[10px] text-muted-foreground/20">{s.playerName[0]}</span>
                       </div>
                     )}
