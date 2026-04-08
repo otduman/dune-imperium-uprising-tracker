@@ -29,7 +29,7 @@ function TrendIcon({ trend, hasPrev }: { trend: "up" | "down" | "same"; hasPrev:
         <Image src="/images/influence_minus.png" alt="down" fill className="object-contain" sizes="16px" />
       </div>
     )
-  return <div className="w-4 h-px bg-muted-foreground/20 shrink-0 self-center" />
+  return <span className="w-4 text-center font-mono text-[10px] text-muted-foreground/30 shrink-0 leading-none">–</span>
 }
 
 export function StandingsTable({ stats, previousStats, onSelectPlayer }: StandingsTableProps) {

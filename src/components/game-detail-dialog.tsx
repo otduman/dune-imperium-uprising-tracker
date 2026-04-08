@@ -69,9 +69,9 @@ export function GameDetailDialog({
         <div className="space-y-4">
           {/* Scores label + rows */}
           <div className="space-y-3">
-            <span className="text-[11px] font-mono font-semibold tracking-widest text-muted-foreground uppercase">
+            <div className="text-[11px] font-mono font-semibold tracking-widest text-muted-foreground uppercase">
               Scores
-            </span>
+            </div>
 
             {/* Score rows */}
             <div className="space-y-2">
@@ -118,9 +118,9 @@ export function GameDetailDialog({
             <>
               <div className="h-px bg-border" />
               <div className="space-y-3 pt-2">
-                <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-warning text-warning-foreground">
+                <div className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-warning text-warning-foreground inline-block">
                   TIEBREAKER BREAKDOWN
-                </span>
+                </div>
 
                 {/* Table header */}
                 <div className="flex items-center gap-2 px-2">

@@ -109,10 +109,11 @@ export default function Home() {
           <div className="max-w-2xl mx-auto px-4 h-14 flex items-center justify-between gap-3">
             <div className="flex items-center gap-2.5 min-w-0">
               <span className="font-mono text-[13px] font-semibold tracking-wide text-foreground whitespace-nowrap">
-                DUNE: IMPERIUM - Uprising
+                <span className="hidden sm:inline">DUNE: IMPERIUM – Uprising</span>
+                <span className="sm:hidden">DUNE: UPRISING</span>
               </span>
-              <span className="text-border text-sm">·</span>
-              <span className="font-mono text-[11px] text-muted-foreground tracking-widest uppercase">
+              <span className="hidden sm:inline text-border text-sm">·</span>
+              <span className="hidden sm:inline font-mono text-[11px] text-muted-foreground tracking-widest uppercase">
                 S01
               </span>
             </div>
