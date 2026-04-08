@@ -86,6 +86,21 @@ export function PlayerProfileDialog({
   const h2h = getHeadToHead(games, player, players)
   const opponents = players.filter((p) => p !== player && h2h[p]?.games > 0)
 
+  // Best leader: highest win rate among leaders played ≥2 games, else ≥1
+  const leaderRecord: Record<string, { wins: number; games: number }> = {}
+  for (const g of games) {
+    const score = g.scores.find((s) => s.playerName === player && s.score > 0)
+    if (!score?.leader) continue
+    if (!leaderRecord[score.leader]) leaderRecord[score.leader] = { wins: 0, games: 0 }
+    leaderRecord[score.leader].games++
+    if (getWinners(g).includes(player)) leaderRecord[score.leader].wins++
+  }
+  const leaderEntries = Object.entries(leaderRecord)
+  const minGames = leaderEntries.some(([, r]) => r.games >= 2) ? 2 : 1
+  const bestLeader = leaderEntries
+    .filter(([, r]) => r.games >= minGames)
+    .sort(([, a], [, b]) => b.wins / b.games - a.wins / a.games || b.wins - a.wins)[0]?.[0] ?? null
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="bg-background border-border max-w-md">
@@ -114,44 +129,44 @@ export function PlayerProfileDialog({
             />
           </div>
 
-          {/* Fav leader */}
+          {/* Fav + Best leader — 2 columns */}
           {stats.mostPlayedLeader !== "—" && (
-            <div className="space-y-2">
-              <span className="text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
-                Fav Leader
-              </span>
-              <div className="border border-border overflow-hidden">
-                {LEADER_IMAGES[stats.mostPlayedLeader] ? (
-                  <div className="relative w-full aspect-[3/2] overflow-hidden">
-                    <Image
-                      src={LEADER_IMAGES[stats.mostPlayedLeader]!}
-                      alt={stats.mostPlayedLeader}
-                      fill
-                      draggable={false}
-                      className="object-cover object-top select-none"
-                      sizes="448px"
-                    />
-                    <div className="absolute bottom-0 left-0 right-0 px-3 py-2 bg-gradient-to-t from-black/80 to-transparent">
-                      <span className="font-mono text-sm font-semibold text-white">
-                        {stats.mostPlayedLeader}
-                      </span>
+            <div className="grid grid-cols-2 gap-2">
+              {[
+                { label: "Most Played", name: stats.mostPlayedLeader },
+                { label: "Best Performer", name: bestLeader },
+              ].map(({ label, name }) => {
+                if (!name) return null
+                const imgSrc = LEADER_IMAGES[name]
+                return (
+                  <div key={label} className="overflow-hidden">
+                    <div className="text-[9px] font-mono font-semibold tracking-widest text-muted-foreground/50 uppercase py-1.5">
+                      {label}
                     </div>
+                    {imgSrc ? (
+                      <Image
+                        src={imgSrc}
+                        alt={name}
+                        width={200}
+                        height={300}
+                        draggable={false}
+                        className="w-full h-auto select-none block"
+                      />
+                    ) : (
+                      <div className="px-3 py-4 font-mono text-sm text-foreground">{name}</div>
+                    )}
                   </div>
-                ) : (
-                  <div className="px-4 py-3 font-mono text-sm text-foreground">
-                    {stats.mostPlayedLeader}
-                  </div>
-                )}
-              </div>
+                )
+              })}
             </div>
           )}
 
           {/* Score history chart */}
           {chartData.length > 0 && (
             <div className="space-y-2">
-              <span className="text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
+              <div className="text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
                 Score History
-              </span>
+              </div>
               <div className="border border-border p-4 space-y-2">
                 {/* Bars */}
                 <div
@@ -212,9 +227,9 @@ export function PlayerProfileDialog({
           {/* Head-to-head */}
           {opponents.length > 0 && (
             <div className="space-y-2">
-              <span className="text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
+              <div className="text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
                 Head to Head
-              </span>
+              </div>
               <div className="border border-border overflow-hidden">
                 {/* Header */}
                 <div className="flex items-center border-b border-border bg-card/60 px-4 py-2">
