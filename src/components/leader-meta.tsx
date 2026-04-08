@@ -33,15 +33,16 @@ export function LeaderMeta({ stats }: LeaderMetaProps) {
             key={leader.name}
             className="flex flex-col border border-border"
           >
-            {/* Portrait — portrait aspect ratio, no overflow-hidden on outer card */}
-            <div className="relative w-full aspect-[2/3] bg-card overflow-hidden">
+            {/* Portrait */}
+            <div className="relative w-full aspect-[3/2] bg-card overflow-hidden">
               {imgSrc ? (
                 <Image
                   src={imgSrc}
                   alt={leader.name}
                   fill
                   draggable={false}
-                  className="object-cover object-top select-none"
+                  className="object-cover select-none"
+                  style={{ objectPosition: "center 20%" }}
                   sizes="(max-width: 640px) 50vw, 33vw"
                 />
               ) : (
