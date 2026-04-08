@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import {
   Dialog,
   DialogContent,
@@ -9,6 +10,7 @@ import {
 } from "@/components/ui/dialog"
 import { Game, PlayerStats } from "@/lib/types"
 import { getWinners, getHeadToHead, shortenName } from "@/lib/store"
+import { LEADER_IMAGES } from "@/lib/leaders"
 
 const BAR_MAX_PX = 64
 
@@ -115,12 +117,25 @@ export function PlayerProfileDialog({
           {/* Fav leader */}
           {stats.mostPlayedLeader !== "—" && (
             <div className="flex items-center gap-3 px-4 py-3 border border-border">
-              <span className="text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase">
+              <span className="text-[10px] font-mono font-semibold tracking-widest text-muted-foreground/60 uppercase shrink-0">
                 Fav Leader
               </span>
-              <span className="font-mono text-sm text-foreground flex-1 text-right">
-                {stats.mostPlayedLeader}
-              </span>
+              <div className="flex items-center gap-2 justify-end flex-1 min-w-0">
+                <span className="font-mono text-sm text-foreground truncate">
+                  {stats.mostPlayedLeader}
+                </span>
+                {LEADER_IMAGES[stats.mostPlayedLeader] && (
+                  <div className="relative w-8 h-8 rounded shrink-0 overflow-hidden">
+                    <Image
+                      src={LEADER_IMAGES[stats.mostPlayedLeader]!}
+                      alt=""
+                      fill
+                      className="object-cover object-top"
+                      sizes="32px"
+                    />
+                  </div>
+                )}
+              </div>
             </div>
           )}
 

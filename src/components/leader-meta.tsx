@@ -1,6 +1,8 @@
 "use client"
 
+import Image from "next/image"
 import { LeaderStats } from "@/lib/types"
+import { LEADER_IMAGES } from "@/lib/leaders"
 
 interface LeaderMetaProps {
   stats: LeaderStats[]
@@ -47,8 +49,19 @@ export function LeaderMeta({ stats }: LeaderMetaProps) {
                 : "border-l-2 border-l-transparent",
             ].join(" ")}
           >
-            <div className="flex-1 py-3 px-2 font-mono text-sm truncate">
-              <span className={isFirst ? "text-primary font-semibold" : "text-foreground"}>
+            <div className="flex-1 py-3 px-2 flex items-center gap-2 min-w-0">
+              {LEADER_IMAGES[leader.name] && (
+                <div className="relative w-8 h-8 rounded shrink-0 overflow-hidden">
+                  <Image
+                    src={LEADER_IMAGES[leader.name]!}
+                    alt=""
+                    fill
+                    className="object-cover object-top"
+                    sizes="32px"
+                  />
+                </div>
+              )}
+              <span className={`font-mono text-sm truncate ${isFirst ? "text-primary font-semibold" : "text-foreground"}`}>
                 {leader.name}
               </span>
             </div>

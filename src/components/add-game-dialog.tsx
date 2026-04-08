@@ -30,6 +30,8 @@ import {
 import { generateId, shortenName } from "@/lib/store"
 import { cn } from "@/lib/utils"
 import { ResourceIcon } from "@/components/ui/resource-icon"
+import Image from "next/image"
+import { LEADER_IMAGES } from "@/lib/leaders"
 
 interface AddGameDialogProps {
   open: boolean
@@ -300,12 +302,46 @@ export function AddGameDialog({
                       className="w-full"
                       data-player-trigger={player}
                     >
-                      <SelectValue placeholder="Leader" />
+                      <SelectValue placeholder="Leader">
+                        {(value: string | null) =>
+                          value ? (
+                            <div className="flex items-center gap-1.5 min-w-0">
+                              {LEADER_IMAGES[value] && (
+                                <div className="relative w-5 h-5 rounded shrink-0 overflow-hidden">
+                                  <Image
+                                    src={LEADER_IMAGES[value]!}
+                                    alt=""
+                                    fill
+                                    className="object-cover object-top"
+                                    sizes="20px"
+                                  />
+                                </div>
+                              )}
+                              <span className="truncate">{value}</span>
+                            </div>
+                          ) : (
+                            <span className="text-muted-foreground/50">Leader</span>
+                          )
+                        }
+                      </SelectValue>
                     </SelectTrigger>
                     <SelectContent>
                       {LEADERS.map((l) => (
                         <SelectItem key={l} value={l}>
-                          {l}
+                          <div className="flex items-center gap-2">
+                            {LEADER_IMAGES[l] && (
+                              <div className="relative w-5 h-5 rounded shrink-0 overflow-hidden">
+                                <Image
+                                  src={LEADER_IMAGES[l]!}
+                                  alt=""
+                                  fill
+                                  className="object-cover object-top"
+                                  sizes="20px"
+                                />
+                              </div>
+                            )}
+                            <span>{l}</span>
+                          </div>
                         </SelectItem>
                       ))}
                     </SelectContent>
