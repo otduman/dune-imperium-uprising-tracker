@@ -3,7 +3,6 @@
 import Image from "next/image"
 import { Game } from "@/lib/types"
 import { getWinners, hasTiebreaker, shortenName } from "@/lib/store"
-import { LEADER_IMAGES } from "@/lib/leaders"
 
 interface GameHistoryProps {
   games: Game[]
@@ -14,76 +13,7 @@ function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString("en-US", {
     month: "short",
     day: "numeric",
-    year: "numeric",
   })
-}
-
-interface PlayerCardProps {
-  playerName: string
-  score: number
-  leader: string
-  isWinner: boolean
-}
-
-function PlayerCard({ playerName, score, leader, isWinner }: PlayerCardProps) {
-  const imgSrc = leader ? LEADER_IMAGES[leader] : undefined
-
-  return (
-    <div className={[
-      "relative flex flex-col overflow-hidden border",
-      isWinner ? "border-primary/60" : "border-border/60",
-    ].join(" ")}>
-      {/* Full portrait — object-contain so no cropping */}
-      <div className="relative w-full aspect-[2/3] bg-black/40 overflow-hidden">
-        {imgSrc ? (
-          <Image
-            src={imgSrc}
-            alt={leader}
-            fill
-            draggable={false}
-            className="object-contain select-none"
-            sizes="20vw"
-          />
-        ) : (
-          /* No leader: show initials placeholder */
-          <div className="w-full h-full flex flex-col items-center justify-center gap-1.5 bg-card/60">
-            <span className="font-mono text-lg font-bold text-muted-foreground/30">
-              {playerName.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase()}
-            </span>
-            <span className="font-mono text-[9px] text-muted-foreground/20 uppercase tracking-widest">
-              no leader
-            </span>
-          </div>
-        )}
-
-        {/* Winner tint */}
-        {isWinner && (
-          <div className="absolute inset-0 bg-primary/10 pointer-events-none" />
-        )}
-
-        {/* Score badge */}
-        <div className={[
-          "absolute bottom-1 right-1 flex items-center gap-0.5 px-1.5 py-0.5",
-          isWinner ? "bg-primary text-primary-foreground" : "bg-black/70 text-white/80",
-        ].join(" ")}>
-          <span className="font-mono text-[11px] font-bold tabular-nums">{score}</span>
-          {isWinner && (
-            <div className="relative w-2.5 h-2.5 shrink-0">
-              <Image src="/images/victorypoint.png" alt="VP" fill className="object-contain" sizes="10px" />
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* Name bar */}
-      <div className={[
-        "px-1.5 py-1 text-[9px] font-mono font-semibold truncate text-center",
-        isWinner ? "text-primary bg-primary/8" : "text-muted-foreground/60 bg-card/40",
-      ].join(" ")}>
-        {shortenName(playerName)}
-      </div>
-    </div>
-  )
 }
 
 export function GameHistory({ games, onSelectGame }: GameHistoryProps) {
@@ -96,54 +26,76 @@ export function GameHistory({ games, onSelectGame }: GameHistoryProps) {
   }
 
   return (
-    <div className="space-y-2">
-      {games.map((game) => {
+    <div className="border border-border overflow-hidden">
+      {games.map((game, gameIdx) => {
         const winners = getWinners(game)
         const isTB = hasTiebreaker(game)
+        // tiebreaker resolves to exactly one winner — take first
+        const winner = isTB && game.tiebreakerResolved
+          ? game.tiebreakerResolved.winnerName
+          : winners[0]
+
         const sorted = [...game.scores]
           .filter((s) => s.score > 0)
           .sort((a, b) => b.score - a.score)
-        const count = sorted.length
-        const gridCols =
-          count === 2 ? "grid-cols-2" :
-          count === 3 ? "grid-cols-3" :
-          "grid-cols-4"
+
+        const winnerScore = sorted.find((s) => s.playerName === winner)
+        const losers = sorted.filter((s) => s.playerName !== winner)
 
         return (
           <button
             key={game.id}
             onClick={() => onSelectGame(game)}
-            className="w-full text-left block border border-border/80 bg-card/20 transition-colors active:bg-secondary"
+            className={[
+              "w-full text-left block transition-colors active:bg-secondary",
+              gameIdx < games.length - 1 ? "border-b border-border" : "",
+            ].join(" ")}
           >
-            {/* Match header */}
-            <div className="flex items-center gap-2 px-3 py-2 border-b border-border/60 bg-card/40">
-              <span className="font-mono text-[10px] text-muted-foreground/50">
+            {/* Date row */}
+            <div className="flex items-center gap-2 px-4 py-2 border-b border-border/50">
+              <span className="font-mono text-[11px] text-muted-foreground/50 tabular-nums">
                 {formatDate(game.date)}
-              </span>
-              <span className="font-mono text-[10px] font-semibold text-primary/80">
-                {winners.map(shortenName).join(" & ")}
               </span>
               {isTB && (
                 <span className="text-[9px] font-mono px-1.5 py-0.5 bg-corrino/20 text-corrino rounded-full">
                   TB
                 </span>
               )}
-              <span className="ml-auto text-[9px] font-mono text-muted-foreground/30 uppercase tracking-widest">
+              <span className="ml-auto font-mono text-[9px] text-muted-foreground/25 uppercase tracking-widest">
                 details →
               </span>
             </div>
 
-            {/* Player cards — gap-px gives a "panel seam" look vs leader meta's gap-3 */}
-            <div className={`grid ${gridCols} gap-px bg-border/30`}>
-              {sorted.map((s) => (
-                <PlayerCard
-                  key={s.playerName}
-                  playerName={s.playerName}
-                  score={s.score}
-                  leader={s.leader}
-                  isWinner={winners.includes(s.playerName)}
-                />
-              ))}
+            {/* Split panel */}
+            <div className="flex items-stretch min-h-[64px]">
+              {/* Left — winner */}
+              <div className="w-2/5 border-r border-border/60 bg-primary/5 flex flex-col items-center justify-center px-3 py-3 gap-0.5">
+                <span className="font-mono text-base font-bold text-primary leading-tight text-center">
+                  {shortenName(winner)}
+                </span>
+                <div className="flex items-center gap-1">
+                  <span className="font-mono text-xl font-bold text-primary tabular-nums">
+                    {winnerScore?.score ?? 0}
+                  </span>
+                  <div className="relative w-4 h-4 shrink-0">
+                    <Image src="/images/victorypoint.png" alt="VP" fill className="object-contain" sizes="16px" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Right — losers */}
+              <div className="flex-1 flex flex-col justify-center px-3 py-3 gap-1">
+                {losers.map((s) => (
+                  <div key={s.playerName} className="flex items-center justify-between gap-2">
+                    <span className="font-mono text-sm text-muted-foreground/60 truncate">
+                      {shortenName(s.playerName)}
+                    </span>
+                    <span className="font-mono text-sm tabular-nums text-muted-foreground/50 shrink-0">
+                      {s.score}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           </button>
         )
